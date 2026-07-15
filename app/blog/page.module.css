@@ -1,0 +1,45 @@
+/* 博客列表页：杂志式排版 */
+.intro {
+  padding-block: var(--space-2xl) var(--space-xl);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.introInner {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: var(--space-2xl);
+  align-items: end;
+}
+
+.introTitle {
+  font-size: var(--fs-3xl);
+  max-width: 12ch;
+}
+
+.introDesc {
+  font-size: var(--fs-md);
+  color: var(--color-text-secondary);
+  max-width: 50ch;
+}
+
+.featured {
+  padding-block: var(--space-2xl);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.grid {
+  padding-block: var(--space-2xl);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl) var(--space-lg);
+}
+
+@media (max-width: 860px) {
+  .introInner {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,178 @@
+/* 联系/询盘页 */
+.intro {
+  padding-block: var(--space-2xl) var(--space-xl);
+}
+
+.introInner {
+  max-width: var(--container-narrow);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.introTitle {
+  font-size: var(--fs-3xl);
+}
+
+.lead {
+  font-size: var(--fs-md);
+  color: var(--color-text-secondary);
+  max-width: 56ch;
+}
+
+/* 询盘引导卡片 */
+.inquiry {
+  padding-block: var(--space-xl);
+}
+
+.inquiryCard {
+  background: var(--color-surface-dark);
+  color: var(--color-text-inverse);
+  border-radius: var(--radius-lg);
+  padding: clamp(2.5rem, 6vw, 4.5rem);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.inquiryCard::before {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 50%;
+  height: 160%;
+  background: radial-gradient(
+    circle at center,
+    rgba(200, 184, 154, 0.12),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.inquiryText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  position: relative;
+}
+
+.inquiryText .eyebrow {
+  color: #c8b89a;
+}
+
+.inquiryTitle {
+  color: var(--color-text-inverse);
+  font-size: var(--fs-2xl);
+}
+
+.inquiryDesc {
+  color: rgba(245, 241, 234, 0.75);
+  font-size: var(--fs-md);
+}
+
+.inquiryAction {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  position: relative;
+  z-index: 1;
+}
+
+/* 询盘要素清单 */
+.checklist {
+  padding-block: var(--space-2xl);
+}
+
+.checklistInner {
+  max-width: var(--container-narrow);
+  margin-inline: auto;
+}
+
+.checklistTitle {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.checklistGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.checklistItem {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: flex-start;
+  padding: var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-elevated);
+}
+
+.checklistMarker {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-forest);
+  color: var(--color-text-inverse);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-xs);
+  font-family: var(--font-serif);
+}
+
+.checklistText {
+  font-size: var(--fs-sm);
+  color: var(--color-text);
+  line-height: var(--lh-normal);
+}
+
+/* 联系方式 */
+.channels {
+  padding-block: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.channelsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.channel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.channelLabel {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--fs-sm);
+  color: var(--color-wood);
+}
+
+.channelValue {
+  font-size: var(--fs-md);
+  color: var(--color-text);
+}
+
+@media (max-width: 860px) {
+  .inquiryCard {
+    grid-template-columns: 1fr;
+  }
+  .checklistGrid {
+    grid-template-columns: 1fr;
+  }
+  .channelsGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,132 @@
+/* 页脚：深森林绿区块，杂志感多列布局 */
+.footer {
+  background: var(--color-surface-dark);
+  color: var(--color-text-inverse);
+  margin-top: var(--space-3xl);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.4fr;
+  gap: var(--space-xl);
+  padding-block: var(--space-2xl);
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 360px;
+}
+
+.logo {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoIcon {
+  width: 26px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.logoText {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.logoAccent {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+}
+
+.logoAlt {
+  color: #c8b89a;
+  font-style: italic;
+}
+
+.brandDesc {
+  color: rgba(245, 241, 234, 0.7);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-normal);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.colTitle {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-regular);
+  color: #c8b89a;
+  letter-spacing: 0.04em;
+}
+
+.linkList,
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.link {
+  font-size: var(--fs-sm);
+  color: rgba(245, 241, 234, 0.82);
+  transition: color var(--transition-base);
+}
+
+.link:hover {
+  color: #ffffff;
+}
+
+.contactText {
+  font-size: var(--fs-sm);
+  color: rgba(245, 241, 234, 0.7);
+  line-height: var(--lh-normal);
+}
+
+.bottom {
+  border-top: 1px solid rgba(245, 241, 234, 0.12);
+  padding-block: var(--space-md);
+}
+
+.bottomInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  font-size: var(--fs-xs);
+  color: rgba(245, 241, 234, 0.55);
+}
+
+.bottomNote {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl) var(--space-lg);
+  }
+  .brandCol {
+    grid-column: 1 / -1;
+    max-width: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+}

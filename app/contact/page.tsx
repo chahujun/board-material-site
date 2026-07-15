@@ -1,0 +1,135 @@
+import type { Metadata } from "next";
+import { buildMetadata, siteConfig } from "@/lib/seo";
+import Breadcrumb from "@/components/Breadcrumb";
+import styles from "./page.module.css";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Contact — Request a Quote",
+  description:
+    "Request a quote for architectural boards, flooring or stone. Tell us about your project and our export team responds within one business day.",
+  path: "/contact",
+});
+
+const checklist = [
+  {
+    n: "1",
+    text: "Project type and location (hotel, residential, commercial) and the country of destination for export compliance.",
+  },
+  {
+    n: "2",
+    text: "Material category and quantity in square meters or pieces, with target delivery date.",
+  },
+  {
+    n: "3",
+    text: "Key specifications: wear-layer thickness, fire rating, finish and any custom color or RAL references.",
+  },
+  {
+    n: "4",
+    text: "Any certification requirements (FSC, CE, ASTM) and documentation needed for customs clearance.",
+  },
+];
+
+export default function ContactPage() {
+  return (
+    <>
+      <div className="container">
+        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Contact", href: "/contact" }]} />
+      </div>
+
+      {/* 介绍 */}
+      <section className={styles.intro}>
+        <div className="container">
+          <div className={styles.introInner}>
+            <span className="eyebrow">Start a conversation</span>
+            <h1 className={styles.introTitle}>Request a quote for your project</h1>
+            <p className={styles.lead}>
+              Our export team responds to inquiries within one business day with
+              pricing, MOQ and lead times. For the fastest response, use our secure
+              inquiry form and include the details below.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 询盘引导（导流到 onestopbuildly.com/inquiry） */}
+      <section className={styles.inquiry}>
+        <div className="container">
+          <div className={styles.inquiryCard}>
+            <div className={styles.inquiryText}>
+              <span className="eyebrow">Secure inquiry form</span>
+              <h2 className={styles.inquiryTitle}>
+                Submit your project brief
+              </h2>
+              <p className={styles.inquiryDesc}>
+                Our dedicated inquiry portal collects your specifications securely
+                and routes them to the right product specialist. It takes about two
+                minutes.
+              </p>
+            </div>
+            <div className={styles.inquiryAction}>
+              <a
+                href={siteConfig.inquiryUrl}
+                className="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open Inquiry Form
+              </a>
+              <a
+                href={`mailto:${siteConfig.contactEmail}`}
+                className="btn btn-outline"
+              >
+                Email us instead
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 询盘要素清单 */}
+      <section className={styles.checklist}>
+        <div className="container">
+          <div className={styles.checklistInner}>
+            <span className="eyebrow">To speed things up</span>
+            <h2 className={styles.checklistTitle}>Include these in your inquiry</h2>
+            <div className={styles.checklistGrid}>
+              {checklist.map((item) => (
+                <div key={item.n} className={styles.checklistItem}>
+                  <span className={styles.checklistMarker}>{item.n}</span>
+                  <p className={styles.checklistText}>{item.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 联系方式 */}
+      <section className={styles.channels}>
+        <div className="container">
+          <div className={styles.channelsGrid}>
+            <div className={styles.channel}>
+              <span className={styles.channelLabel}>Email</span>
+              <a href={`mailto:${siteConfig.contactEmail}`} className={`${styles.channelValue} text-link`}>
+                {siteConfig.contactEmail}
+              </a>
+            </div>
+            <div className={styles.channel}>
+              <span className={styles.channelLabel}>Phone</span>
+              <span className={styles.channelValue}>{siteConfig.phone}</span>
+            </div>
+            <div className={styles.channel}>
+              <span className={styles.channelLabel}>Workshop</span>
+              <span className={styles.channelValue}>
+                {siteConfig.address.streetAddress}
+                <br />
+                {siteConfig.address.addressLocality},{" "}
+                {siteConfig.address.addressCountry}
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

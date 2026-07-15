@@ -1,0 +1,172 @@
+/* 品类详情页：头部 + 产品网格 + FAQ + 相关品类 */
+.header {
+  padding-block: var(--space-xl);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.headerInner {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: var(--space-xl);
+  align-items: end;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.categoryTitle {
+  font-size: var(--fs-3xl);
+}
+
+.categoryDesc {
+  font-size: var(--fs-md);
+  color: var(--color-text-secondary);
+  max-width: 56ch;
+}
+
+.headerImage {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-bg-deep);
+}
+
+/* ===== 产品网格 ===== */
+.productsSection {
+  padding-block: var(--space-2xl);
+}
+
+.productsHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--space-xl);
+  gap: var(--space-md);
+}
+
+.productsHead h2 {
+  font-size: var(--fs-xl);
+}
+
+.blockCount {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+/* ===== FAQ ===== */
+.faq {
+  padding-block: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+}
+
+.faqItem {
+  border-bottom: 1px solid var(--color-border);
+  padding-block: var(--space-md);
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: var(--space-lg);
+}
+
+.faqQuestion {
+  font-family: var(--font-serif);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+  line-height: var(--lh-snug);
+}
+
+.faqAnswer {
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--lh-normal);
+}
+
+/* ===== 相关品类 ===== */
+.related {
+  padding-block: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.relatedCard {
+  position: relative;
+  display: block;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: var(--color-bg-deep);
+}
+
+.relatedCard img {
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.relatedCard:hover img {
+  transform: scale(1.05);
+}
+
+.relatedOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(26, 26, 26, 0.75),
+    rgba(26, 26, 26, 0.05)
+  );
+}
+
+.relatedName {
+  position: absolute;
+  left: var(--space-md);
+  bottom: var(--space-md);
+  font-family: var(--font-serif);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-inverse);
+}
+
+@media (max-width: 960px) {
+  .headerInner {
+    grid-template-columns: 1fr;
+  }
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .relatedGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .faqItem {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+}
+
+@media (max-width: 600px) {
+  .productGrid {
+    grid-template-columns: 1fr;
+  }
+  .relatedGrid {
+    grid-template-columns: 1fr;
+  }
+}

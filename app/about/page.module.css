@@ -1,0 +1,112 @@
+/* 关于我们页 */
+.intro {
+  padding-block: var(--space-2xl) var(--space-xl);
+}
+
+.introGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.introTitle {
+  font-size: var(--fs-3xl);
+}
+
+.lead {
+  font-size: var(--fs-md);
+  color: var(--color-text-secondary);
+  max-width: 50ch;
+}
+
+.introImage {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-bg-deep);
+}
+
+/* 故事区 */
+.story {
+  padding-block: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.storyInner {
+  max-width: var(--container-narrow);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.storyTitle {
+  font-size: var(--fs-2xl);
+}
+
+.storyInner p {
+  font-size: var(--fs-md);
+  color: var(--color-text);
+  line-height: var(--lh-loose);
+}
+
+/* 价值观 */
+.values {
+  padding-block: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.valuesHead {
+  margin-bottom: var(--space-xl);
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.valueCard {
+  padding: var(--space-lg);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.valueIndex {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--fs-sm);
+  color: var(--color-wood);
+}
+
+.valueTitle {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+}
+
+.valueText {
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--lh-normal);
+}
+
+@media (max-width: 860px) {
+  .introGrid {
+    grid-template-columns: 1fr;
+  }
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+}

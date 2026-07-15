@@ -1,0 +1,118 @@
+/* 产品总览页：交替式杂志区块 */
+.intro {
+  padding-block: var(--space-2xl) var(--space-xl);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.introInner {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-2xl);
+  align-items: end;
+}
+
+.introTitle {
+  font-size: var(--fs-3xl);
+  max-width: 12ch;
+}
+
+.introDesc {
+  font-size: var(--fs-md);
+  color: var(--color-text-secondary);
+  max-width: 50ch;
+}
+
+/* 交替式品类区块列表 */
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+  padding-block: var(--space-2xl);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.block:nth-child(even) .blockImage {
+  order: 2;
+}
+
+.blockImage {
+  position: relative;
+  aspect-ratio: 5 / 4;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-bg-deep);
+  animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.blockImage img {
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.block:hover .blockImage img {
+  transform: scale(1.03);
+}
+
+.blockContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.blockName {
+  font-size: var(--fs-2xl);
+}
+
+.blockDesc {
+  font-size: var(--fs-md);
+  color: var(--color-text-secondary);
+  max-width: 50ch;
+}
+
+.blockFeatures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: var(--space-xs);
+}
+
+.tag {
+  font-size: var(--fs-xs);
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-text-secondary);
+  background: var(--color-bg-elevated);
+}
+
+.blockMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: var(--space-sm);
+}
+
+.blockCount {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 860px) {
+  .introInner {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  .block {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  .block:nth-child(even) .blockImage {
+    order: 0;
+  }
+}

@@ -1,0 +1,85 @@
+/* 询盘导流区块：深森林绿底，反白文字，杂志感留白 */
+.cta {
+  padding-block: var(--space-2xl);
+}
+
+.inner {
+  background: var(--color-surface-dark);
+  border-radius: var(--radius-lg);
+  padding: clamp(2.5rem, 6vw, 5rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 材质纹理感色块（克制） */
+.inner::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 50%;
+  height: 180%;
+  background: radial-gradient(
+    circle at center,
+    rgba(200, 184, 154, 0.12),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.text {
+  flex: 1 1 360px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.text .eyebrow {
+  color: #c8b89a;
+}
+
+.title {
+  color: var(--color-text-inverse);
+  font-size: var(--fs-2xl);
+  max-width: 18ch;
+}
+
+.description {
+  color: rgba(245, 241, 234, 0.75);
+  max-width: 52ch;
+  font-size: var(--fs-md);
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  position: relative;
+  z-index: 1;
+}
+
+.mailLink {
+  font-size: var(--fs-sm);
+  color: rgba(245, 241, 234, 0.7);
+  border-bottom: 1px solid rgba(245, 241, 234, 0.3);
+  padding-bottom: 2px;
+  transition: color var(--transition-base), border-color var(--transition-base);
+}
+
+.mailLink:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+@media (max-width: 720px) {
+  .inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

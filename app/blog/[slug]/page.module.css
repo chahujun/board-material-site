@@ -1,0 +1,180 @@
+/* 博客文章详情页：杂志式阅读排版 */
+.header {
+  padding-block: var(--space-xl) var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.headerInner {
+  max-width: var(--container-narrow);
+  margin-inline: auto;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  letter-spacing: 0.02em;
+  margin-top: var(--space-md);
+}
+
+.categoryTag {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--color-wood);
+}
+
+.articleTitle {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.08;
+  margin-top: var(--space-sm);
+}
+
+.excerpt {
+  font-size: var(--fs-md);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-md);
+  max-width: 60ch;
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  max-width: var(--container-max);
+  margin: var(--space-xl) auto 0;
+  aspect-ratio: 16 / 7;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-bg-deep);
+}
+
+/* 正文 */
+.body {
+  max-width: var(--container-narrow);
+  margin-inline: auto;
+  padding-block: var(--space-2xl);
+  animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.body :global(h2) {
+  font-size: var(--fs-xl);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
+}
+
+.body :global(h3) {
+  font-size: var(--fs-lg);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-xs);
+}
+
+.body :global(p) {
+  font-size: var(--fs-md);
+  line-height: var(--lh-loose);
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.body :global(ul),
+.body :global(ol) {
+  margin: 0 0 var(--space-md) var(--space-md);
+  padding-left: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.body :global(li) {
+  font-size: var(--fs-md);
+  line-height: var(--lh-normal);
+  color: var(--color-text);
+  list-style: disc;
+  padding-left: var(--space-xs);
+}
+
+.body :global(ol) :global(li) {
+  list-style: decimal;
+}
+
+.body :global(blockquote) {
+  border-left: 3px solid var(--color-wood);
+  padding: var(--space-xs) var(--space-md);
+  margin: var(--space-md) 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--fs-md);
+  color: var(--color-text-secondary);
+  background: var(--color-bg-elevated);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.body :global(.table-wrap) {
+  overflow-x: auto;
+  margin: var(--space-md) 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.body :global(table) {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-sm);
+}
+
+.body :global(th),
+.body :global(td) {
+  padding: var(--space-sm);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.body :global(th) {
+  background: var(--color-bg-deep);
+  font-family: var(--font-serif);
+  font-weight: var(--fw-semibold);
+}
+
+.body :global(tr:last-child) :global(td) {
+  border-bottom: none;
+}
+
+.body :global(a) {
+  color: var(--color-forest);
+  border-bottom: 1px solid var(--color-border-strong);
+  transition: border-color var(--transition-base);
+}
+
+.body :global(a:hover) {
+  border-color: var(--color-forest);
+}
+
+.body :global(.md-code) {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.9em;
+  background: var(--color-bg-deep);
+  padding: 0.15em 0.4em;
+  border-radius: var(--radius-sm);
+  color: var(--color-wood);
+}
+
+.shareBack {
+  max-width: var(--container-narrow);
+  margin-inline: auto;
+  padding-bottom: var(--space-2xl);
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+  transition: gap var(--transition-base), color var(--transition-base);
+}
+
+.backLink:hover {
+  gap: 0.7rem;
+  color: var(--color-forest);
+}

@@ -1,0 +1,37 @@
+/* 面包屑：小字、次要色，杂志感克制 */
+.nav {
+  padding-block: var(--space-lg) var(--space-md);
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--fs-xs);
+  letter-spacing: 0.02em;
+  color: var(--color-text-muted);
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.link {
+  color: var(--color-text-secondary);
+  transition: color var(--transition-base);
+}
+
+.link:hover {
+  color: var(--color-forest);
+}
+
+.current {
+  color: var(--color-text);
+}
+
+.separator {
+  opacity: 0.4;
+}

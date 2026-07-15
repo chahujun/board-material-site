@@ -1,0 +1,86 @@
+/* ============================================================
+   设计令牌（Design Tokens）
+   Editorial / Atelier 风格 — 建材材质灵感配色
+   字体变量由 next/font/google 在 layout.tsx 中注入：
+     --font-serif (Fraunces) / --font-sans (Manrope)
+   ============================================================ */
+
+:root {
+  /* —— 背景与表面 —— */
+  --color-bg: #f5f1ea; /* 暖白米色主背景 */
+  --color-bg-elevated: #faf7f1; /* 略亮的卡片/区块背景 */
+  --color-bg-deep: #ece6db; /* 更深的区块底色，用于分隔 */
+  --color-surface-dark: #2d4a3e; /* 深森林绿区块（反白文字） */
+
+  /* —— 文字 —— */
+  --color-text: #1a1a1a; /* 主文字 */
+  --color-text-secondary: #6b6b6b; /* 次要文字 */
+  --color-text-inverse: #f5f1ea; /* 深色背景上的反白文字 */
+  --color-text-muted: #9a9489; /* 更弱化的辅助文字 */
+
+  /* —— 品牌材质色 —— */
+  --color-stone: #5c6b5a; /* 石材灰绿 */
+  --color-wood: #8b6f47; /* 木材暖棕 */
+  --color-metal: #8c8c8c; /* 金属哑光灰 */
+  --color-forest: #2d4a3e; /* 深森林绿（强调色） */
+  --color-accent: #2d4a3e; /* 主强调色别名 */
+
+  /* —— 边框与分隔线 —— */
+  --color-border: #e0dcd3; /* 默认边框 */
+  --color-border-strong: #cfc8bb; /* 更明显的分隔线 */
+
+  /* —— 字体族（由 next/font 注入变量，提供回退） —— */
+  --font-serif: var(--font-fraunces), "Times New Roman", Georgia, serif;
+  --font-sans: var(--font-manrope), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif;
+
+  /* —— 字号阶梯 —— */
+  --fs-xs: 0.75rem; /* 12px */
+  --fs-sm: 0.875rem; /* 14px */
+  --fs-base: 1rem; /* 16px */
+  --fs-md: 1.125rem; /* 18px */
+  --fs-lg: 1.375rem; /* 22px */
+  --fs-xl: 1.75rem; /* 28px */
+  --fs-2xl: 2.25rem; /* 36px */
+  --fs-3xl: 3rem; /* 48px */
+  --fs-4xl: clamp(2.75rem, 6vw, 4.5rem); /* 杂志级大标题 */
+
+  /* —— 行高 —— */
+  --lh-tight: 1.1;
+  --lh-snug: 1.3;
+  --lh-normal: 1.6;
+  --lh-loose: 1.8;
+
+  /* —— 字重 —— */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* —— 间距 —— */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3.5rem;
+  --space-2xl: 6rem;
+  --space-3xl: 9rem;
+
+  /* —— 容器宽度 —— */
+  --container-max: 1280px;
+  --container-narrow: 880px; /* 文章正文阅读宽度 */
+
+  /* —— 圆角 —— */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  /* —— 过渡 —— */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 450ms cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* —— 阴影（克制，仅在卡片悬停时） —— */
+  --shadow-card: 0 1px 2px rgba(26, 26, 26, 0.04);
+  --shadow-hover: 0 18px 40px -24px rgba(26, 26, 26, 0.28);
+}
