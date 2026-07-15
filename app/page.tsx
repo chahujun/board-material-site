@@ -7,6 +7,7 @@ import { siteConfig, buildMetadata } from "@/lib/seo";
 import BlogCard from "@/components/BlogCard";
 import CTA from "@/components/CTA";
 import FactoryTour from "@/components/FactoryTour";
+import FactoryCapabilities from "@/components/FactoryCapabilities";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = buildMetadata({
@@ -89,6 +90,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ===== 工厂实力照片 ===== */}
+      <FactoryCapabilities />
 
       {/* ===== 工厂视频 ===== */}
       <FactoryTour variant="compact" />
