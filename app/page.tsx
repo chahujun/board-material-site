@@ -6,6 +6,7 @@ import { getFeaturedPosts } from "@/lib/blog";
 import { siteConfig, buildMetadata } from "@/lib/seo";
 import BlogCard from "@/components/BlogCard";
 import CTA from "@/components/CTA";
+import FactoryTour from "@/components/FactoryTour";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = buildMetadata({
@@ -88,6 +89,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ===== 工厂视频 ===== */}
+      <FactoryTour variant="compact" />
 
       {/* ===== 产品品类总览（不对称网格） ===== */}
       <section className="section">

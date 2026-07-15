@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { buildMetadata, siteConfig } from "@/lib/seo";
 import Breadcrumb from "@/components/Breadcrumb";
 import CTA from "@/components/CTA";
+import FactoryTour from "@/components/FactoryTour";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = buildMetadata({
@@ -96,6 +97,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* 工厂视频 */}
+      <FactoryTour variant="full" />
 
       {/* 价值观 */}
       <section className={styles.values}>
