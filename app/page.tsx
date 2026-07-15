@@ -52,7 +52,7 @@ export default function HomePage() {
 
             <div className={styles.heroVisual}>
               <Image
-                src="https://picsum.photos/seed/hero-material-texture/900/1100"
+                src="/images/products/homepage-hero.jpg"
                 alt="Architectural surface material close-up"
                 fill
                 priority

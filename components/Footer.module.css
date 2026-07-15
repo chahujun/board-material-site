@@ -20,34 +20,16 @@
 }
 
 .logo {
-  font-family: var(--font-sans);
-  font-size: 1.25rem;
-  font-weight: var(--fw-semibold);
-  letter-spacing: -0.01em;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
-.logoIcon {
-  width: 26px;
-  height: 32px;
-  flex-shrink: 0;
-}
-
-.logoText {
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.logoAccent {
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 400;
-}
-
-.logoAlt {
-  color: #c8b89a;
-  font-style: italic;
+.logoImage {
+  height: auto;
+  width: auto;
+  max-height: 40px;
+  width: 160px;
+  filter: brightness(0) invert(1);
 }
 
 .brandDesc {

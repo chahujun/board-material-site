@@ -56,7 +56,7 @@ export default function AboutPage() {
             </div>
             <div className={styles.introImage}>
               <Image
-                src="https://picsum.photos/seed/onestopbuildly-factory/900/1100"
+                src="/images/products/indoor-wpc-hero.jpg"
                 alt="OneStopBuildly factory and material samples in Haining"
                 fill
                 sizes="(max-width: 860px) 100vw, 40vw"

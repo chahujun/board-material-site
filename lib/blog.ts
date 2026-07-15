@@ -63,7 +63,7 @@ Specify **WPC for guest rooms** where comfort and acoustics matter. Specify **SP
     category: "Flooring",
     date: "2026-06-18",
     readTime: "6 min read",
-    image: "https://picsum.photos/seed/blog-wpc-vs-spc/1200/700",
+    image: "/images/products/blog-wpc-vs-spc.jpg",
     author: "OneStopBuildly Editorial",
   },
   {
@@ -108,7 +108,7 @@ Standard stocked decors ship in 15-20 days. Custom colors and embossing require 
     category: "Manufacturing",
     date: "2026-06-25",
     readTime: "7 min read",
-    image: "https://picsum.photos/seed/blog-spc-process/1200/700",
+    image: "/images/products/blog-spc-process.jpg",
     author: "OneStopBuildly Editorial",
   },
   {
@@ -157,7 +157,7 @@ WPC panels install with tongue-and-groove over a timber or metal batten framewor
     category: "Design",
     date: "2026-07-02",
     readTime: "5 min read",
-    image: "https://picsum.photos/seed/blog-wpc-hotel-interior/1200/700",
+    image: "/images/products/blog-wpc-hotel.jpg",
     author: "OneStopBuildly Editorial",
   },
   {
@@ -206,7 +206,7 @@ For hotel wall cladding and bathroom panels, **UV marble sheets deliver 90% of t
     category: "Surface Materials",
     date: "2026-07-08",
     readTime: "6 min read",
-    image: "https://picsum.photos/seed/blog-uv-vs-marble/1200/700",
+    image: "/images/products/blog-uv-vs-marble.jpg",
     author: "OneStopBuildly Editorial",
   },
 ];

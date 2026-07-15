@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { categories } from "@/lib/products";
 import { siteConfig } from "@/lib/seo";
@@ -19,18 +20,14 @@ export default function Footer() {
         {/* 公司信息 */}
         <div className={styles.brandCol}>
           <div className={styles.logo}>
-            <svg className={styles.logoIcon} viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="2" width="22" height="44" rx="1" fill="#5A5A5A" />
-              <rect x="18" y="2" width="20" height="44" rx="1" fill="#0D3B66" />
-              <line x1="2" y1="10" x2="38" y2="10" stroke="white" strokeWidth="1.2" />
-              <line x1="2" y1="18" x2="38" y2="18" stroke="white" strokeWidth="1.2" />
-              <line x1="2" y1="26" x2="38" y2="26" stroke="white" strokeWidth="1.2" />
-              <line x1="2" y1="34" x2="38" y2="34" stroke="white" strokeWidth="1.2" />
-              <rect x="0" y="44" width="40" height="4" rx="1" fill="#0D3B66" />
-            </svg>
-            <span className={styles.logoText}>
-              OneStop<span className={styles.logoAccent}>Buildly</span>
-            </span>
+            <Image
+              src="/images/logo/onestopbuildly-logo.png"
+              alt="OneStopBuildly — Trusted Source for Building Materials"
+              width={160}
+              height={40}
+              priority
+              className={styles.logoImage}
+            />
           </div>
           <p className={styles.brandDesc}>
             {siteConfig.tagline}. {siteConfig.shortDescription}

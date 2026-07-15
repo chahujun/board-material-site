@@ -39,7 +39,7 @@ export const categories: ProductCategory[] = [
     tagline: "Wood-plastic composite panels for modern interior walls.",
     description:
       "Fluted and slatted WPC wall panels combining PVC and wood fiber for a waterproof, fire-retardant interior cladding. Widely used in hotel lobbies, apartment interiors, TV feature walls and commercial spaces where real wood would warp or rot.",
-    image: "https://picsum.photos/seed/indoor-wpc-hero/1200/800",
+    image: "/images/products/category-indoor-wpc.jpg",
     accentColor: "#5C6B5A",
     faqs: [
       {
@@ -70,7 +70,7 @@ export const categories: ProductCategory[] = [
     tagline: "Weather-resistant exterior cladding with co-extrusion technology.",
     description:
       "Co-extruded WPC exterior wall cladding engineered for UV resistance, waterproofing and dimensional stability in outdoor conditions. Used on building facades, garden walls, hotel exteriors and commercial building envelopes.",
-    image: "https://picsum.photos/seed/outdoor-wpc-hero/1200/800",
+    image: "/images/products/category-outdoor-wpc.jpg",
     accentColor: "#8B6F47",
     faqs: [
       {
@@ -101,7 +101,7 @@ export const categories: ProductCategory[] = [
     tagline: "High-gloss PVC panels with UV-cured marble finish.",
     description:
       "UV-coated PVC marble sheets replicating natural stone at a fraction of the weight and cost. The UV lacquer cures to a high-gloss, scratch-resistant surface ideal for hotel lobby walls, bathroom panels and commercial interior cladding.",
-    image: "https://picsum.photos/seed/uv-marble-hero/1200/800",
+    image: "/images/products/category-uv-marble.jpg",
     accentColor: "#8C8C8C",
     faqs: [
       {
@@ -132,7 +132,7 @@ export const categories: ProductCategory[] = [
     tagline: "Wood-plastic composite decking for outdoor floors.",
     description:
       "3D-embossed WPC decking planks engineered for outdoor garden decks, swimming pool surrounds, balconies and terraces. Co-extrusion and 3D embossing technologies deliver realistic wood texture with superior anti-slip and weather resistance.",
-    image: "https://picsum.photos/seed/wpc-decking-hero/1200/800",
+    image: "/images/products/category-wpc-decking.jpg",
     accentColor: "#8B6F47",
     faqs: [
       {
@@ -163,7 +163,7 @@ export const categories: ProductCategory[] = [
     tagline: "Stone-plastic composite flooring for commercial traffic.",
     description:
       "Rigid-core SPC flooring with a high-density limestone-powder core. The most dimensionally stable and impact-resistant vinyl floor available, engineered for hotel corridors, retail spaces, hospitals and heavy-traffic commercial interiors.",
-    image: "https://picsum.photos/seed/spc-flooring-hero/1200/800",
+    image: "/images/products/category-spc-flooring.jpg",
     accentColor: "#2D4A3E",
     faqs: [
       {
@@ -194,7 +194,7 @@ export const categories: ProductCategory[] = [
     tagline: "Lightweight polystyrene panels with 3D decorative effects.",
     description:
       "Extruded polystyrene wall panels with 3D embossed patterns for interior decoration. Lightweight, waterproof and easy to install with adhesive, these panels offer an economical decorative solution for residential and commercial interior walls.",
-    image: "https://picsum.photos/seed/ps-wall-panels-hero/1200/800",
+    image: "/images/products/category-ps-wall.jpg",
     accentColor: "#5C6B5A",
     faqs: [
       {
@@ -241,7 +241,7 @@ export const products: Product[] = [
       FireRating: "EN 13501-1 Class B",
       Waterproof: "Yes",
     },
-    image: "https://picsum.photos/seed/wpc-fluted-teak/800/600",
+    image: "/images/products/indoor-wpc-1.jpg",
     features: [
       "Waterproof and fire-retardant",
       "3D embossed realistic wood grain",
@@ -268,7 +268,7 @@ export const products: Product[] = [
       FireRating: "EN 13501-1 Class B",
       Waterproof: "Yes",
     },
-    image: "https://picsum.photos/seed/wpc-fireproof-fluted/800/600",
+    image: "/images/products/indoor-wpc-2.jpg",
     features: [
       "Class B fire-rated for commercial use",
       "Anti-termite and anti-rot",
@@ -294,7 +294,7 @@ export const products: Product[] = [
       Finish: "3D synchronized embossing",
       FireRating: "EN 13501-1 Class B",
     },
-    image: "https://picsum.photos/seed/wpc-3d-embossing/800/600",
+    image: "/images/products/indoor-wpc-3.jpg",
     features: [
       "Synchronized 3D wood grain texture",
       "Premium tactile surface",
@@ -320,7 +320,7 @@ export const products: Product[] = [
       Profile: "Louvre / slat",
       Finish: "Matte wood grain",
     },
-    image: "https://picsum.photos/seed/wpc-louvre/800/600",
+    image: "/images/products/indoor-wpc-4.jpg",
     features: [
       "Modern louvre architectural profile",
       "Lightweight slatted design",
@@ -349,7 +349,7 @@ export const products: Product[] = [
       UVRating: "Delta E < 3 after 1000h QUV",
       FireRating: "Class B",
     },
-    image: "https://picsum.photos/seed/wpc-coex-cladding/800/600",
+    image: "/images/products/outdoor-wpc-1.jpg",
     features: [
       "Co-extrusion UV-resistant cap layer",
       "Waterproof and anti-termite",
@@ -376,7 +376,7 @@ export const products: Product[] = [
       Finish: "Wood grain, matte",
       UVRating: "Anti-UV cap layer",
     },
-    image: "https://picsum.photos/seed/wpc-exterior-fluted/800/600",
+    image: "/images/products/outdoor-wpc-2.jpg",
     features: [
       "Deep fluted shadow-line profile",
       "Anti-UV co-extrusion cap",
@@ -402,7 +402,7 @@ export const products: Product[] = [
       Finish: "Wood grain, embossed",
       UVRating: "UV stabilized compound",
     },
-    image: "https://picsum.photos/seed/wpc-anti-uv/800/600",
+    image: "/images/products/outdoor-wpc-3.jpg",
     features: [
       "UV-stabilized compound",
       "Economical exterior solution",
@@ -429,7 +429,7 @@ export const products: Product[] = [
       Finish: "Wood grain, co-extruded cap",
       FireRating: "Class B",
     },
-    image: "https://picsum.photos/seed/wpc-great-wall/800/600",
+    image: "/images/products/outdoor-wpc-4.jpg",
     features: [
       "Wide-profile grand exterior design",
       "Co-extrusion UV protection",
@@ -458,7 +458,7 @@ export const products: Product[] = [
       Waterproof: "Yes",
       FireRating: "Class B",
     },
-    image: "https://picsum.photos/seed/uv-marble-4x8/800/600",
+    image: "/images/products/uv-marble-1.jpg",
     features: [
       "Standard 4x8 ft size for easy spec",
       "High-gloss mirror finish",
@@ -484,7 +484,7 @@ export const products: Product[] = [
       Hardness: "3H pencil",
       Waterproof: "Yes",
     },
-    image: "https://picsum.photos/seed/uv-marble-2800/800/600",
+    image: "/images/products/uv-marble-2.jpg",
     features: [
       "Extended 2.8 m length for tall walls",
       "Minimal horizontal joints",
@@ -510,7 +510,7 @@ export const products: Product[] = [
       Hardness: "3H pencil",
       Waterproof: "Yes",
     },
-    image: "https://picsum.photos/seed/uv-marble-3d/800/600",
+    image: "/images/products/uv-marble-3.jpg",
     features: [
       "3D printing for realistic marble depth",
       "Multi-layer vein texture",
@@ -536,7 +536,7 @@ export const products: Product[] = [
       FireRating: "EN 13501-1 Class B",
       Waterproof: "Yes",
     },
-    image: "https://picsum.photos/seed/uv-marble-fire/800/600",
+    image: "/images/products/uv-marble-4.jpg",
     features: [
       "Class B fire-rated for commercial use",
       "Low smoke emission",
@@ -565,7 +565,7 @@ export const products: Product[] = [
       AntiSlip: "R10 rated",
       FireRating: "Class B",
     },
-    image: "https://picsum.photos/seed/wpc-deck-3d/800/600",
+    image: "/images/products/wpc-decking-1.jpg",
     features: [
       "Co-extrusion UV and stain resistance",
       "3D synchronized wood grain texture",
@@ -591,7 +591,7 @@ export const products: Product[] = [
       Finish: "Wood grain, embossed",
       AntiSlip: "R10 rated",
     },
-    image: "https://picsum.photos/seed/wpc-deck-system/800/600",
+    image: "/images/products/wpc-decking-2.jpg",
     features: [
       "Complete system with all accessories",
       "Stainless steel clip system",
@@ -617,7 +617,7 @@ export const products: Product[] = [
       Finish: "Embossed wood grain",
       AntiSlip: "R10 rated",
     },
-    image: "https://picsum.photos/seed/wpc-deck-eco/800/600",
+    image: "/images/products/wpc-decking-3.jpg",
     features: [
       "Recycled material content",
       "Competitive price point",
@@ -644,7 +644,7 @@ export const products: Product[] = [
       FireRating: "EN 13501-1 Class B",
       AntiSlip: "R11 rated",
     },
-    image: "https://picsum.photos/seed/wpc-deck-fire/800/600",
+    image: "/images/products/wpc-decking-4.jpg",
     features: [
       "Class B fire-rated for commercial use",
       "R11 enhanced anti-slip",
@@ -673,7 +673,7 @@ export const products: Product[] = [
       FireRating: "Bfl-s1",
       Waterproof: "Yes",
     },
-    image: "https://picsum.photos/seed/spc-waterproof/800/600",
+    image: "/images/products/spc-flooring-1.jpg",
     features: [
       "100% waterproof rigid core",
       "Pre-attached IXPE underlayment",
@@ -700,7 +700,7 @@ export const products: Product[] = [
       FireRating: "EN 13501-1 Bfl-s1",
       Waterproof: "Yes",
     },
-    image: "https://picsum.photos/seed/spc-commercial/800/600",
+    image: "/images/products/spc-flooring-2.jpg",
     features: [
       "0.5 mm commercial wear layer",
       "Bfl-s1 fire rated",
@@ -726,7 +726,7 @@ export const products: Product[] = [
       ClickSystem: "Unilin angle-angle",
       FireRating: "Bfl-s1",
     },
-    image: "https://picsum.photos/seed/spc-multi-thickness/800/600",
+    image: "/images/products/spc-flooring-3.jpg",
     features: [
       "Three thickness options for subfloor flexibility",
       "Thin 3mm for renovation overlays",
@@ -752,7 +752,7 @@ export const products: Product[] = [
       Texture: "EIR synchronized embossing",
       ClickSystem: "Unilin 5G-i",
     },
-    image: "https://picsum.photos/seed/spc-eir-textured/800/600",
+    image: "/images/products/spc-flooring-4.jpg",
     features: [
       "EIR synchronized wood texture",
       "Realistic tactile wood feel",
@@ -781,7 +781,7 @@ export const products: Product[] = [
       Waterproof: "Yes",
       Install: "Adhesive",
     },
-    image: "https://picsum.photos/seed/ps-3d-waterproof/800/600",
+    image: "/images/products/ps-wall-1.jpg",
     features: [
       "Adhesive install, no battens needed",
       "Lightweight, cut with utility knife",
@@ -808,7 +808,7 @@ export const products: Product[] = [
       Waterproof: "Yes",
       Install: "Adhesive",
     },
-    image: "https://picsum.photos/seed/ps-concrete-texture/800/600",
+    image: "/images/products/ps-wall-2.jpg",
     features: [
       "Realistic concrete texture",
       "Industrial loft design style",
@@ -834,7 +834,7 @@ export const products: Product[] = [
       Finish: "Matte white, paintable",
       Waterproof: "Yes",
     },
-    image: "https://picsum.photos/seed/ps-diamond-pattern/800/600",
+    image: "/images/products/ps-wall-3.jpg",
     features: [
       "Geometric diamond relief pattern",
       "Light-catching 3D surface",
@@ -860,7 +860,7 @@ export const products: Product[] = [
       Finish: "White, paintable",
       Waterproof: "Yes",
     },
-    image: "https://picsum.photos/seed/ps-embossed-3d/800/600",
+    image: "/images/products/ps-wall-3.jpg",
     features: [
       "Deep 8-10 mm relief patterns",
       "20+ design options in stock",

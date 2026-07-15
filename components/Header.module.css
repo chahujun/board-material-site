@@ -18,29 +18,15 @@
 }
 
 .logo {
-  font-family: var(--font-sans);
-  font-size: 1.25rem;
-  font-weight: var(--fw-semibold);
-  letter-spacing: -0.01em;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
-.logoIcon {
-  width: 28px;
-  height: 34px;
-  flex-shrink: 0;
-}
-
-.logoText {
-  color: #0D3B66;
-  font-weight: 700;
-}
-
-.logoAccent {
-  color: #0D3B66;
-  font-weight: 400;
+.logoImage {
+  height: auto;
+  width: auto;
+  max-height: 48px;
+  width: 180px;
 }
 
 .nav {
