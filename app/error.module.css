@@ -1,0 +1,26 @@
+.container {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  padding-block: var(--space-2xl);
+}
+
+.inner {
+  max-width: 40ch;
+}
+
+.title {
+  font-size: var(--fs-3xl);
+  margin-block: var(--space-sm);
+}
+
+.desc {
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-lg);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}

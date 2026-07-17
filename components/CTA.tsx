@@ -1,7 +1,7 @@
 import { siteConfig } from "@/lib/seo";
 import styles from "./CTA.module.css";
 
-// 询盘导流区块：链接到 onestopbuildly.com/inquiry
+// 询盘导流区块：链接到 onestopbuildly.com/contact
 interface CTAProps {
   title?: string;
   description?: string;

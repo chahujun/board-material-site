@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { buildMetadata, siteConfig } from "@/lib/seo";
 import Breadcrumb from "@/components/Breadcrumb";
 import styles from "./page.module.css";
@@ -51,7 +52,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* 询盘引导（导流到 onestopbuildly.com/inquiry） */}
+      {/* 询盘引导（导流到 onestopbuildly.com/contact） */}
       <section className={styles.inquiry}>
         <div className="container">
           <div className={styles.inquiryCard}>
@@ -123,9 +124,54 @@ export default function ContactPage() {
               <span className={styles.channelValue}>
                 {siteConfig.address.streetAddress}
                 <br />
-                {siteConfig.address.addressLocality},{" "}
-                {siteConfig.address.addressCountry}
+                {siteConfig.address.addressLocality}
               </span>
+            </div>
+            <div className={styles.channel}>
+              <span className={styles.channelLabel}>Hours</span>
+              <span className={styles.channelValue}>
+                Mon-Fri 8:30 AM - 5:00 PM CST (UTC+8)
+                <br />
+                Sat-Sun Closed
+              </span>
+            </div>
+          </div>
+
+          {/* 二维码联系 */}
+          <div className={styles.qrSection}>
+            <h2 className={styles.qrTitle}>Connect with us directly</h2>
+            <p className={styles.qrDesc}>
+              Scan the QR code to start a conversation with our export specialist Cindy on your preferred messaging app.
+            </p>
+            <div className={styles.qrGrid}>
+              <div className={styles.qrCard}>
+                <div className={styles.qrImageWrap}>
+                  <Image
+                    src="/images/wechat-qr.jpg"
+                    alt="WeChat QR code - Cindy"
+                    fill
+                    sizes="200px"
+                    className={styles.qrImage}
+                  />
+                </div>
+                <span className={styles.qrLabel}>WeChat</span>
+                <span className={styles.qrName}>Cindy</span>
+                <span className={styles.qrLocation}>Zhejiang, Jiaxing</span>
+              </div>
+              <div className={styles.qrCard}>
+                <div className={styles.qrImageWrap}>
+                  <Image
+                    src="/images/whatsapp-qr.jpg"
+                    alt="WhatsApp QR code - Cindy"
+                    fill
+                    sizes="200px"
+                    className={styles.qrImage}
+                  />
+                </div>
+                <span className={styles.qrLabel}>WhatsApp Business</span>
+                <span className={styles.qrName}>Cindy</span>
+                <span className={styles.qrLocation}>Chat with our export team</span>
+              </div>
             </div>
           </div>
         </div>

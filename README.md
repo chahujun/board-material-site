@@ -8,7 +8,7 @@ A content marketing website for B2B building materials export, focused on WPC wa
 - **Language**: TypeScript
 - **Styling**: CSS Modules + Design Tokens (no Tailwind)
 - **Fonts**: Fraunces (serif, headings) + Manrope (sans, body) via next/font
-- **SEO**: next-sitemap, JSON-LD structured data, per-page metadata
+- **SEO**: Next.js built-in sitemap.ts & robots.ts, JSON-LD structured data, per-page metadata
 - **Deployment**: Vercel
 
 ## Quick Start
@@ -34,7 +34,7 @@ app/
 └── contact/                # Inquiry redirect to main site
 components/                  # Header, Footer, ProductCard, BlogCard, CTA, etc.
 lib/
-├── products.ts             # 6 categories, 24 products (real SONSILL data)
+├── products.ts             # 12 categories, 42 products (real OneStopBuildly data)
 ├── blog.ts                 # 4 SEO articles
 ├── seo.ts                  # Site config + metadata builder
 └── markdown.tsx            # Lightweight Markdown renderer
@@ -90,7 +90,7 @@ After deployment, update `lib/seo.ts`:
 
 ## SEO Features
 
-- SSG static generation (20 pages pre-rendered)
+- SSG static generation (21 pages pre-rendered)
 - Auto sitemap.xml with all URLs
 - robots.txt with sitemap declaration
 - JSON-LD structured data:
@@ -112,7 +112,7 @@ After deployment, update `lib/seo.ts`:
 
 ## Replacing Placeholder Images
 
-All images currently use `picsum.photos` placeholders. Replace with real product photos:
+All product images are locally hosted in `/public/images/`. To update:
 
 1. Add images to `public/images/products/`
 2. Update `image` fields in `lib/products.ts` and `lib/blog.ts`
@@ -120,4 +120,4 @@ All images currently use `picsum.photos` placeholders. Replace with real product
 
 ## License
 
-Proprietary — OneStopBuildly (Haining Wanzhu Decoration Materials Co., Ltd.)
+Proprietary — OneStopBuildly (Haining Onestopbuildly Building Materials Co., Ltd.)

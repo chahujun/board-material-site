@@ -9,7 +9,8 @@ type SchemaType =
   | "Article"
   | "BreadcrumbList"
   | "FAQPage"
-  | "Organization";
+  | "Organization"
+  | "Service";
 
 interface SchemaProps {
   type: SchemaType;
@@ -39,6 +40,8 @@ function buildSchema(type: SchemaType, data: Record<string, unknown>) {
       return { ...base, "@type": "Article", ...data };
     case "FAQPage":
       return { ...base, "@type": "FAQPage", ...data };
+    case "Service":
+      return { ...base, "@type": "Service", ...data };
     default:
       return { ...base, ...data };
   }

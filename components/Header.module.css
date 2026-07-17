@@ -1,4 +1,4 @@
-/* 极简粘性导航，半透明暖色背景 */
+/* 极简粘性导航 + Mega Menu 下拉 */
 .header {
   position: sticky;
   top: 0;
@@ -20,6 +20,7 @@
 .logo {
   display: inline-flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .logoImage {
@@ -29,13 +30,21 @@
   width: 180px;
 }
 
+/* ===== 导航链接 ===== */
 .nav {
   display: flex;
   align-items: center;
-  gap: clamp(1.25rem, 3vw, 2.25rem);
+  gap: clamp(1rem, 2.5vw, 2rem);
+}
+
+.navItemWrap {
+  position: relative;
 }
 
 .navLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   font-size: var(--fs-sm);
   font-weight: var(--fw-medium);
   color: var(--color-text-secondary);
@@ -43,6 +52,8 @@
   position: relative;
   padding-block: 0.25rem;
   transition: color var(--transition-base);
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .navLink::after {
@@ -64,9 +75,273 @@
   width: 100%;
 }
 
-/* 移动端：隐藏次要导航与按钮（保持骨架简洁，后续可扩展抽屉） */
-@media (max-width: 720px) {
+.chevron {
+  transition: transform var(--transition-base);
+}
+
+.navItemWrap:hover .chevron {
+  transform: rotate(180deg);
+}
+
+/* ===== Mega Menu ===== */
+.megaMenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.navItemWrap:hover .megaMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+.megaMenuInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 0;
+  min-width: 720px;
+  max-width: 900px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.megaCol {
+  padding: var(--space-md) var(--space-md);
+  border-right: 1px solid var(--color-border);
+}
+
+.megaCol:last-of-type {
+  border-right: none;
+}
+
+.megaColTitle {
+  display: block;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-forest);
+  margin-bottom: var(--space-sm);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid var(--color-forest);
+}
+
+.megaList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.megaLink {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 0.5rem 0.4rem;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition-base);
+}
+
+.megaLink:hover {
+  background: var(--color-bg-elevated);
+}
+
+.megaLinkLabel {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--color-text);
+  line-height: var(--lh-snug);
+}
+
+.megaLinkDesc {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  line-height: var(--lh-tight);
+}
+
+/* Mega Menu CTA */
+.megaCta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg) var(--space-md);
+  background: var(--color-bg-elevated);
+  min-width: 160px;
+}
+
+.megaCtaText {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  text-align: center;
+  line-height: var(--lh-snug);
+}
+
+.megaCtaBtn {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--color-forest);
+  white-space: nowrap;
+}
+
+.megaCtaBtn:hover {
+  text-decoration: underline;
+}
+
+/* ===== Mobile Menu Toggle ===== */
+.menuToggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--color-text);
+  flex-shrink: 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .megaMenuInner {
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 860px) {
+  .inner {
+    flex-wrap: wrap;
+    height: auto;
+    padding-block: var(--space-sm);
+    row-gap: var(--space-sm);
+  }
+
+  .menuToggle {
+    display: flex;
+  }
+
   .nav {
+    order: 1;
+    flex: 1 1 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav.navOpen {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .navItemWrap {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .navLink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    font-size: var(--fs-md);
+  }
+
+  .navLink::after {
     display: none;
+  }
+
+  /* Mobile: mega menu becomes expanded accordion */
+  .megaMenu {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .navItemWrap:hover .megaMenu,
+  .navItemWrap:focus-within .megaMenu {
+    max-height: 1000px;
+  }
+
+  .navItemWrap:hover .megaMenu {
+    transform: none;
+  }
+
+  .megaMenuInner {
+    display: flex;
+    flex-direction: column;
+    min-width: auto;
+    max-width: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: var(--color-bg-elevated);
+  }
+
+  .megaCol {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  .megaColTitle {
+    font-size: var(--fs-xs);
+    margin-bottom: var(--space-xs);
+  }
+
+  .megaLink {
+    padding: 0.6rem 0;
+  }
+
+  .megaCta {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  /* Hide mega menu by default on mobile - toggle via navOpen */
+  .nav:not(.navOpen) .megaMenu {
+    display: none;
+  }
+
+  .nav:not(.navOpen) .navItemWrap .chevron {
+    display: none;
+  }
+
+  .nav:not(.navOpen) .navItemWrap {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .nav:not(.navOpen) .navLink {
+    pointer-events: auto;
+  }
+
+  /* Show chevron when nav is open */
+  .nav.navOpen .navItemWrap .chevron {
+    display: inline-block;
+    transition: transform 0.2s;
   }
 }

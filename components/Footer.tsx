@@ -6,6 +6,7 @@ import styles from "./Footer.module.css";
 
 // 页脚：公司信息 + 产品品类链接 + 快速链接 + 联系方式 + 版权
 const quickLinks = [
+  { label: "Design Assistant", href: "/design-assistant" },
   { label: "Products", href: "/products" },
   { label: "Blog", href: "/blog" },
   { label: "About Us", href: "/about" },
@@ -89,7 +90,7 @@ export default function Footer() {
       <div className={styles.bottom}>
         <div className={`container ${styles.bottomInner}`}>
           <span>
-            (c) {year} {siteConfig.name}. All rights reserved.
+            © {year} {siteConfig.name}. All rights reserved.
           </span>
           <span className={styles.bottomNote}>
             Architectural boards and surface materials for B2B export.

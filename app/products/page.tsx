@@ -10,7 +10,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = buildMetadata({
   title: "Products — Architectural Boards & Surface Materials",
   description:
-    "Browse our six core material categories: 3D wall panels, UV boards, WPC flooring, engineered wood, SPC flooring and marble & stone slabs — engineered for B2B export.",
+    "Browse our twelve core material categories: WPC wall panels, UV marble sheets, WPC decking, SPC flooring, PS wall panels, 3D wall panels, PU stone panels, acoustic panels, wood veneer panels, PVC ceiling panels and PVC partition panels — engineered for B2B export.",
   path: "/products",
 });
 
@@ -33,11 +33,28 @@ export default function ProductsPage() {
             </div>
             <p className={styles.introDesc}>
               From sculpted wall panels to waterproof flooring and natural stone,
-              our six categories cover the surfaces that define hospitality and
+              our twelve categories cover the surfaces that define hospitality and
               commercial interiors. Each category is stocked with export-ready
               specifications, MOQ and documentation.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Design Assistant 推广条 */}
+      <section className="container">
+        <div className={styles.designBanner}>
+          <div>
+            <span className="eyebrow">AI Design Tools</span>
+            <p className={styles.designBannerText}>
+              Not sure which material fits your project? Use our AI Design
+              Assistant to match materials, estimate budgets, and explore
+              commercial space solutions.
+            </p>
+          </div>
+          <Link href="/design-assistant" className="btn btn-outline">
+            Open Design Assistant →
+          </Link>
         </div>
       </section>
 

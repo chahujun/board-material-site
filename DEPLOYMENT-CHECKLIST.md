@@ -3,13 +3,13 @@
 ## 部署前检查
 
 - [x] npm run build 通过
-- [x] 全部 17 个路由返回 200
+- [x] 全部 21 个路由返回 200
 - [x] sitemap.xml 正确生成
 - [x] robots.txt 声明 sitemap
 - [x] JSON-LD 结构化数据注入
 - [x] 品牌名 OneStopBuildly 全站统一
-- [x] LOGO SVG 渲染正确
-- [x] CTA 指向 onestopbuildly.com/inquiry
+- [x] LOGO PNG 渲染正确
+- [x] CTA 指向 onestopbuildly.com/contact
 - [x] Git 初始提交完成
 
 ## 部署步骤
@@ -37,7 +37,7 @@ git push -u origin main
 
 ### 4. 绑定域名（NameSilo）
 - Vercel 项目 → Settings → Domains → Add Domain
-- 输入你的域名（如 `materials.onestopbuildly.com` 或新域名）
+- 输入你的域名（如 `www.onestopbuildly.com` 或新域名）
 - 到 NameSilo DNS 管理：
   - 添加 CNAME 记录: `materials` → `cname.vercel-dns.com`
   - 或 A 记录: `@` → `76.76.21.21`

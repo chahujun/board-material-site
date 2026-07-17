@@ -108,17 +108,17 @@
   gap: 0.7rem;
 }
 
-/* ===== 品类不对称网格（杂志感，非等高卡片墙） ===== */
+/* ===== 品类网格（统一等高卡片） ===== */
 .categoryGrid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: minmax(180px, auto);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-md);
 }
 
 .categoryCard {
   position: relative;
   display: block;
+  aspect-ratio: 4 / 5;
   border-radius: var(--radius-md);
   overflow: hidden;
   background: var(--color-bg-deep);
@@ -129,28 +129,6 @@
 .categoryCard:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-hover);
-}
-
-/* 不对称跨度：大图、中图、小图交替 */
-.categoryCard:nth-child(1) {
-  grid-column: span 4;
-  grid-row: span 2;
-}
-.categoryCard:nth-child(2) {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-.categoryCard:nth-child(3) {
-  grid-column: span 2;
-}
-.categoryCard:nth-child(4) {
-  grid-column: span 2;
-}
-.categoryCard:nth-child(5) {
-  grid-column: span 2;
-}
-.categoryCard:nth-child(6) {
-  grid-column: span 6;
 }
 
 .categoryImage {
@@ -194,13 +172,9 @@
 
 .categoryName {
   font-family: var(--font-serif);
-  font-size: var(--fs-xl);
+  font-size: var(--fs-lg);
   font-weight: var(--fw-semibold);
   line-height: 1.1;
-}
-
-.categoryCard:nth-child(1) .categoryName {
-  font-size: var(--fs-2xl);
 }
 
 .categoryTagline {
@@ -252,6 +226,65 @@
   color: var(--color-text-secondary);
 }
 
+/* ===== AI Design Assistant 推广 ===== */
+.designPromo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+  padding: var(--space-xl);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.designPromoText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.designPromoDesc {
+  font-size: var(--fs-md);
+  color: var(--color-text-secondary);
+  line-height: var(--lh-loose);
+  max-width: 48ch;
+}
+
+.designPromoCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.designPromoCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg) var(--space-md);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.designPromoCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.designPromoIcon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.designPromoLabel {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--color-text);
+}
+
 /* ===== 响应式 ===== */
 @media (max-width: 960px) {
   .heroGrid {
@@ -264,20 +297,12 @@
   .categoryGrid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .categoryCard:nth-child(1),
-  .categoryCard:nth-child(2),
-  .categoryCard:nth-child(3),
-  .categoryCard:nth-child(4),
-  .categoryCard:nth-child(5),
-  .categoryCard:nth-child(6) {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-  .categoryCard:nth-child(1) {
-    grid-row: span 2;
-  }
   .valueStrip {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .designPromo {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
   }
 }
 

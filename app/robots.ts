@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/seo";
 
+export const dynamic = "force-static";
+
 // robots.txt：允许所有爬虫，声明 sitemap 位置
 export default function robots(): MetadataRoute.Robots {
   return {

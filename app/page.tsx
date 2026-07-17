@@ -72,20 +72,20 @@ export default function HomePage() {
         <div className="container">
           <div className={styles.valueStrip}>
             <div className={styles.valueItem}>
-              <span className={styles.valueNum}>15+</span>
-              <span className={styles.valueLabel}>Years exporting architectural materials</span>
+              <span className={styles.valueNum}>5+</span>
+              <span className={styles.valueLabel}>Years export</span>
             </div>
             <div className={styles.valueItem}>
-              <span className={styles.valueNum}>40+</span>
+              <span className={styles.valueNum}>20+</span>
               <span className={styles.valueLabel}>Countries served</span>
             </div>
             <div className={styles.valueItem}>
-              <span className={styles.valueNum}>6</span>
-              <span className={styles.valueLabel}>Core material categories</span>
+              <span className={styles.valueNum}>500+</span>
+              <span className={styles.valueLabel}>Products</span>
             </div>
             <div className={styles.valueItem}>
-              <span className={styles.valueNum}>24h</span>
-              <span className={styles.valueLabel}>Quote turnaround</span>
+              <span className={styles.valueNum}>50+</span>
+              <span className={styles.valueLabel}>Partner factories</span>
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@ export default function HomePage() {
           <div className={styles.sectionHead}>
             <div className={styles.sectionHeadText}>
               <span className="eyebrow">Our materials</span>
-              <h2 className={styles.sectionTitle}>Six categories, one reliable source</h2>
+              <h2 className={styles.sectionTitle}>Twelve categories, one reliable source</h2>
             </div>
             <Link href="/products" className={styles.sectionLink}>
               View all products &rarr;
@@ -158,6 +158,46 @@ export default function HomePage() {
             {featuredPosts.map((post, i) => (
               <BlogCard key={post.slug} post={post} variant={i === 0 ? "featured" : "default"} index={i} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== AI Design Assistant 推广 ===== */}
+      <section className="section">
+        <div className="container">
+          <div className={styles.designPromo}>
+            <div className={styles.designPromoText}>
+              <span className="eyebrow">AI Design Tools</span>
+              <h2 className={styles.sectionTitle}>
+                Design first, source second
+              </h2>
+              <p className={styles.designPromoDesc}>
+                Match materials to your project style, estimate budgets, explore
+                commercial space solutions, and calculate quantities — then source
+                every panel directly from OneStopBuildly.
+              </p>
+              <Link href="/design-assistant" className="btn btn-primary">
+                Open Design Assistant →
+              </Link>
+            </div>
+            <div className={styles.designPromoCards}>
+              <Link href="/design-assistant#tools" className={styles.designPromoCard}>
+                <span className={styles.designPromoIcon}>🎯</span>
+                <span className={styles.designPromoLabel}>Material Matcher</span>
+              </Link>
+              <Link href="/design-assistant#tools" className={styles.designPromoCard}>
+                <span className={styles.designPromoIcon}>💰</span>
+                <span className={styles.designPromoLabel}>Budget Estimator</span>
+              </Link>
+              <Link href="/design-assistant#tools" className={styles.designPromoCard}>
+                <span className={styles.designPromoIcon}>🎨</span>
+                <span className={styles.designPromoLabel}>Color Studio</span>
+              </Link>
+              <Link href="/design-assistant#tools" className={styles.designPromoCard}>
+                <span className={styles.designPromoIcon}>📐</span>
+                <span className={styles.designPromoLabel}>Space Planner</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

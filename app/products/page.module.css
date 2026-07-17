@@ -103,7 +103,32 @@
   color: var(--color-text-muted);
 }
 
+/* Design Assistant 推广条 */
+.designBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  padding: var(--space-lg) var(--space-xl);
+  margin-block: var(--space-xl);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.designBannerText {
+  font-size: var(--fs-md);
+  color: var(--color-text-secondary);
+  line-height: var(--lh-snug);
+  margin-top: var(--space-xs);
+  max-width: 60ch;
+}
+
 @media (max-width: 860px) {
+  .designBanner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .introInner {
     grid-template-columns: 1fr;
     gap: var(--space-md);

@@ -13,6 +13,7 @@ const fraunces = Fraunces({
   variable: "--font-fraunces",
   display: "swap",
   style: ["normal", "italic"],
+  weight: ["500", "600"],
 });
 
 // 正文字体：无衬线体 Manrope
@@ -20,6 +21,7 @@ const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-manrope",
   display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
 // 站点级 metadata
@@ -62,8 +64,9 @@ export default function RootLayout({
       className={`${fraunces.variable} ${manrope.variable}`}
     >
       <body>
+        <a href="#main-content" className="skip-link">Skip to content</a>
         <Header />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <Footer />
         {/* 全站注入 Organization 结构化数据 */}
         <Schema

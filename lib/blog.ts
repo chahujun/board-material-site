@@ -1,6 +1,6 @@
 // 博客文章数据（markdown 格式正文，后续可迁移到 MDX/CMS）
 // 面向海外 B2B 买家的选购与工艺知识文章
-// 更新日期：2026-07-15 — 品类调整为 SONSILL 供应链产品线
+// 更新日期：2026-07-15 — 品类调整为供应链产品线
 
 export interface BlogPost {
   slug: string;

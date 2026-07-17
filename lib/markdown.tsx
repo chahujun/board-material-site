@@ -4,6 +4,22 @@ import React from "react";
 // 支持子集：h1/h2/h3、段落、无序/有序列表、表格、引用、行内 bold/italic/link/code
 // 专为博客 placeholder 内容设计
 
+// 协议白名单校验：拦截 javascript:/data:/vbscript:/file: 等危险协议，
+// 仅允许 http(s)、mailto、tel 及相对路径/锚点链接
+function sanitizeHref(href: string): string {
+  const trimmed = href.trim();
+  const lowered = trimmed.toLowerCase();
+  if (
+    lowered.startsWith("javascript:") ||
+    lowered.startsWith("data:") ||
+    lowered.startsWith("vbscript:") ||
+    lowered.startsWith("file:")
+  ) {
+    return "#";
+  }
+  return trimmed;
+}
+
 // 解析行内格式：**bold** *italic* [text](url) `code`
 function parseInline(text: string, keyPrefix: string): React.ReactNode[] {
   const nodes: React.ReactNode[] = [];
@@ -24,8 +40,14 @@ function parseInline(text: string, keyPrefix: string): React.ReactNode[] {
     } else if (match[4] !== undefined) {
       nodes.push(<em key={`${keyPrefix}-i-${idx}`}>{match[4]}</em>);
     } else if (match[6] !== undefined) {
+      const href = sanitizeHref(match[7]);
       nodes.push(
-        <a key={`${keyPrefix}-a-${idx}`} href={match[7]}>
+        <a
+          key={`${keyPrefix}-a-${idx}`}
+          href={href}
+          rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+          target={href.startsWith("http") ? "_blank" : undefined}
+        >
           {match[6]}
         </a>
       );

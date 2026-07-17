@@ -143,7 +143,7 @@
 
 .channelsGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-lg);
 }
 
@@ -175,4 +175,76 @@
   .channelsGrid {
     grid-template-columns: 1fr;
   }
+  .qrGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 二维码联系 */
+.qrSection {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.qrTitle {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--space-sm);
+}
+
+.qrDesc {
+  font-size: var(--fs-md);
+  color: var(--color-text-secondary);
+  max-width: 50ch;
+  margin: 0 auto var(--space-xl);
+}
+
+.qrGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.qrCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-elevated);
+}
+
+.qrImageWrap {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin-bottom: var(--space-xs);
+}
+
+.qrImage {
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.qrLabel {
+  font-family: var(--font-serif);
+  font-size: var(--fs-md);
+  color: var(--color-forest);
+  font-weight: 500;
+}
+
+.qrName {
+  font-size: var(--fs-md);
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.qrLocation {
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
 }

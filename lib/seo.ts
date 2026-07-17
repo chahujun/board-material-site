@@ -1,26 +1,24 @@
 import type { Metadata } from "next";
 
 // 站点全局配置：品牌信息、域名、询盘落地页
-// 对齐主站品牌：OneStopBuildly（海宁万筑装修材料有限公司）
-// 内容站定位：板材聚焦的内容营销站，导流到主站询盘
+// 公司：Haining Onestopbuildly Building Materials Co., Ltd.
+// 品牌名：OneStopBuildly（阿里巴巴店铺：uvboards, sonsill, 3dpanel 等）
 export const siteConfig = {
   name: "OneStopBuildly",
-  // 生产环境域名占位，部署时替换为真实域名
   url: "https://www.onestopbuildly.com",
   description:
     "OneStopBuildly supplies premium WPC wall panels, UV marble sheets, WPC decking, SPC flooring and PS wall panels to B2B buyers worldwide — engineered, finished and shipped from our Haining facility to your project.",
   shortDescription:
-    "Trusted source for building materials. Premium board materials and surface finishes for B2B export from Haining, China.",
-  tagline: "Trusted Source for Building Materials",
+    "Your Trusted One-Stop Export Supplier for Premium Building Materials. 500+ products, 50+ partner factories, serving 20+ countries from Haining, China.",
+  tagline: "Your Trusted One-Stop Export Supplier",
   locale: "en_US",
-  contactEmail: "sales@onestopbuildly.com",
-  phone: "+86 573 0000 0000",
-  // 询盘落地页（导流到主站询盘表单）
-  inquiryUrl: "https://onestopbuildly.com/inquiry",
+  contactEmail: "cindy@onestopbuildly.com",
+  phone: "+86-13511316133",
+  inquiryUrl: "https://www.onestopbuildly.com/contact",
   twitter: "@onestopbuildly",
   address: {
-    streetAddress: "Haining, Jiaxing",
-    addressLocality: "Haining",
+    streetAddress: "Room 108, Building 2, Fenghuang Commercial Building, Dingqiao Town",
+    addressLocality: "Haining, Zhejiang",
     addressRegion: "Zhejiang",
     postalCode: "314400",
     addressCountry: "CN",
