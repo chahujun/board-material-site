@@ -12,6 +12,7 @@ import { buildMetadata } from "@/lib/seo";
 import { puStoneFAQs } from "@/lib/pu-stone-data";
 import { pvcPanelFAQs } from "@/lib/pvc-panel-data";
 import { wpcPanelFAQs } from "@/lib/wpc-panel-data";
+import { outdoorWPCFAQs } from "@/lib/outdoor-wpc-data";
 import ProductCard from "@/components/ProductCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import Schema, { buildFAQ } from "@/components/Schema";
@@ -19,6 +20,7 @@ import CTA from "@/components/CTA";
 import PUStoneClient from "@/components/pu-stone/PUStoneClient";
 import PVCPanelClient from "@/components/pvc-panel/PVCPanelClient";
 import WPCPanelClient from "@/components/wpc-panel/WPCPanelClient";
+import OutdoorWPCClient from "@/components/outdoor-wpc/OutdoorWPCClient";
 import styles from "./page.module.css";
 
 // 仅预渲染已知品类，未知 slug 返回 404（SSG 友好）
@@ -68,6 +70,17 @@ export async function generateMetadata({
       description:
         "Explore indoor WPC wall panels for hotel, apartment and commercial interiors. Browse fluted and slatted wood-plastic composite panel models, sizes, MOQ and quotation information from OneStopBuildly.",
       path: "/products/indoor-wpc-wall-panels",
+      image: cat.image,
+    });
+  }
+
+  // Outdoor WPC Wall Cladding 专用 SEO
+  if (category === "outdoor-wpc-cladding") {
+    return buildMetadata({
+      title: "Outdoor WPC Wall Cladding | OneStopBuildly",
+      description:
+        "Explore co-extruded outdoor WPC wall cladding for building facades, garden walls and commercial exteriors. Browse UV-resistant wood-plastic composite cladding models, sizes, MOQ and quotation information from OneStopBuildly.",
+      path: "/products/outdoor-wpc-cladding",
       image: cat.image,
     });
   }
@@ -142,6 +155,25 @@ export default async function CategoryPage({
         </div>
         <WPCPanelClient />
         <Schema type="FAQPage" data={buildFAQ(wpcPanelFAQs)} />
+      </>
+    );
+  }
+
+  // Outdoor WPC Wall Cladding 使用增强型交互页面
+  if (category === "outdoor-wpc-cladding") {
+    return (
+      <>
+        <div className="container">
+          <Breadcrumb
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Products", href: "/products" },
+              { label: "Outdoor WPC Wall Cladding", href: "/products/outdoor-wpc-cladding" },
+            ]}
+          />
+        </div>
+        <OutdoorWPCClient />
+        <Schema type="FAQPage" data={buildFAQ(outdoorWPCFAQs)} />
       </>
     );
   }
