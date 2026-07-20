@@ -301,6 +301,50 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Export Logistics */}
+      <section className={styles.logistics}>
+        <div className="container">
+          <div className={styles.logisticsGrid}>
+            <div className={styles.logisticsImage}>
+              <Image
+                src="/images/about-export-logistics.jpg"
+                alt="Container loading at port — 40-foot shipping containers being loaded onto trailers for export from Shanghai and Ningbo"
+                fill
+                sizes="(max-width: 860px) 100vw, 55vw"
+                className={styles.logisticsImg}
+              />
+            </div>
+            <div className={styles.logisticsText}>
+              <span className="eyebrow">Export logistics</span>
+              <h2 className={styles.sectionTitle}>From factory floor to your port</h2>
+              <p className={styles.logisticsLead}>
+                Every container is loaded under our supervision. We coordinate
+                trucking, book vessel space, and manage documentation — so your
+                shipment clears customs smoothly and arrives on schedule.
+              </p>
+              <div className={styles.logisticsPoints}>
+                <div className={styles.logisticsPoint}>
+                  <span className={styles.logisticsPointTitle}>Pre-Loading QC</span>
+                  <span className={styles.logisticsPointText}>Every batch inspected at the factory before container sealing — dimensions, finish, packaging and labeling verified against your order.</span>
+                </div>
+                <div className={styles.logisticsPoint}>
+                  <span className={styles.logisticsPointTitle}>Port Proximity</span>
+                  <span className={styles.logisticsPointText}>Shanghai and Ningbo — two of the world's busiest container ports — are within 1–2 hours of our facility, enabling fast vessel booking and competitive ocean freight rates.</span>
+                </div>
+                <div className={styles.logisticsPoint}>
+                  <span className={styles.logisticsPointTitle}>Full Documentation</span>
+                  <span className={styles.logisticsPointText}>Commercial invoice, packing list, bill of lading, certificate of origin, and compliance certificates — prepared and checked before sailing.</span>
+                </div>
+                <div className={styles.logisticsPoint}>
+                  <span className={styles.logisticsPointTitle}>FCL &amp; LCL</span>
+                  <span className={styles.logisticsPointText}>Full container loads for large projects, or consolidated LCL shipments for smaller orders — flexible to your volume and budget.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Showroom */}
       <section className={styles.showroom}>
         <div className="container">
