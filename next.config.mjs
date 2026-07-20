@@ -2,6 +2,11 @@
 // Next.js 配置：保持 SSG 静态生成，开启严格模式
 const nextConfig = {
   reactStrictMode: true,
+  allowedDevOrigins: [
+    "run-agent-6a56e8dda1bd4a5e35143889-mrskcf7s.remote-agent.svc.cluster.local",
+    "localhost",
+    "127.0.0.1",
+  ],
   async headers() {
     return [
       {
