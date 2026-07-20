@@ -44,21 +44,21 @@ export const woodVeneerSeries: WoodVeneerSeries[] = [
     name: "Bamboo Fiber Series",
     nameZh: "竹纤维系列",
     description:
-      "Bamboo fiber wood veneer wall panels and boards in 1220x2440mm size with 5mm thickness. Brand: Sonsill. Waterproof, modern design for indoor, hotel and home office decoration. MOQ: 200 pcs.",
+      "Bamboo fiber wood veneer wall panels and boards in 1220x2440mm size with 5mm thickness. Brand: Sonsill. Waterproof, modern design for indoor, hotel and home office decoration. Includes natural wood grain, travertine stone texture, and dark brown wood grain finishes. MOQ: 200 pcs.",
   },
   {
     slug: "melamine-mdf",
     name: "Melamine MDF Series",
     nameZh: "三聚氰胺MDF系列",
     description:
-      "Melamine-faced MDF boards in 1220x2440mm with thickness options from 3mm to 25mm. Brand: Sonsill. Glossy white, fancy wood veneer and various melamine colors for furniture and interior decoration. MOQ: 100 pcs.",
+      "Melamine-faced MDF boards in 1220x2440mm with thickness options from 3mm to 25mm. Brand: Sonsill. Includes warm oak wood veneer wall cladding, fancy wood veneer, melamine-faced various colors, and wood grain melamine multi-color sample sets for furniture and interior decoration. MOQ: 100 pcs.",
   },
   {
     slug: "decorative-veneer",
     name: "Decorative Veneer Series",
     nameZh: "装饰木饰面系列",
     description:
-      "Decorative wood veneer panels including WPC co-extrusion flat panels, mirrored bamboo fiber, PET marble texture, and flexible natural stone veneer. Brand: Sonsill. 1220x2440mm size for background walls and exterior decoration. MOQ: 100-200 pcs.",
+      "Decorative wood veneer panels including WPC co-extrusion flat panels, mirrored bamboo fiber with 3D geometric patterns, red mirror acrylic, PET marble texture with gold veining, black polished marble, and multi-texture decorative sets. Brand: Sonsill. 1220x2440mm size for background walls and interior decoration. MOQ: 200 pcs.",
   },
 ];
 
@@ -96,12 +96,12 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
   {
     id: "wv-bf-002",
     code: "WV-002",
-    name: "Interior Decoration 1220*2440mm 5mm 8mm Plastic Melamine Mdf Board Wpc Panels",
+    name: "Interior Decoration 1220*2440mm 5mm 8mm Travertine Stone Texture Wpc Wall Panels",
     series: "Bamboo Fiber Series",
     seriesSlug: "bamboo-fiber",
     size: "1220*2440*5mm",
     thickness: "5mm/8mm",
-    color: "Melamine White",
+    color: "Travertine Stone Texture",
     moq: 200,
     unit: "pcs",
     unitPrice: null,
@@ -168,12 +168,12 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
   {
     id: "wv-bf-009",
     code: "WV-009",
-    name: "Chinese Factory Price Bamboo Fiber 1220*2440*5mm Decorative Wood 3d Wall Panel",
+    name: "Chinese Factory Price Bamboo Fiber 1220*2440*5mm Dark Brown Wood Grain Flat Wall Panel",
     series: "Bamboo Fiber Series",
     seriesSlug: "bamboo-fiber",
     size: "1220*2440*5mm",
     thickness: "5mm",
-    color: "3D Decorative Pattern",
+    color: "Dark Brown Wood Grain",
     moq: 200,
     unit: "pcs",
     unitPrice: null,
@@ -190,14 +190,14 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     image: `${IMG_BASE}/WV-009.jpg`,
   },
   {
-    id: "wv-bf-010",
+    id: "wv-dv-010",
     code: "WV-010",
-    name: "Indoor Wall Decoration Material Wood Alternatives Wpc Wood Veneer Panels",
-    series: "Bamboo Fiber Series",
-    seriesSlug: "bamboo-fiber",
-    size: "1220*2440*5mm",
+    name: "Black Polished Marble Wall Panel Indoor Decoration Mirror Gloss Stone Pattern Board",
+    series: "Decorative Veneer Series",
+    seriesSlug: "decorative-veneer",
+    size: "1220*2440mm",
     thickness: "5mm",
-    color: "Natural Wood Veneer",
+    color: "Black Polished Marble",
     moq: 200,
     unit: "pcs",
     unitPrice: null,
@@ -210,7 +210,7 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.1kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill. Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
+      "Brand: Sonsill. Application: Hotel. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
     image: `${IMG_BASE}/WV-010.jpg`,
   },
 
@@ -218,12 +218,12 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
   {
     id: "wv-mm-005",
     code: "WV-005",
-    name: "Laminated Mdf Board White Melamine Mdf",
+    name: "Warm Oak Wood Veneer Wall Cladding Panels For Hospitality Interior",
     series: "Melamine MDF Series",
     seriesSlug: "melamine-mdf",
     size: "1220*2440mm",
     thickness: "3mm-25mm",
-    color: "Glossy White Double Sided",
+    color: "Warm Oak Wood Veneer",
     moq: 100,
     unit: "pcs",
     unitPrice: null,
@@ -290,12 +290,12 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
   {
     id: "wv-mm-008",
     code: "WV-008",
-    name: "Wholesale Glossy White Melamine Mdf 3mm 4mm 5mm 9mm 12mm 15mm 18mm 25mm Sublimation Waterproof White Double Sided Mdf Board",
+    name: "Wholesale Wood Grain Melamine Mdf Sample Set 3mm 5mm 9mm 12mm 15mm 18mm 25mm Multi-Color Decorative Boards",
     series: "Melamine MDF Series",
     seriesSlug: "melamine-mdf",
     size: "1220*2440mm",
     thickness: "3mm-25mm",
-    color: "Glossy White Double Sided",
+    color: "Wood Grain Melamine Multi-Color",
     moq: 100,
     unit: "pcs",
     unitPrice: null,
@@ -364,12 +364,12 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
   {
     id: "wv-dv-013",
     code: "WV-013",
-    name: "New Design Wpc Pvc Wall Panel Metal Texture Bamboo Charcoal Wood Mirror Board For Office Building",
+    name: "New Design Red Mirror Acrylic Wall Panel Bamboo Charcoal Wood Veneer Decorative Board For Office Building",
     series: "Decorative Veneer Series",
     seriesSlug: "decorative-veneer",
     size: "1220*2440mm",
     thickness: "5mm",
-    color: "Metal Texture Mirror Board",
+    color: "Red Mirror Acrylic",
     moq: 200,
     unit: "pcs",
     unitPrice: null,
@@ -436,22 +436,22 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
   {
     id: "wv-dv-016",
     code: "WV-016",
-    name: "Stone Veneer For Building Exterior Wall Decoration Natural Stone Wall Cladding Flexible Stone Veneer",
+    name: "Multi-Texture Decorative Wall Panel Set Marble Concrete Wood Grain Interior Cladding Boards",
     series: "Decorative Veneer Series",
     seriesSlug: "decorative-veneer",
     size: "1220*2440mm",
-    thickness: "2mm",
-    color: "Natural Stone Texture",
-    moq: 100,
+    thickness: "5mm",
+    color: "Multi-Texture Decorative Set",
+    moq: 200,
     unit: "pcs",
     unitPrice: null,
     currency: CURRENCY,
     incoterm: INCOTERM,
     packaging: "Carton",
-    pcsPerCarton: 30,
-    cartonSize: "125X250X8cm",
-    netWeightPerCarton: "18.0kg",
-    weightPerPiece: "0.6kg",
+    pcsPerCarton: 20,
+    cartonSize: "125X250X12cm",
+    netWeightPerCarton: "22.0kg",
+    weightPerPiece: "1.1kg",
     leadTime: LEAD_TIME,
     remarks:
       "Brand: Sonsill. Application: Hotel. Warranty: More Than 5 Years. Design Style: Modern. Project Solution Capability: graphic design, 3D model design, total solution for projects, Cross Categories Consolidation. After-sale Service: Online Technical Support, Onsite Installation, Onsite Training, Onsite Inspection, Free Spare Parts, Return and Replacement.",
@@ -469,27 +469,27 @@ export const woodVeneerFAQs = [
   {
     question: "What thickness options are available for melamine MDF boards?",
     answer:
-      "Our Melamine MDF Series offers flexible thickness options. The Fancy Wood Veneer MDF boards (WV-006) are available in 3mm, 5mm, 6mm, 9mm, 12mm, 15mm, and 18mm. The Glossy White Melamine MDF boards (WV-005, WV-007, WV-008) support 3mm, 4mm, 5mm, 9mm, 12mm, 15mm, 18mm, and 25mm. All melamine MDF boards are 1220x2440mm in size, packaged on pallets with 30 pcs per carton, weight 1.5kg per piece. MOQ: 100 pcs.",
+      "Our Melamine MDF Series offers flexible thickness options. The Fancy Wood Veneer MDF boards (WV-006) are available in 3mm, 5mm, 6mm, 9mm, 12mm, 15mm, and 18mm. The Warm Oak Wood Veneer (WV-005), Melamine Faced Various Colors (WV-007), and Wood Grain Melamine Multi-Color (WV-008) boards support 3mm, 4mm, 5mm, 9mm, 12mm, 15mm, 18mm, and 25mm. All melamine MDF boards are 1220x2440mm in size, packaged on pallets with 30 pcs per carton, weight 1.5kg per piece. MOQ: 100 pcs.",
   },
   {
     question: "Are the wood veneer panels waterproof and suitable for humid environments?",
     answer:
-      "Yes. The Bamboo Fiber Series panels (WV-001, WV-003, WV-004) are specifically marketed as waterproof wood wall boards. The melamine MDF boards also feature sublimation waterproof technology with glossy white double-sided finish (WV-008). These panels are suitable for hotel applications, bathrooms, kitchens, and other humid interior environments. The 5mm bamboo fiber panels maintain dimensional stability in moist conditions while preserving their wood grain appearance.",
+      "Yes. The Bamboo Fiber Series panels (WV-001, WV-003, WV-004) are specifically marketed as waterproof wood wall boards. The melamine MDF boards also feature sublimation waterproof technology (WV-008). These panels are suitable for hotel applications, bathrooms, kitchens, and other humid interior environments. The 5mm bamboo fiber panels maintain dimensional stability in moist conditions while preserving their wood grain appearance.",
   },
   {
     question: "What installation methods are used for wood veneer wall panels?",
     answer:
-      "Our wood veneer panels support multiple installation methods. The 1220x2440mm panels can be installed using adhesive bonding, screw fixing, or clip systems depending on the substrate and application. For the flexible stone veneer (WV-016, 2mm thickness), the panel can be applied directly to curved or flat surfaces. For project clients, we provide total solution for projects including graphic design, 3D model design, and Cross Categories Consolidation. After-sale service includes Online Technical Support for all products, with Onsite Installation, Onsite Training, and Onsite Inspection available for stone veneer projects.",
+      "Our wood veneer panels support multiple installation methods. The 1220x2440mm panels can be installed using adhesive bonding, screw fixing, or clip systems depending on the substrate and application. For project clients, we provide total solution for projects including graphic design, 3D model design, and Cross Categories Consolidation. After-sale service includes Online Technical Support for all products, with Onsite Installation, Onsite Training, and Onsite Inspection available for select decorative veneer projects.",
   },
   {
     question: "What application scenarios are the wood veneer panels designed for?",
     answer:
-      "Our wood veneer panels cover a wide range of interior and exterior applications. The Bamboo Fiber Series is ideal for indoor, hotel, and home office wall decoration. The Melamine MDF Series is designed for furniture manufacturing and interior decoration with various color options. The Decorative Veneer Series serves specialized applications: WPC co-extrusion flat panels (WV-011, WV-012) for indoor walls, mirrored bamboo fiber panels (WV-013, WV-014) for office buildings, PET marble texture panels (WV-015) for background walls, and flexible natural stone veneer (WV-016) for building exterior wall cladding. Design Style: Modern for all products.",
+      "Our wood veneer panels cover a wide range of interior applications. The Bamboo Fiber Series is ideal for indoor, hotel, and home office wall decoration with natural wood grain, travertine stone texture, and dark brown wood grain finishes. The Melamine MDF Series is designed for furniture manufacturing and interior decoration with warm oak veneer, fancy wood veneer, and multi-color melamine options. The Decorative Veneer Series serves specialized applications: WPC co-extrusion flat panels (WV-011, WV-012) for indoor walls, mirrored panels with 3D geometric patterns (WV-014) and red mirror acrylic (WV-013) for office buildings, PET marble texture panels with gold veining (WV-015) for background walls, black polished marble panels (WV-010) for luxury interiors, and multi-texture decorative sets (WV-016) for interior cladding. Design Style: Modern for all products.",
   },
   {
     question: "What is the minimum order quantity (MOQ) and packaging information?",
     answer:
-      "MOQ varies by product series. The Bamboo Fiber Series and most Decorative Veneer Series panels have an MOQ of 200 pcs, packaged in cartons with 20 pcs per carton (carton size 125X250X12cm, net weight 22.0kg, 1.1kg per piece). The Melamine MDF Series has an MOQ of 100 pcs, packaged on pallets with 30 pcs per carton (carton size 125X250X15cm, net weight 45.0kg, 1.5kg per piece). The flexible stone veneer (WV-016) has an MOQ of 100 pcs with 30 pcs per carton, 0.6kg per piece. All products use FOB incoterm in USD currency. Lead time: Please contact our sales team for confirmation.",
+      "MOQ varies by product series. The Bamboo Fiber Series and most Decorative Veneer Series panels have an MOQ of 200 pcs, packaged in cartons with 20 pcs per carton (carton size 125X250X12cm, net weight 22.0kg, 1.1kg per piece). The Melamine MDF Series has an MOQ of 100 pcs, packaged on pallets with 30 pcs per carton (carton size 125X250X15cm, net weight 45.0kg, 1.5kg per piece). All products use FOB incoterm in USD currency. Lead time: Please contact our sales team for confirmation.",
   },
 ];
 
