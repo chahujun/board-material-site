@@ -145,7 +145,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     seriesSlug: "co-extrusion-premium",
     size: "2900*219*26mm",
     thickness: "26mm",
-    color: "Five-Color Outdoor Range",
+    color: "Four-Color Outdoor Range",
     moq: 200,
     unit: "meters",
     unitPrice: 1.65,
@@ -158,7 +158,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "6.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Hollow exterior WPC wall panel shown in five outdoor color range: light beige, gray-brown, cool gray, cedar warm brown and charcoal. Fluted design with 8-10 flutes.",
+      "Hollow exterior WPC wall panel shown in four outdoor color range: light gray, medium gray, warm brown and dark charcoal. Fluted design with 8-10 flutes.",
     image: `${IMG_BASE}/OW-012.jpg`,
   },
   {
@@ -304,7 +304,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "6.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Co-extrusion wood WPC exterior wall cladding in warm medium oak tone. Measuring tape in image shows approximately 300mm panel width. Hollow multi-chamber profile with reeded fluted design.",
+      "Co-extrusion wood WPC exterior wall cladding in warm medium oak tone. Measuring tape in image confirms panel length of approximately 2.9m (2900mm). Hollow multi-chamber profile with reeded fluted design.",
     image: `${IMG_BASE}/OW-013.jpg`,
   },
 
@@ -389,7 +389,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     seriesSlug: "classic-outdoor",
     size: "2900*219*26mm",
     thickness: "26mm",
-    color: "Six-Color Gradient",
+    color: "Five-Color Gradient",
     moq: 3000,
     unit: "meters",
     unitPrice: 1.80,
@@ -426,7 +426,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "6.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Anti-UV no fade WPC wall panel in natural wood brown. Measuring tape in image shows approximately 300mm panel height. Multi-chamber hollow core with fine linear wood grain texture.",
+      "Anti-UV no fade WPC wall panel in natural wood brown. Measuring tape in image confirms panel length of approximately 2.9m (2900mm). Multi-chamber hollow core with fine linear wood grain texture.",
     image: `${IMG_BASE}/OW-014.jpg`,
   },
 ];
