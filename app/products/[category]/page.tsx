@@ -14,6 +14,7 @@ import { pvcPanelFAQs } from "@/lib/pvc-panel-data";
 import { wpcPanelFAQs } from "@/lib/wpc-panel-data";
 import { outdoorWPCFAQs } from "@/lib/outdoor-wpc-data";
 import { threeDWallFAQs } from "@/lib/3d-wall-data";
+import { acousticWallFAQs } from "@/lib/acoustic-wall-data";
 import ProductCard from "@/components/ProductCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import Schema, { buildFAQ } from "@/components/Schema";
@@ -23,6 +24,7 @@ import PVCPanelClient from "@/components/pvc-panel/PVCPanelClient";
 import WPCPanelClient from "@/components/wpc-panel/WPCPanelClient";
 import OutdoorWPCClient from "@/components/outdoor-wpc/OutdoorWPCClient";
 import ThreeDWallClient from "@/components/3d-wall/3DWallClient";
+import AcousticWallClient from "@/components/acoustic-wall/AcousticWallClient";
 import styles from "./page.module.css";
 
 // 仅预渲染已知品类，未知 slug 返回 404（SSG 友好）
@@ -94,6 +96,17 @@ export async function generateMetadata({
       description:
         "Explore 3D PVC wall panels with gold diamond, geometric and art deco patterns for luxurious interior decoration. Browse waterproof, fireproof 3D wall panel models, sizes, MOQ and quotation information from OneStopBuildly.",
       path: "/products/3d-wall-panels",
+      image: cat.image,
+    });
+  }
+
+  // Acoustic Wall Panels 专用 SEO
+  if (category === "acoustic-wall-panels") {
+    return buildMetadata({
+      title: "Acoustic Wall Panels | OneStopBuildly",
+      description:
+        "Explore MDF acoustic wall panels with sound insulation and eco-friendly features for conference rooms, hotels, offices and home decoration. Browse lightweight, quick install sound absorbing panel models, sizes, MOQ and quotation information from OneStopBuildly.",
+      path: "/products/acoustic-wall-panels",
       image: cat.image,
     });
   }
@@ -206,6 +219,25 @@ export default async function CategoryPage({
         </div>
         <ThreeDWallClient />
         <Schema type="FAQPage" data={buildFAQ(threeDWallFAQs)} />
+      </>
+    );
+  }
+
+  // Acoustic Wall Panels 使用增强型交互页面
+  if (category === "acoustic-wall-panels") {
+    return (
+      <>
+        <div className="container">
+          <Breadcrumb
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Products", href: "/products" },
+              { label: "Acoustic Wall Panels", href: "/products/acoustic-wall-panels" },
+            ]}
+          />
+        </div>
+        <AcousticWallClient />
+        <Schema type="FAQPage" data={buildFAQ(acousticWallFAQs)} />
       </>
     );
   }
