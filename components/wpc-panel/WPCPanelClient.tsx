@@ -7,8 +7,6 @@ import {
   wpcPanelProducts,
   wpcPanelSeries,
   wpcPanelFAQs,
-  formatPrice,
-  formatPriceShort,
   getProductsBySeries,
   getUniqueSizes,
   getUniqueSeries,
@@ -437,7 +435,6 @@ Size: ${product.size}mm
 Thickness: ${product.thickness}
 Color: ${product.color}
 MOQ: ${product.moq} ${product.unit}
-Unit Price: ${formatPrice(product)}
 Incoterm: ${product.incoterm}
 Packaging: ${product.packaging}
 Pieces per Carton: ${product.pcsPerCarton}
@@ -656,15 +653,6 @@ Please contact our sales team for pricing and confirmation.
                       <span>{product.color}</span>
                     </div>
                   </div>
-                  <div
-                    className={
-                      product.unitPrice !== null
-                        ? styles.cardPrice
-                        : `${styles.cardPrice} ${styles.cardPriceNa}`
-                    }
-                  >
-                    {formatPriceShort(product)}
-                  </div>
                   <div className={styles.cardFooter}>
                     <button
                       className={styles.detailsBtn}
@@ -758,10 +746,6 @@ Please contact our sales team for pricing and confirmation.
                   <span className={styles.specValue}>
                     {selectedProduct.moq} {selectedProduct.unit}
                   </span>
-                </div>
-                <div className={styles.specItem}>
-                  <span className={styles.specLabel}>Price</span>
-                  <span className={styles.specValue}>{formatPrice(selectedProduct)}</span>
                 </div>
                 <div className={styles.specItem}>
                   <span className={styles.specLabel}>Incoterm</span>
