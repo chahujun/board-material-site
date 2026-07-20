@@ -15,6 +15,7 @@ import { wpcPanelFAQs } from "@/lib/wpc-panel-data";
 import { outdoorWPCFAQs } from "@/lib/outdoor-wpc-data";
 import { threeDWallFAQs } from "@/lib/3d-wall-data";
 import { acousticWallFAQs } from "@/lib/acoustic-wall-data";
+import { woodVeneerFAQs } from "@/lib/wood-veneer-data";
 import ProductCard from "@/components/ProductCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import Schema, { buildFAQ } from "@/components/Schema";
@@ -25,6 +26,7 @@ import WPCPanelClient from "@/components/wpc-panel/WPCPanelClient";
 import OutdoorWPCClient from "@/components/outdoor-wpc/OutdoorWPCClient";
 import ThreeDWallClient from "@/components/3d-wall/3DWallClient";
 import AcousticWallClient from "@/components/acoustic-wall/AcousticWallClient";
+import WoodVeneerClient from "@/components/wood-veneer/WoodVeneerClient";
 import styles from "./page.module.css";
 
 // 仅预渲染已知品类，未知 slug 返回 404（SSG 友好）
@@ -107,6 +109,17 @@ export async function generateMetadata({
       description:
         "Explore MDF acoustic wall panels with sound insulation and eco-friendly features for conference rooms, hotels, offices and home decoration. Browse lightweight, quick install sound absorbing panel models, sizes, MOQ and quotation information from OneStopBuildly.",
       path: "/products/acoustic-wall-panels",
+      image: cat.image,
+    });
+  }
+
+  // Wood Veneer Panels 专用 SEO
+  if (category === "wood-veneer-panels") {
+    return buildMetadata({
+      title: "Wood Veneer Panels | OneStopBuildly",
+      description:
+        "Explore bamboo fiber wood veneer panels, melamine MDF boards and decorative WPC veneer panels. Waterproof, fancy wood grain finishes for furniture, interior decoration and feature walls. Available in 3mm-25mm thicknesses from OneStopBuildly.",
+      path: "/products/wood-veneer-panels",
       image: cat.image,
     });
   }
@@ -238,6 +251,25 @@ export default async function CategoryPage({
         </div>
         <AcousticWallClient />
         <Schema type="FAQPage" data={buildFAQ(acousticWallFAQs)} />
+      </>
+    );
+  }
+
+  // Wood Veneer Panels 使用增强型交互页面
+  if (category === "wood-veneer-panels") {
+    return (
+      <>
+        <div className="container">
+          <Breadcrumb
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Products", href: "/products" },
+              { label: "Wood Veneer Panels", href: "/products/wood-veneer-panels" },
+            ]}
+          />
+        </div>
+        <WoodVeneerClient />
+        <Schema type="FAQPage" data={buildFAQ(woodVeneerFAQs)} />
       </>
     );
   }
