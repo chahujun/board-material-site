@@ -173,7 +173,7 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     seriesSlug: "bamboo-fiber",
     size: "1220*2440*5mm",
     thickness: "5mm",
-    color: "Dark Brown Wood Grain",
+    color: "Dark Gray-Brown Wood Grain",
     moq: 200,
     unit: "pcs",
     unitPrice: null,
