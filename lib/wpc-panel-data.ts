@@ -89,7 +89,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "30.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: SONSILL, Model: 2900MM, Material: wood-plastic composite environmental material. Function: Moisture-Proof, Anti-static, Sound-Absorbing, Mould-Proof, Waterproof. Application: indoor wall panel decoration. Usage: Entertainment, Commerce, Household, Administration. Design Style: Modern. Color: customizable. Image shows fanned stack of six panels with tongue-and-groove edge profile in six wood-grain color variants: weathered gray oak, espresso, medium walnut, natural oak, bleached pine and silver gray.",
+      "Material: wood-plastic composite environmental material. Function: Moisture-Proof, Anti-static, Sound-Absorbing, Mould-Proof, Waterproof. Application: indoor wall panel decoration. Warranty: 5 year. Project Solution Capability: total solution for projects. Design Style: Modern.",
     image: `${IMG_BASE}/WP-001.jpg`,
   },
   {
@@ -113,7 +113,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "30.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: SONSILL, Model: 2.9M, Material: wood-plastic composite environmental material. Function: Moisture-Proof, Anti-static, Sound-Absorbing, Mould-Proof, Waterproof, Fireproof, Soundproof, Smoke-Proof, Heat Insulation. Application: indoor wall panel decoration. Usage: Entertainment, Commerce, Household, Administration. Design Style: Modern. Color: customizable per supplier's ability.",
+      "Material: wood-plastic composite environmental material. Function: Moisture-Proof, Anti-static, Sound-Absorbing, Mould-Proof, Waterproof, Fireproof, Soundproof, Smoke-Proof, Heat Insulation. Application: indoor wall panel decoration. Warranty: 5 year. Project Solution Capability: total solution for projects. Design Style: Modern.",
     image: `${IMG_BASE}/WP-002.jpg`,
   },
   {
@@ -137,7 +137,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "30.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: SONSILL, Material: wood-plastic composite environmental material. Function: Moisture-Proof, Anti-static, Sound-Absorbing, Mould-Proof, Waterproof, Fireproof. Application: indoor wall panel decoration. Usage: Entertainment, Commerce, Household, Administration. Design Style: Modern. Fluted slat decorative wall board for home building decoration.",
+      "Material: wood-plastic composite environmental material. Function: Moisture-Proof, Anti-static, Sound-Absorbing, Mould-Proof, Waterproof, Fireproof. Application: indoor wall panel decoration. Warranty: 5 year. Project Solution Capability: total solution for projects. Design Style: Modern.",
     image: `${IMG_BASE}/WP-003.jpg`,
   },
   {
@@ -161,7 +161,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "30.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: SONSILL, Material: wood-plastic composite environmental material. Function: Sound-Absorbing, Mould-Proof, Waterproof, Fireproof, Soundproof, Smoke-Proof, Heat Insulation. Application: indoor wall panel decoration. Usage: Entertainment, Commerce, Household, Administration. Design Style: Modern. 3D texture surface with wood grain finish, ideal for TV background wall decoration.",
+      "Material: wood-plastic composite environmental material. Function: Sound-Absorbing, Mould-Proof, Waterproof, Fireproof, Soundproof, Smoke-Proof, Heat Insulation. Application: indoor wall panel decoration. Warranty: 5 year. Project Solution Capability: total solution for projects. Design Style: Modern.",
     image: `${IMG_BASE}/WP-004.jpg`,
   },
   {
@@ -185,7 +185,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "30.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill, Model: WPC wall panel, Material: Plastic. Thickness: 9mm. Feature: Waterproof, Eco-Friendly, Fire Retardant, Moisture-Proof, Easily Clean. Application: interior walls, Hotel, Villa, Apartment, Office Building. Design Style: Modern. Installation: Easy Installation. 200mm wide 2900mm long waterproof panel for interior wall cladding.",
+      "Material: Plastic. Function: Waterproof, Eco-Friendly, Fire Retardant, Moisture-Proof, Easily Clean. Application: interior walls, Hotel, Villa, Apartment, Office Building. Design Style: Modern.",
     image: `${IMG_BASE}/WP-005.jpg`,
   },
   {
@@ -209,7 +209,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "30.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill, Model: WPC, Material: Plastic. Thickness: 9mm. Color: Wooden Color. Surface treatment: Laminated Printing. Feature: Waterproof, Eco-Friendly, Fire Retardant, Moisture-Proof, Easily Clean. Function: Decoration Material Cladding. Application: Home Office. Design Style: Modern. Image shows three staggered panels in dark brown, medium brown and light beige/cream wood grain tones with tongue-and-groove edge profile.",
+      "Material: Plastic. Function: Waterproof, Eco-Friendly, Fire Retardant, Moisture-Proof, Easily Clean. Application: Home Office. Warranty: 3 Years. Project Solution Capability: graphic design, total solution for projects, Others. Design Style: Modern.",
     image: `${IMG_BASE}/WP-020.jpg`,
   },
 
@@ -235,7 +235,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "27.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill, Material: Plastic. Thickness: 9mm. Feature: Waterproof. Application: interior walls. Design Style: Modern. Installation: Easy Installation. MOQ: 300pc/color. Package: Carton. Image shows fanned stack of four fluted panels with 3 parallel raised ridges (fluted profile) in four color variants: light brown, pale blonde, medium walnut and dark espresso.",
+      "Material: Plastic. Function: Waterproof. Application: interior walls.",
     image: `${IMG_BASE}/WP-012.jpg`,
   },
   {
@@ -259,7 +259,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "27.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill, Material: Plastic. Thickness: 9mm. Feature: Waterproof. Application: interior walls. Design Style: Modern. Installation: Easy Installation. MOQ: 300pc/color. Package: Carton. 3D fluted decor panel for luxury home interior wall decoration.",
+      "Material: Plastic. Function: Waterproof. Application: interior walls.",
     image: `${IMG_BASE}/WP-013.jpg`,
   },
   {
@@ -283,7 +283,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "27.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill, Material: Plastic. Thickness: 9mm. Feature: Waterproof. Application: interior walls. Design Style: Modern. Installation: Easy Installation. MOQ: 300pc/color. Package: Carton. Modern fluted WPC board, high quality indoor waterproof panel for wall cladding.",
+      "Material: Plastic. Function: Waterproof. Application: interior walls.",
     image: `${IMG_BASE}/WP-014.jpg`,
   },
   {
@@ -307,7 +307,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "27.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill, Material: Plastic. Thickness: 9mm. Feature: Waterproof. Application: interior walls. Design Style: Modern. Installation: Easy Installation. MOQ: 300pc/color. Package: Carton. New style modern decorative WPC wall cladding, waterproof for indoor application.",
+      "Material: Plastic. Function: Waterproof. Application: interior walls.",
     image: `${IMG_BASE}/WP-015.jpg`,
   },
 
@@ -333,7 +333,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "2.5kg",
     leadTime: LEAD_TIME,
     remarks:
-      "160mm wide indoor WPC wall panel. Dark charcoal wood tone for interior wall decoration.",
+      "Material: WPC. Function: Waterproof. Application: interior walls.",
     image: `${IMG_BASE}/WP-016.jpg`,
   },
   {
@@ -357,7 +357,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "2.5kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Dark charcoal wood grain WPC cladding. Waterproof for indoor decoration.",
+      "Material: WPC. Function: Waterproof. Application: interior walls.",
     image: `${IMG_BASE}/WP-017.jpg`,
   },
   {
@@ -381,7 +381,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "2.5kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Fluted grooved off-white cream WPC panels. Factory price for interior wall cladding.",
+      "Material: WPC. Function: Waterproof. Application: interior walls.",
     image: `${IMG_BASE}/WP-018.jpg`,
   },
   {
@@ -405,7 +405,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "2.5kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Natural antisepsis 3D WPC wall board. Dual-tone facade design with dark charcoal and light beige slats for indoor decoration.",
+      "Material: WPC. Function: Waterproof. Application: interior walls.",
     image: `${IMG_BASE}/WP-019.jpg`,
   },
   {
@@ -429,7 +429,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "30.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: sonsill, Model: wpc001, Product name: Wpc Wall Panel, Material: Plastic. Size: Customized Sizes Support. Color: Customized Color. Thickness: 24mm. Feature: Waterproof, Eco-Friendly, Fire Retardant. Application: Hotel. Design Style: Modern. Installation: Easy Installation. MOQ: 100pcs. Image shows lifestyle application scene with WPC wall panels installed as background in a home setting with vase and tea set.",
+      "Material: Plastic. Function: Waterproof, Eco-Friendly, Fire Retardant. Application: Hotel.",
     image: `${IMG_BASE}/WP-021.jpg`,
   },
   {
@@ -453,7 +453,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "30.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: sonsill, Model: wpc001, Product name: Wpc Wall Panel, Material: Plastic. Size: Customized Sizes Support. Color: Customized Color. Thickness: 24mm. Feature: Waterproof, Eco-Friendly, Fire Retardant. Application: Hotel. Design Style: Modern. Installation: Easy Installation. MOQ: 100pcs. Wholesale pricing for global building material distributors.",
+      "Material: Plastic. Function: Waterproof, Eco-Friendly, Fire Retardant. Application: Hotel.",
     image: `${IMG_BASE}/WP-022.jpg`,
   },
   {
@@ -477,7 +477,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "30.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: sonsill, Model: wpc001, Product name: Wpc Wall Panel, Material: Plastic. Size: Customized Sizes Support. Color: Customized Color. Thickness: 24mm. Feature: Waterproof, Eco-Friendly, Fire Retardant. Application: Hotel. Design Style: Modern. Installation: Easy Installation. MOQ: 100pcs. Ready to ship for quick home interior renovation and DIY decoration.",
+      "Material: Plastic. Function: Waterproof, Eco-Friendly, Fire Retardant. Application: Hotel.",
     image: `${IMG_BASE}/WP-023.jpg`,
   },
   {
@@ -501,7 +501,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "30.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: sonsill, Model: wpc001, Product name: Wpc Wall Panel, Material: Plastic. Size: Customized Sizes Support. Color: Customized Color. Thickness: 24mm. Feature: Waterproof, Eco-Friendly, Fire Retardant. Application: Hotel. Design Style: Modern. Installation: Easy Installation. MOQ: 100pcs. Image shows four fanned fluted panel samples with embossed texture in matte black, espresso brown, light gray and black marble pattern variants.",
+      "Material: Plastic. Function: Waterproof, Eco-Friendly, Fire Retardant. Application: Hotel.",
     image: `${IMG_BASE}/WP-024.jpg`,
   },
   {
@@ -525,7 +525,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "30.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: sonsill, Model: wpc001, Product name: Wpc Wall Panel, Material: Plastic. Size: Customized Sizes Support. Color: Customized Color. Thickness: 24mm. Feature: Waterproof, Eco-Friendly, Fire Retardant. Application: Hotel. Design Style: Modern. Installation: Easy Installation. MOQ: 100pcs. Image shows five fanned panel samples with wood-grain texture in taupe-brown, honey beige, ivory cream, natural oak and light maple color variants.",
+      "Material: Plastic. Function: Waterproof, Eco-Friendly, Fire Retardant. Application: Hotel.",
     image: `${IMG_BASE}/WP-025.jpg`,
   },
   {
@@ -549,7 +549,7 @@ export const wpcPanelProducts: WPCPanelProduct[] = [
     weightPerPiece: "30.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: sonsill, Model: wpc001, Product name: Wpc Wall Panel, Material: Plastic. Size: Customized Sizes Support. Color: Customized Color. Thickness: 24mm. Feature: Waterproof, Eco-Friendly, Fire Retardant. Application: Hotel. Design Style: Modern. Installation: Easy Installation. MOQ: 100pcs. Recyclable eco-friendly WPC wall panel for interior design.",
+      "Material: Plastic. Function: Waterproof, Eco-Friendly, Fire Retardant. Application: Hotel.",
     image: `${IMG_BASE}/WP-026.jpg`,
   },
 ];

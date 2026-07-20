@@ -88,7 +88,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "6.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Co-extruded fluted cladding panel with dark espresso brown finish. Large stack display showing consistent hollow-core extrusion profile.",
+      "Material: Wood Plastic Composite. Function: Waterproof, Anti-UV. Application: outdoor wall cladding.",
     image: `${IMG_BASE}/OW-009.jpg`,
   },
   {
@@ -112,7 +112,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "6.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Weather resistant co-extrusion panel shown with cedar reddish-brown and olive teak dual-tone samples. Hollow box-beam profile with wood grain embossing.",
+      "Material: Wood Plastic Composite. Function: Waterproof, Anti-UV. Application: outdoor wall cladding.",
     image: `${IMG_BASE}/OW-010.jpg`,
   },
   {
@@ -136,7 +136,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "6.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Co-extruded fluted exterior cladding with golden oak warm tone. 10-12 flutes per panel width, hollow extruded profile with realistic wood grain embossing.",
+      "Material: Wood Plastic Composite. Function: Waterproof, Anti-UV. Application: outdoor wall cladding.",
     image: `${IMG_BASE}/OW-011.jpg`,
   },
   {
@@ -160,7 +160,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "6.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Hollow exterior WPC wall panel shown in four outdoor color range: light gray, medium gray, warm brown and dark charcoal. Fluted design with 8-10 flutes.",
+      "Material: Wood Plastic Composite. Function: Waterproof, Anti-UV. Application: outdoor wall cladding.",
     image: `${IMG_BASE}/OW-012.jpg`,
   },
   {
@@ -184,7 +184,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "4.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Luxury co-extrusion outdoor cladding installed on modern residential building exterior. Charcoal gray lap-siding with subtle wood grain and UV-resistant cap layer.",
+      "Material: Wood Plastic Composite. Function: Waterproof, Anti-UV. Application: outdoor wall cladding.",
     image: `${IMG_BASE}/OW-015.jpg`,
   },
   {
@@ -208,7 +208,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "1.96kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: SONSILL, Model: WPC-01, Material: Wood-plastic Composite Environmental Material. Size 219*26mm, Film Laminated surface treatment, CE certified. Versatile for exterior cladding and interior wall panel decoration. Color customizable per customer requirement. Port of dispatch: Foshan, Guangzhou, Shenzhen. Image shows split view: installed vertical slat wall cladding in bedroom setting (warm natural oak tone) with modular slat panel cross-section detail showing hollow rectangular profile.",
+      "Material: Wood-plastic Composite Environmental Material. Function: Moisture-Proof, Fireproof. Application: exterior wall cladding, interior wall panel decoration.",
     image: `${IMG_BASE}/OW-017.jpg`,
   },
   {
@@ -232,7 +232,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "10.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: SONSILL, Model: SONSILL, Material: WPC wall panels. Co-extrusion surface treatment, CE certified. Thickness 25mm. Usage: Indoor Wall Panel Decoration & Exterior Cladding. Color customizable per customer requirement. Image shows large warehouse stacks with three color families: light tan/beige, medium-dark brown and dark gray/charcoal. Hollow rectangular tube profile with wood-grain embossed top surface.",
+      "Material: WPC wall panels. Function: Waterproof. Application: indoor wall panel decoration, exterior cladding.",
     image: `${IMG_BASE}/OW-019.jpg`,
   },
 
@@ -258,7 +258,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "5.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill wpc wall panel, Model: wpc wall panel, Material: Wood Plastic Composite (50% wood, 38% plastic, 12% additive). Size 172*30mm, length 3m/pcs (customizable). Surface: 3D embossing, embossing, groove. Installation: interlocking. Colors: cedar, red pine, red wood, light grey, coffee, blue grey. Shown in showroom with five color variants: dark brown, cream beige, medium caramel, charcoal and light gray. Rounded semicircular flute profile.",
+      "Material: Wood Plastic Composite (50% wood, 38% plastic, 12% additive). Function: Waterproof. Application: outdoor wall cladding.",
     image: `${IMG_BASE}/OW-003.jpg`,
   },
   {
@@ -282,7 +282,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "2.4kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill wpc wall panel, Model: wpc wall panel, Material: Wood Plastic Composite (50% wood, 38% plastic, 12% additive). Size 172*30mm, length 3m/pcs (customizable). Surface: 3D embossing, embossing, groove. Installation: interlocking. Colors: cedar, red pine, red wood, light grey, coffee, blue grey. Port: Ningbo. Supply: 800000 meters/week. Exterior fluted wall panel with four-tone range: natural oak, charcoal, cedar reddish-brown and sand wheat. Hollow-box construction with embossed wood grain texture.",
+      "Material: Wood Plastic Composite (50% wood, 38% plastic, 12% additive). Function: Waterproof. Application: outdoor wall cladding.",
     image: `${IMG_BASE}/OW-005.jpg`,
   },
   {
@@ -306,7 +306,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "2.4kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill wpc wall panel, Model: wpc wall panel, Material: Wood Plastic Composite (50% wood, 38% plastic, 12% additive). Size 172*30mm, length 3m/pcs (customizable). Surface: 3D embossing, embossing, groove. Installation: interlocking. Colors: cedar, red pine, red wood, light grey, coffee, blue grey. Anti-UV fluted outdoor panel shown with three stacked samples: terracotta reddish-brown, golden olive teak and medium gray. Hollow box-beam profile with four slats per panel.",
+      "Material: Wood Plastic Composite (50% wood, 38% plastic, 12% additive). Function: Waterproof, Anti-UV. Application: outdoor wall cladding.",
     image: `${IMG_BASE}/OW-007.jpg`,
   },
   {
@@ -330,7 +330,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "6.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Outdoor fluted WPC wall panel in dark chocolate brown. Warehouse stack showing consistent hollow-core extrusion with embossed wood grain texture.",
+      "Material: Wood Plastic Composite. Function: Waterproof. Application: outdoor wall cladding.",
     image: `${IMG_BASE}/OW-008.jpg`,
   },
   {
@@ -354,7 +354,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "6.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Co-extrusion wood WPC exterior wall cladding shown in warehouse with four color variants: light wood, dark charcoal gray, red-brown teak and light camel. Diagonal layout with hollow cross-section visible.",
+      "Material: Wood Plastic Composite. Function: Waterproof, Anti-UV. Application: outdoor wall cladding.",
     image: `${IMG_BASE}/OW-013.jpg`,
   },
   {
@@ -378,7 +378,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "1.96kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: SONSILL, Model: WPC-01, Material: Wood-plastic Composite Environmental Material. Size 219*26mm, Film Laminated surface treatment. Functions: Moisture-Proof, Fireproof. CE certified, complies with EU standards. Color customizable per customer requirement. Image shows stacks of WPC boards with fluted multi-slatted surface in medium-dark walnut brown tone. Hollow rectangular profile with 5-6 slats per board width and wood-grain embossed texture. Industrial warehouse setting.",
+      "Material: Wood-plastic Composite Environmental Material. Function: Moisture-Proof, Fireproof. Application: exterior wall cladding.",
     image: `${IMG_BASE}/OW-016.jpg`,
   },
 
@@ -404,7 +404,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "2.4kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill wpc wall panel, Model: wpc wall panel, Material: Wood Plastic Composite (50% wood, 38% plastic, 12% additive). Size 172*30mm, length 3m/pcs (customizable). Surface: 3D embossing, embossing, groove. Installation: interlocking. Colors: cedar, red pine, red wood, light grey, coffee, blue grey. Label shows model K219-76A. Six sample strips with fluted vertical ribbed profile and hollow-core construction on bubble wrap background.",
+      "Material: Wood Plastic Composite (50% wood, 38% plastic, 12% additive). Function: Waterproof. Application: outdoor wall cladding.",
     image: `${IMG_BASE}/OW-001.jpg`,
   },
   {
@@ -428,7 +428,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "2.4kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill wpc wall panel, Model: wpc wall panel, Material: Wood Plastic Composite (50% wood, 38% plastic, 12% additive). Size 172*30mm, length 3m/pcs (customizable). Surface: 3D embossing, embossing, groove. Installation: interlocking. Colors: cedar, red pine, red wood, light grey, coffee, blue grey. Two sample pieces shown in diagonal layout on white background. Single deep walnut red-brown color with natural wood grain pattern and fluted slat design.",
+      "Material: Wood Plastic Composite (50% wood, 38% plastic, 12% additive). Function: Waterproof. Application: outdoor wall cladding.",
     image: `${IMG_BASE}/OW-002.jpg`,
   },
   {
@@ -452,7 +452,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "2.4kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill wpc wall panel, Model: wpc wall panel, Material: Wood Plastic Composite (50% wood, 38% plastic, 12% additive). Size 172*30mm, length 3m/pcs (customizable). Surface: 3D embossing, embossing, groove. Installation: interlocking. Colors: cedar, red pine, red wood, light grey, coffee, blue grey. Product name: 220mm Fluted panels. UV resistant WPC wall cladding with earth tone collection: golden yellow ochre, terracotta rust orange, light gray and charcoal. Hollow box-section profile with wood grain embossing on white background display.",
+      "Material: Wood Plastic Composite (50% wood, 38% plastic, 12% additive). Function: Waterproof, Anti-UV. Application: outdoor wall cladding.",
     image: `${IMG_BASE}/OW-004.jpg`,
   },
   {
@@ -476,7 +476,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "6.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "219*26mm WPC groove outdoor wood panel. Warehouse stack showing six-color gradient: light honey oak, medium walnut, dark espresso, dark charcoal, light silver gray and deep mahogany red. Hollow rectangular profile with fluted channels.",
+      "Material: Wood Plastic Composite. Function: Waterproof. Application: outdoor wall cladding.",
     image: `${IMG_BASE}/OW-006.jpg`,
   },
   {
@@ -500,7 +500,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "6.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Anti-UV no fade WPC wall panel in natural wood brown. Measuring tape in image confirms panel length of approximately 2.9m (2900mm). Multi-chamber hollow core with fine linear wood grain texture.",
+      "Material: Wood Plastic Composite. Function: Waterproof, Anti-UV. Application: outdoor wall cladding.",
     image: `${IMG_BASE}/OW-014.jpg`,
   },
   {
@@ -524,7 +524,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "2.4kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill wpc wall panel, Model: wpc wall panel, Material: Wood Plastic Composite (50% wood, 38% plastic, 12% additive). Size 172*30mm, length 3m/pcs (customizable). Surface: 3D embossing, embossing, groove. Installation: interlocking. Colors: cedar, red pine, red wood, light grey, coffee, blue grey. Image shows warehouse stacks with three distinct color families: light tan/beige, medium-dark brown and dark gray/charcoal. Hollow rectangular tube profile with wood-grain embossed top surface.",
+      "Material: Wood Plastic Composite (50% wood, 38% plastic, 12% additive). Function: Waterproof. Application: outdoor wall cladding.",
     image: `${IMG_BASE}/OW-018.jpg`,
   },
 ];

@@ -87,7 +87,7 @@ export const threeDWallProducts: ThreeDWallProduct[] = [
     weightPerPiece: "0.25kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: 3DARTWALL, Model: 3d wall panel pvc, Material: PVC. Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Usage: Administration, Commerce, Entertainment, Household. Customized logo/packaging/graphic available (Min. order: 1,000 pieces). Image shows stacked gold diamond design panels with mirror-like metallic gold finish and quilted diamond lattice 3D relief pattern.",
+      "Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Application: Hotel. Warranty: 2 Years. Design Style: Modern.",
     image: `${IMG_BASE}/3D-002.jpg`,
   },
   {
@@ -111,7 +111,7 @@ export const threeDWallProducts: ThreeDWallProduct[] = [
     weightPerPiece: "0.25kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: 3DARTWALL, Model: 137, Material: PVC. Product Name: Diamond Shining Gold 3D Wall Panel For Interior Decoration. Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Usage: Administration, Commerce, Entertainment, Household. Diamond shining gold finish for luxurious interior decoration.",
+      "Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Application: Hotel. Warranty: 2 Years. Design Style: Modern.",
     image: `${IMG_BASE}/3D-004.jpg`,
   },
   {
@@ -135,7 +135,7 @@ export const threeDWallProducts: ThreeDWallProduct[] = [
     weightPerPiece: "0.25kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: 3DARTWALL, Model: 3d wall panel pvc, Material: PVC. Product Name: Shining Gold Diamond Design PVC 3d Wall Panel For Interior. Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Usage: Administration, Commerce, Entertainment, Household. Customized logo/packaging/graphic available (Min. order: 1,000 pieces).",
+      "Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Application: Hotel. Warranty: 2 Years. Design Style: Modern.",
     image: `${IMG_BASE}/3D-005.jpg`,
   },
   {
@@ -159,7 +159,7 @@ export const threeDWallProducts: ThreeDWallProduct[] = [
     weightPerPiece: "0.25kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: 3DARTWALL, Model: 3d wall panel pvc, Material: PVC. Product Name: Fireproof Shining Gold Diamond Design PVC 3d Wall Panel For Interior. Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Usage: Administration, Commerce, Entertainment, Household. Customized logo/packaging/graphic available (Min. order: 1,000 pieces).",
+      "Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Application: Hotel. Warranty: 2 Years. Design Style: Modern.",
     image: `${IMG_BASE}/3D-006.jpg`,
   },
   {
@@ -183,7 +183,7 @@ export const threeDWallProducts: ThreeDWallProduct[] = [
     weightPerPiece: "0.25kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: 3DARTWALL, Model: 3d wall panel, Material: PVC. Color: Multi. Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Usage: Administration, Commerce, Entertainment, Household. MOQ: 25 cartons. Package: carton. For wall and ceiling decorative applications.",
+      "Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Application: Living Room. Warranty: 2 Years. Design Style: Modern.",
     image: `${IMG_BASE}/3D-007.jpg`,
   },
   {
@@ -207,7 +207,7 @@ export const threeDWallProducts: ThreeDWallProduct[] = [
     weightPerPiece: "0.25kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: 3DARTWALL, Model: 3d wall panel, Material: PVC. Color: Multi. Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Usage: Administration, Commerce, Entertainment, Household. MOQ: 25 cartons. Package: carton. Shinning gold finish for home deco wall decoration.",
+      "Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Application: Living Room. Warranty: 2 Years. Design Style: Modern.",
     image: `${IMG_BASE}/3D-008.jpg`,
   },
   {
@@ -231,7 +231,7 @@ export const threeDWallProducts: ThreeDWallProduct[] = [
     weightPerPiece: "0.21kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: sonsill, Model: 3d wall panel, Material: PVC Material. Type: 3d wall panel. Color: Multi. Function: Waterproof, Moisture-Proof, Mould-Proof, Fireproof, Soundproof, Heat Insulation. Thickness: 0.8mm. Place of Origin: Zhejiang, China. Electroplating bright gold finish for art decorative wall panels.",
+      "Function: Waterproof, Moisture-Proof, Mould-Proof, Fireproof, Soundproof, Heat Insulation. Application: Home Office. Warranty: 2 Years. Design Style: Modern.",
     image: `${IMG_BASE}/3D-009.jpg`,
   },
   {
@@ -255,7 +255,7 @@ export const threeDWallProducts: ThreeDWallProduct[] = [
     weightPerPiece: "0.25kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: 3DARTWALL, Model: 3d wall panel pvc, Material: PVC. Product Name: Golden mirror pvc 3d decorative wall panels for home decoration. Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Usage: Administration, Commerce, Entertainment, Household. Golden mirror finish for home decoration.",
+      "Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Application: Hotel. Warranty: 2 Years. Project Solution Capability: total solution for projects. Design Style: Modern.",
     image: `${IMG_BASE}/3D-010.jpg`,
   },
 
@@ -281,7 +281,7 @@ export const threeDWallProducts: ThreeDWallProduct[] = [
     weightPerPiece: "0.21kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: sonsill, Model: 3d wall panel, Material: PVC Material. Type: 3d wall panel. Color: Multi. Function: Waterproof, Moisture-Proof, Mould-Proof, Fireproof, Soundproof, Heat Insulation. Place of Origin: Zhejiang, China. Product Name: Home Decorative Modern PVC 3d Diamond Wall Panel Interior. Image shows 3D geometric diamond wall panels with metallic silver-gray iridescent finish and angular crystalline tessellation pattern.",
+      "Function: Waterproof, Moisture-Proof, Mould-Proof, Fireproof, Soundproof, Heat Insulation. Application: Home Office. Warranty: 2 Years. Design Style: Modern.",
     image: `${IMG_BASE}/3D-001.jpg`,
   },
   {
@@ -305,7 +305,7 @@ export const threeDWallProducts: ThreeDWallProduct[] = [
     weightPerPiece: "0.25kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: 3DARTWALL, Model: 3d fireproof wall panel, Material: PVC. Product Name: High quality waterproof pvc 3d fireproof wall panel for house decor. Function: Waterproof, Moisture-Proof, Mould-Proof, Fireproof, Soundproof, Heat Insulation, Anti-static. Usage: Administration, Commerce, Entertainment, Household. Fireproof wall panel for house decoration.",
+      "Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Application: Hotel. Warranty: 2 Years. Design Style: Modern.",
     image: `${IMG_BASE}/3D-003.jpg`,
   },
   {
@@ -329,7 +329,7 @@ export const threeDWallProducts: ThreeDWallProduct[] = [
     weightPerPiece: "0.25kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: 3DARTWALL, Model: 3, Material: PVC. Product Name: Interior panel decorativo pared pvc 3d Wall Panels for wall decoration. Color: gold/silver. Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Usage: Administration, Commerce, Entertainment, Household. Available in gold and silver color options.",
+      "Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Application: Hotel. Warranty: 2 Years. Design Style: Modern.",
     image: `${IMG_BASE}/3D-011.jpg`,
   },
   {
@@ -353,7 +353,7 @@ export const threeDWallProducts: ThreeDWallProduct[] = [
     weightPerPiece: "0.25kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: 3DARTWALL, Model: wall panels decorative interior 3d, Material: PVC. Product Name: Free Samples Fireproof Plant Fiber 3d Wall Panel Mold. Function: Waterproof, Moisture-Proof, Mould-Proof, Fireproof, Soundproof, Heat Insulation, Anti-static. Usage: Administration, Commerce, Entertainment, Household. Fireproof plant fiber design for decorative interior wall panels.",
+      "Material: PVC. Function: Waterproof, Moisture-Proof, Mould-Proof, Fireproof, Soundproof, Heat Insulation, Anti-static. Application: Apartment. Warranty: 2 Years. Project Solution Capability: total solution for projects. Design Style: Modern.",
     image: `${IMG_BASE}/3D-013.jpg`,
   },
 
@@ -379,7 +379,7 @@ export const threeDWallProducts: ThreeDWallProduct[] = [
     weightPerPiece: "0.25kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: sonsill or OEM, Model: wallpaper, Material: PVC. Product Name: 3d Wallpaper. Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Usage: Administration, Commerce, Entertainment, Household. Customized logo/graphic/packaging available (Min. order: 10,000 pieces). 3D wood wall panel with PVC stickers design for home decoration.",
+      "Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Application: Hotel. Warranty: 2 Years. Design Style: Modern.",
     image: `${IMG_BASE}/3D-012.jpg`,
   },
   {
@@ -403,7 +403,7 @@ export const threeDWallProducts: ThreeDWallProduct[] = [
     weightPerPiece: "0.25kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: 3DARTWALL, Model: decorative pvc panel, Material: 100% PVC. Product Name: Art deco pvc ceiling wall decoration 3d ceiling board panel. Installation: FREE install material. Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Usage: Administration, Commerce, Entertainment, Household. Free shipping. For ceiling and wall decoration.",
+      "Material: PVC. Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Application: Apartment. Warranty: 2 Years. Project Solution Capability: total solution for projects.",
     image: `${IMG_BASE}/3D-014.jpg`,
   },
   {
@@ -427,7 +427,7 @@ export const threeDWallProducts: ThreeDWallProduct[] = [
     weightPerPiece: "0.25kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: 3DARTWALL, Model: 3d wall panel pvc, Material: PVC. Product Name: 3d pvc wall panels for office for drawing room for living room. Design Style: Modern. Function: Waterproof, Moisture-Proof, Mould-Proof, Fireproof, Soundproof, Heat Insulation, Anti-static. Usage: Administration, Commerce, Entertainment, Household. Modern design for living room and office wall decoration.",
+      "Material: PVC. Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Application: Apartment. Warranty: 2 Years. Project Solution Capability: total solution for projects.",
     image: `${IMG_BASE}/3D-015.jpg`,
   },
   {
@@ -451,7 +451,7 @@ export const threeDWallProducts: ThreeDWallProduct[] = [
     weightPerPiece: "0.25kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: 3DARTWALL, Model: 3d art wall panel, Material: PVC. Product Name: Pack of 48 Tiles 128 Sq Ft decorative pvc 3d art wall panel. Design Style: Modern. Application: Interior Wall Decoration. Function: Waterproof, Moisture-Proof, Mould-Proof, Fireproof, Soundproof, Heat Insulation, Anti-static. Usage: Commerce, Entertainment, Household. Customized logo/packaging/graphic available (Min. order: 36 pieces). Free shipping. Pack of 48 tiles covering 128 sq ft (12 sqm).",
+      "Material: PVC. Function: Waterproof, Moisture-Proof, Mould-Proof, Smoke-Proof, Fireproof, Soundproof, Sound-Absorbing, Heat Insulation, Anti-static. Warranty: 2 Years. Project Solution Capability: total solution for projects.",
     image: `${IMG_BASE}/3D-016.jpg`,
   },
 ];
