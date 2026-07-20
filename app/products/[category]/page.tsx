@@ -13,6 +13,7 @@ import { puStoneFAQs } from "@/lib/pu-stone-data";
 import { pvcPanelFAQs } from "@/lib/pvc-panel-data";
 import { wpcPanelFAQs } from "@/lib/wpc-panel-data";
 import { outdoorWPCFAQs } from "@/lib/outdoor-wpc-data";
+import { threeDWallFAQs } from "@/lib/3d-wall-data";
 import ProductCard from "@/components/ProductCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import Schema, { buildFAQ } from "@/components/Schema";
@@ -21,6 +22,7 @@ import PUStoneClient from "@/components/pu-stone/PUStoneClient";
 import PVCPanelClient from "@/components/pvc-panel/PVCPanelClient";
 import WPCPanelClient from "@/components/wpc-panel/WPCPanelClient";
 import OutdoorWPCClient from "@/components/outdoor-wpc/OutdoorWPCClient";
+import ThreeDWallClient from "@/components/3d-wall/3DWallClient";
 import styles from "./page.module.css";
 
 // 仅预渲染已知品类，未知 slug 返回 404（SSG 友好）
@@ -81,6 +83,17 @@ export async function generateMetadata({
       description:
         "Explore co-extruded outdoor WPC wall cladding for building facades, garden walls and commercial exteriors. Browse UV-resistant wood-plastic composite cladding models, sizes, MOQ and quotation information from OneStopBuildly.",
       path: "/products/outdoor-wpc-cladding",
+      image: cat.image,
+    });
+  }
+
+  // 3D Wall Panels 专用 SEO
+  if (category === "3d-wall-panels") {
+    return buildMetadata({
+      title: "3D Wall Panels | OneStopBuildly",
+      description:
+        "Explore 3D PVC wall panels with gold diamond, geometric and art deco patterns for luxurious interior decoration. Browse waterproof, fireproof 3D wall panel models, sizes, MOQ and quotation information from OneStopBuildly.",
+      path: "/products/3d-wall-panels",
       image: cat.image,
     });
   }
@@ -174,6 +187,25 @@ export default async function CategoryPage({
         </div>
         <OutdoorWPCClient />
         <Schema type="FAQPage" data={buildFAQ(outdoorWPCFAQs)} />
+      </>
+    );
+  }
+
+  // 3D Wall Panels 使用增强型交互页面
+  if (category === "3d-wall-panels") {
+    return (
+      <>
+        <div className="container">
+          <Breadcrumb
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Products", href: "/products" },
+              { label: "3D Wall Panels", href: "/products/3d-wall-panels" },
+            ]}
+          />
+        </div>
+        <ThreeDWallClient />
+        <Schema type="FAQPage" data={buildFAQ(threeDWallFAQs)} />
       </>
     );
   }
