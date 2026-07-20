@@ -291,7 +291,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     seriesSlug: "fluted-decor",
     size: "2900*219*26mm",
     thickness: "26mm",
-    color: "Warm Medium Oak",
+    color: "Four-Color Warehouse Display",
     moq: 50,
     unit: "sqm",
     unitPrice: 2.95,
@@ -304,7 +304,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "6.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Co-extrusion wood WPC exterior wall cladding in warm medium oak tone. Measuring tape in image confirms panel length of approximately 2.9m (2900mm). Hollow multi-chamber profile with reeded fluted design.",
+      "Co-extrusion wood WPC exterior wall cladding shown in warehouse with four color variants: light wood, dark charcoal gray, red-brown teak and light camel. Diagonal layout with hollow cross-section visible.",
     image: `${IMG_BASE}/OW-013.jpg`,
   },
 
@@ -330,7 +330,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "6.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Decorative outdoor WPC wall panel in warm teak golden-brown (柚木). Label shows model K219-26A. Six sample strips with fluted vertical ribbed profile and hollow-core construction.",
+      "Decorative outdoor WPC wall panel in warm teak golden-brown (柚木). Label shows model K219-76A. Six sample strips with fluted vertical ribbed profile and hollow-core construction on bubble wrap background.",
     image: `${IMG_BASE}/OW-001.jpg`,
   },
   {
@@ -341,7 +341,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     seriesSlug: "classic-outdoor",
     size: "2900*219*26mm",
     thickness: "26mm",
-    color: "Multi-Color Display (5 Colors)",
+    color: "Deep Walnut Red-Brown",
     moq: 5000,
     unit: "meters",
     unitPrice: 1.50,
@@ -354,7 +354,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "6.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Durable waterproof exterior WPC wall panel displayed in showroom with five color variants: dark walnut, natural oak, caramel, charcoal and light gray. Fluted design with rounded semicircular profile.",
+      "Durable waterproof exterior WPC wall panel. Two sample pieces shown in diagonal layout on white background. Single deep walnut red-brown color with natural wood grain pattern and fluted slat design.",
     image: `${IMG_BASE}/OW-002.jpg`,
   },
   {
@@ -389,7 +389,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     seriesSlug: "classic-outdoor",
     size: "2900*219*26mm",
     thickness: "26mm",
-    color: "Five-Color Gradient",
+    color: "Six-Color Gradient",
     moq: 3000,
     unit: "meters",
     unitPrice: 1.80,
@@ -402,7 +402,7 @@ export const outdoorWPCProducts: OutdoorWPCProduct[] = [
     weightPerPiece: "6.0kg",
     leadTime: LEAD_TIME,
     remarks:
-      "219*26mm WPC groove outdoor wood panel. Warehouse stack showing six-color gradient: light honey oak, medium walnut, dark espresso, dark charcoal and deep mahogany. Hollow rectangular profile with fluted channels.",
+      "219*26mm WPC groove outdoor wood panel. Warehouse stack showing six-color gradient: light honey oak, medium walnut, dark espresso, dark charcoal, light silver gray and deep mahogany red. Hollow rectangular profile with fluted channels.",
     image: `${IMG_BASE}/OW-006.jpg`,
   },
   {
