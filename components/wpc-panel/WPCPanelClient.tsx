@@ -84,6 +84,16 @@ function SmartImage({
   showZoomHint?: boolean;
 }) {
   const [status, setStatus] = useState<"loading" | "loaded" | "error">("loading");
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    if (imgRef.current) {
+      const img = imgRef.current;
+      if (img.complete && img.naturalWidth > 0) {
+        setStatus("loaded");
+      }
+    }
+  }, [src]);
 
   return (
     <div
@@ -101,6 +111,7 @@ function SmartImage({
         </div>
       )}
       <Image
+        ref={imgRef}
         src={src}
         alt={alt}
         fill={fill}
