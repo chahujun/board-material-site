@@ -135,6 +135,67 @@
   line-height: var(--lh-normal);
 }
 
+/* 贸易条款 */
+.tradeTerms {
+  padding-block: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+}
+
+.tradeTermsInner {
+  max-width: var(--container-narrow);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.tradeTermsTitle {
+  font-size: var(--fs-2xl);
+}
+
+.tradeTermsDesc {
+  font-size: var(--fs-md);
+  color: var(--color-text-secondary);
+  max-width: 56ch;
+  margin-bottom: var(--space-sm);
+}
+
+.tradeTermsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+}
+
+.tradeTermCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: var(--space-lg);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.tradeTermLabel {
+  font-size: var(--fs-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.tradeTermValue {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--color-forest);
+}
+
+.tradeTermDetail {
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--lh-normal);
+}
+
 /* 联系方式 */
 .channels {
   padding-block: var(--space-2xl);

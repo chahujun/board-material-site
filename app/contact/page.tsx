@@ -30,6 +30,39 @@ const checklist = [
   },
 ];
 
+const tradeTerms = [
+  {
+    label: "Delivery Terms",
+    value: "FOB · CIF · EXW",
+    detail: "Flexible Incoterms to suit your logistics setup",
+  },
+  {
+    label: "Accepted Payment",
+    value: "T/T (Bank Transfer)",
+    detail: "USD, EUR, AUD, HKD, GBP, CNY",
+  },
+  {
+    label: "Nearest Ports",
+    value: "Shanghai · Ningbo",
+    detail: "Two of China's largest export hubs, 1–2 hours from our facility",
+  },
+  {
+    label: "Average Lead Time",
+    value: "~25 days",
+    detail: "From deposit to container loading at port",
+  },
+  {
+    label: "Languages Spoken",
+    value: "6 languages",
+    detail: "English, Chinese, Spanish, Portuguese, Arabic, Russian",
+  },
+  {
+    label: "Annual Revenue",
+    value: "US$5M – US$10M",
+    detail: "Serving buyers across 20+ countries worldwide",
+  },
+];
+
 export default function ContactPage() {
   return (
     <>
@@ -98,6 +131,29 @@ export default function ContactPage() {
                 <div key={item.n} className={styles.checklistItem}>
                   <span className={styles.checklistMarker}>{item.n}</span>
                   <p className={styles.checklistText}>{item.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 贸易条款 */}
+      <section className={styles.tradeTerms}>
+        <div className="container">
+          <div className={styles.tradeTermsInner}>
+            <span className="eyebrow">Business at a glance</span>
+            <h2 className={styles.tradeTermsTitle}>Trade terms &amp; capabilities</h2>
+            <p className={styles.tradeTermsDesc}>
+              Clear, documented business terms so you can plan your procurement
+              with confidence. All terms verified and consistent across orders.
+            </p>
+            <div className={styles.tradeTermsGrid}>
+              {tradeTerms.map((t) => (
+                <div key={t.label} className={styles.tradeTermCard}>
+                  <span className={styles.tradeTermLabel}>{t.label}</span>
+                  <span className={styles.tradeTermValue}>{t.value}</span>
+                  <span className={styles.tradeTermDetail}>{t.detail}</span>
                 </div>
               ))}
             </div>

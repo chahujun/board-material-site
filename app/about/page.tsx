@@ -58,15 +58,46 @@ const values = [
   },
 ];
 
+// ===== Partner factory data =====
+const partnerFactory = {
+  name: "Zhejiang Shamrock Plastic Co., Ltd.",
+  cooperationYears: "4 Years",
+  annualOutput: "US$1 Million – US$2.5 Million",
+  location: "Zhejiang, China",
+  products: [
+    { name: "PVC Wall Panel", capacity: "7,000,000 m²/year" },
+    { name: "PVC Floor Tiles", capacity: "7,000,000 m²/year" },
+    { name: "WPC Panel", capacity: "70,000,000 m³/year" },
+  ],
+};
+
+// ===== Global market distribution =====
+const markets = [
+  { region: "Middle East", percent: 15 },
+  { region: "Southeast Asia", percent: 15 },
+  { region: "South America", percent: 15 },
+  { region: "Northern Europe", percent: 10 },
+  { region: "Central America", percent: 10 },
+  { region: "Western Europe", percent: 10 },
+  { region: "Eastern Europe", percent: 10 },
+  { region: "North America", percent: 10 },
+  { region: "Southern Europe", percent: 5 },
+];
+
 const facts = [
   { label: "Legal entity", value: "Haining Onestopbuildly Building Materials Co., Ltd." },
   { label: "Founded", value: "2019" },
   { label: "Location", value: "Haining, Jiaxing, Zhejiang, China" },
+  { label: "Annual revenue", value: "US$5 Million – US$10 Million" },
+  { label: "Trade team", value: "6–10 people" },
+  { label: "Average lead time", value: "~25 days" },
+  { label: "Languages", value: "English, Chinese, Spanish, Portuguese, Arabic, Russian" },
   { label: "Phone", value: "+86-13511316133" },
   { label: "Email", value: "cindy@onestopbuildly.com" },
   { label: "Alibaba", value: "1 store on Alibaba.com" },
   { label: "Certifications", value: "CE · ISO 9001 · SGS" },
-  { label: "Trade terms", value: "FOB · EXW · CNF (Shanghai / Ningbo)" },
+  { label: "Trade terms", value: "FOB · CIF · EXW (Shanghai / Ningbo)" },
+  { label: "Payment", value: "T/T — USD, EUR, AUD, HKD, GBP, CNY" },
   { label: "Business hours", value: "Mon–Fri 8:30–17:00 CST (UTC+8)" },
 ];
 
@@ -183,6 +214,87 @@ export default function AboutPage() {
               <div key={v.title} className={styles.valueCard}>
                 <h3 className={styles.valueTitle}>{v.title}</h3>
                 <p className={styles.valueText}>{v.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Partner Factory */}
+      <section className={styles.partnerFactory}>
+        <div className="container">
+          <div className={styles.sectionHead}>
+            <span className="eyebrow">Manufacturing partner</span>
+            <h2 className={styles.sectionTitle}>Verified factory, 4-year partnership</h2>
+            <p className={styles.sectionSubtitle}>
+              We work with audited, contract-verified manufacturers. Our longest-running
+              partner supplies PVC and WPC panels with proven production capacity.
+            </p>
+          </div>
+
+          <div className={styles.factoryCard}>
+            <div className={styles.factoryHeader}>
+              <div className={styles.factoryInfo}>
+                <h3 className={styles.factoryName}>{partnerFactory.name}</h3>
+                <p className={styles.factoryLocation}>{partnerFactory.location}</p>
+              </div>
+              <div className={styles.factoryBadges}>
+                <span className={styles.factoryBadge}>4-Year Partnership</span>
+                <span className={styles.factoryBadge}>Contract Verified</span>
+              </div>
+            </div>
+
+            <div className={styles.factoryStats}>
+              <div className={styles.factoryStatItem}>
+                <span className={styles.factoryStatLabel}>Annual Output Value</span>
+                <span className={styles.factoryStatValue}>{partnerFactory.annualOutput}</span>
+              </div>
+              <div className={styles.factoryStatItem}>
+                <span className={styles.factoryStatLabel}>Cooperation Period</span>
+                <span className={styles.factoryStatValue}>{partnerFactory.cooperationYears}</span>
+              </div>
+            </div>
+
+            <div className={styles.capacitySection}>
+              <h4 className={styles.capacityTitle}>Annual Production Capacity</h4>
+              <div className={styles.capacityGrid}>
+                {partnerFactory.products.map((p) => (
+                  <div key={p.name} className={styles.capacityCard}>
+                    <span className={styles.capacityName}>{p.name}</span>
+                    <span className={styles.capacityValue}>{p.capacity}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Global Markets */}
+      <section className={styles.markets}>
+        <div className="container">
+          <div className={styles.sectionHead}>
+            <span className="eyebrow">Global reach</span>
+            <h2 className={styles.sectionTitle}>Exporting to 9 regions worldwide</h2>
+            <p className={styles.sectionSubtitle}>
+              Our materials reach projects across the Middle East, Europe, the Americas
+              and Southeast Asia — a diversified market presence built on repeat orders.
+            </p>
+          </div>
+
+          <div className={styles.marketsGrid}>
+            {markets.map((m) => (
+              <div key={m.region} className={styles.marketItem}>
+                <div className={styles.marketHeader}>
+                  <span className={styles.marketRegion}>{m.region}</span>
+                  <span className={styles.marketPercent}>{m.percent}%</span>
+                </div>
+                <div className={styles.marketBar}>
+                  <div
+                    className={styles.marketBarFill}
+                    style={{ width: `${m.percent * 5}%` }}
+                  />
+                </div>
               </div>
             ))}
           </div>
