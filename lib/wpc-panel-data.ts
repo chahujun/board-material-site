@@ -43,21 +43,21 @@ export const wpcPanelSeries: WPCPanelSeries[] = [
     name: "Premium Fluted Series",
     nameZh: "高端凹槽系列",
     description:
-      "Premium WPC wall panels with special shapes, 3D textures and wood grain finishes. Brand: SONSILL. Material: wood-plastic composite environmental material with moisture-proof, anti-static, sound-absorbing and waterproof properties.",
+      "Premium WPC wall panels with special shapes, 3D textures and wood grain finishes. Material: wood-plastic composite environmental material with moisture-proof, anti-static, sound-absorbing and waterproof properties.",
   },
   {
     slug: "fluted-decor",
     name: "Fluted Decor Series",
     nameZh: "凹槽装饰系列",
     description:
-      "Modern fluted WPC wall panels with 3-ridge fluted surface profile. Brand: Sonsill. Material: Plastic composite, 9mm thickness, waterproof for interior wall cladding applications.",
+      "Modern fluted WPC wall panels with 3-ridge fluted surface profile. Material: Plastic composite, 9mm thickness, waterproof for interior wall cladding applications.",
   },
   {
     slug: "classic-indoor",
     name: "Classic Indoor Series",
     nameZh: "经典室内系列",
     description:
-      "Classic indoor WPC wall panels for hotel, meeting room and architectural decoration. Brand: sonsill. Model: wpc001. Available in customized sizes and colors with 24mm thickness.",
+      "Classic indoor WPC wall panels for hotel, meeting room and architectural decoration. Model: wpc001. Available in customized sizes and colors with 24mm thickness.",
   },
 ];
 
@@ -559,7 +559,7 @@ export const wpcPanelFAQs = [
   {
     question: "What materials are indoor WPC wall panels made of?",
     answer:
-      "Our WPC panels are made from wood-plastic composite environmental material (Premium Fluted Series, brand SONSILL) or plastic composite (Fluted Decor and Classic Indoor Series, brand sonsill). The panels are 100% waterproof, fire retardant, eco-friendly and feature moisture-proof, anti-static and sound-absorbing properties.",
+      "Our WPC panels are made from wood-plastic composite environmental material (Premium Fluted Series) or plastic composite (Fluted Decor and Classic Indoor Series). The panels are 100% waterproof, fire retardant, eco-friendly and feature moisture-proof, anti-static and sound-absorbing properties.",
   },
   {
     question: "What is the standard panel size and how are panels priced?",
@@ -569,7 +569,7 @@ export const wpcPanelFAQs = [
   {
     question: "Are WPC wall panels fire-rated for commercial projects?",
     answer:
-      "Yes. Our SONSILL brand panels feature fireproof properties, and all series include Fire Retardant as a standard feature. The panels also offer smoke-proof and heat insulation functions for enhanced safety in commercial and residential applications.",
+      "Yes. Our panels feature fireproof properties, and all series include Fire Retardant as a standard feature. The panels also offer smoke-proof and heat insulation functions for enhanced safety in commercial and residential applications.",
   },
   {
     question: "How are WPC wall panels installed?",

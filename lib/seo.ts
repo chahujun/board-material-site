@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 // 站点全局配置：品牌信息、域名、询盘落地页
 // 公司：Haining Onestopbuildly Building Materials Co., Ltd.
-// 品牌名：OneStopBuildly（阿里巴巴店铺：uvboards, sonsill, 3dpanel 等）
+// 品牌名：OneStopBuildly（阿里巴巴店铺：uvboards, 3dpanel 等）
 export const siteConfig = {
   name: "OneStopBuildly",
   url: "https://www.onestopbuildly.com",

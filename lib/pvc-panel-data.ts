@@ -596,7 +596,7 @@ export const pvcPanelProducts: PVCPanelProduct[] = [
   {
     id: "pvc-tg-002",
     code: "TG-002",
-    name: "SONSILL Faux Plafond PVC Tongue and Groove Ceiling",
+    name: "Faux Plafond PVC Tongue and Groove Ceiling",
     series: "Tongue & Groove Series",
     seriesSlug: "tongue-groove",
     size: "5950*250*8mm",
@@ -613,7 +613,7 @@ export const pvcPanelProducts: PVCPanelProduct[] = [
     netWeightPerCarton: "25kg",
     weightPerPiece: "0.6kg",
     leadTime: LEAD_TIME,
-    remarks: "SONSILL brand faux plafond panel. V-groove tongue and groove interlocking system.",
+    remarks: "Faux plafond panel. V-groove tongue and groove interlocking system.",
     image: `${IMG_BASE}/TG-002.jpg`,
   },
   {

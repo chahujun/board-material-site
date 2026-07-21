@@ -41,21 +41,21 @@ export const threeDWallSeries: ThreeDWallSeries[] = [
     name: "Gold Diamond Series",
     nameZh: "金钻系列",
     description:
-      "Shining gold diamond design PVC 3D wall panels with electroplating bright finish. Brand: 3DARTWALL. Material: PVC, 500mm*500mm, 1mm thickness. Waterproof, fireproof, soundproof with heat insulation for luxurious interior decoration.",
+      "Shining gold diamond design PVC 3D wall panels with electroplating bright finish. Material: PVC, 500mm*500mm, 1mm thickness. Waterproof, fireproof, soundproof with heat insulation for luxurious interior decoration.",
   },
   {
     slug: "diamond-geometric",
     name: "Diamond Geometric Series",
     nameZh: "钻石几何系列",
     description:
-      "Modern diamond and geometric 3D PVC wall panels with multi-color options. Brands: sonsill / 3DARTWALL. Material: PVC, 500mm*500mm, 0.8-1mm thickness. Fireproof, moisture-proof, mould-proof for house decoration.",
+      "Modern diamond and geometric 3D PVC wall panels with multi-color options. Material: PVC, 500mm*500mm, 0.8-1mm thickness. Fireproof, moisture-proof, mould-proof for house decoration.",
   },
   {
     slug: "art-deco",
     name: "Art Deco Series",
     nameZh: "艺术装饰系列",
     description:
-      "Art deco 3D PVC wall panels for ceiling and wall decoration with wood and modern patterns. Brand: 3DARTWALL / sonsill. Material: PVC, 500mm*500mm, 1mm thickness. Waterproof, anti-static for living room, office and commercial spaces.",
+      "Art deco 3D PVC wall panels for ceiling and wall decoration with wood and modern patterns. Material: PVC, 500mm*500mm, 1mm thickness. Waterproof, anti-static for living room, office and commercial spaces.",
   },
 ];
 
@@ -466,7 +466,7 @@ export const threeDWallFAQs = [
   {
     question: "What is the standard panel size and how are panels packaged?",
     answer:
-      "All 3D wall panels are 500mm*500mm (19.7\"x19.7\") per piece. Standard packaging is 1 carton = 4 boxes (12pcs = 3sqm) = 48pcs = 12sqm. Thickness ranges from 0.8mm to 1mm depending on the model. Brands include SONSILL and 3DARTWALL. MOQ varies from 25 cartons to 200 cartons depending on the product.",
+      "All 3D wall panels are 500mm*500mm (19.7\"x19.7\") per piece. Standard packaging is 1 carton = 4 boxes (12pcs = 3sqm) = 48pcs = 12sqm. Thickness ranges from 0.8mm to 1mm depending on the model. MOQ varies from 25 cartons to 200 cartons depending on the product.",
   },
   {
     question: "Are 3D wall panels fire-rated for commercial projects?",
@@ -476,7 +476,7 @@ export const threeDWallFAQs = [
   {
     question: "Can I customize the 3D wall panels with my own logo or design?",
     answer:
-      "Yes, customization is available. For most 3DARTWALL brand products, customized logo, customized packaging, and graphic customization are available with a minimum order of 1,000 pieces. For the Pack of 48 Tiles product, customization is available with a minimum order of 36 pieces. The sonsill or OEM brand 3D Wood Wall Panel offers customization with a minimum order of 10,000 pieces.",
+      "Yes, customization is available. For most products, customized logo, customized packaging, and graphic customization are available with a minimum order of 1,000 pieces. For the Pack of 48 Tiles product, customization is available with a minimum order of 36 pieces. The 3D Wood Wall Panel offers customization with a minimum order of 10,000 pieces.",
   },
   {
     question: "What applications are 3D wall panels suitable for?",

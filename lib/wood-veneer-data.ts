@@ -44,21 +44,21 @@ export const woodVeneerSeries: WoodVeneerSeries[] = [
     name: "Bamboo Fiber Series",
     nameZh: "竹纤维系列",
     description:
-      "Bamboo fiber wood veneer wall panels and boards in 1220x2440mm size with 5mm thickness. Brand: Sonsill. Waterproof, modern design for indoor, hotel and home office decoration. Includes natural wood grain, travertine stone texture, and dark brown wood grain finishes. MOQ: 200 pcs.",
+      "Bamboo fiber wood veneer wall panels and boards in 1220x2440mm size with 5mm thickness. Waterproof, modern design for indoor, hotel and home office decoration. Includes natural wood grain, travertine stone texture, and dark brown wood grain finishes. MOQ: 200 pcs.",
   },
   {
     slug: "melamine-mdf",
     name: "Melamine MDF Series",
     nameZh: "三聚氰胺MDF系列",
     description:
-      "Melamine-faced MDF boards in 1220x2440mm with thickness options from 3mm to 25mm. Brand: Sonsill. Includes warm oak wood veneer wall cladding, fancy wood veneer, melamine-faced various colors, and wood grain melamine multi-color sample sets for furniture and interior decoration. MOQ: 100 pcs.",
+      "Melamine-faced MDF boards in 1220x2440mm with thickness options from 3mm to 25mm. Includes warm oak wood veneer wall cladding, fancy wood veneer, melamine-faced various colors, and wood grain melamine multi-color sample sets for furniture and interior decoration. MOQ: 100 pcs.",
   },
   {
     slug: "decorative-veneer",
     name: "Decorative Veneer Series",
     nameZh: "装饰木饰面系列",
     description:
-      "Decorative wood veneer panels including WPC co-extrusion flat panels, mirrored bamboo fiber with 3D geometric patterns, red mirror acrylic, PET marble texture with gold veining, black polished marble, and multi-texture decorative sets. Brand: Sonsill. 1220x2440mm size for background walls and interior decoration. MOQ: 200 pcs.",
+      "Decorative wood veneer panels including WPC co-extrusion flat panels, mirrored bamboo fiber with 3D geometric patterns, red mirror acrylic, PET marble texture with gold veining, black polished marble, and multi-texture decorative sets. 1220x2440mm size for background walls and interior decoration. MOQ: 200 pcs.",
   },
 ];
 
@@ -90,7 +90,7 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.1kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill WPC Flat Board. Application: Indoor. Warranty: More Than 5 Years. Design Style: Modern. Project Solution Capability: total solution for projects.",
+      "Application: Indoor. Warranty: More Than 5 Years. Design Style: Modern. Project Solution Capability: total solution for projects.",
     image: `${IMG_BASE}/WV-001.jpg`,
   },
   {
@@ -114,7 +114,7 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.1kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: sonsill. Application: Hotel. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: 3D model design, total solution for projects.",
+      "Application: Hotel. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: 3D model design, total solution for projects.",
     image: `${IMG_BASE}/WV-002.jpg`,
   },
   {
@@ -138,7 +138,7 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.1kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: SONSILL. Application: Hotel. Warranty: 5 year. Design Style: Modern. Project Solution Capability: graphic design, 3D model design, total solution for projects, Cross Categories Consolidation.",
+      "Application: Hotel. Warranty: 5 year. Design Style: Modern. Project Solution Capability: graphic design, 3D model design, total solution for projects, Cross Categories Consolidation.",
     image: `${IMG_BASE}/WV-003.jpg`,
   },
   {
@@ -162,7 +162,7 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.1kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill. Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
+      "Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
     image: `${IMG_BASE}/WV-004.jpg`,
   },
   {
@@ -186,7 +186,7 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.1kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill. Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
+      "Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
     image: `${IMG_BASE}/WV-009.jpg`,
   },
   {
@@ -210,7 +210,7 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.1kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill. Application: Hotel. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
+      "Application: Hotel. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
     image: `${IMG_BASE}/WV-010.jpg`,
   },
 
@@ -236,7 +236,7 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.5kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill. Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
+      "Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
     image: `${IMG_BASE}/WV-005.jpg`,
   },
   {
@@ -260,7 +260,7 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.5kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill. Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
+      "Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
     image: `${IMG_BASE}/WV-006.jpg`,
   },
   {
@@ -284,7 +284,7 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.5kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill. Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
+      "Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
     image: `${IMG_BASE}/WV-007.jpg`,
   },
   {
@@ -308,7 +308,7 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.5kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill. Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
+      "Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
     image: `${IMG_BASE}/WV-008.jpg`,
   },
 
@@ -334,7 +334,7 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.1kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill. Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
+      "Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
     image: `${IMG_BASE}/WV-011.jpg`,
   },
   {
@@ -358,7 +358,7 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.1kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill. Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
+      "Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
     image: `${IMG_BASE}/WV-012.jpg`,
   },
   {
@@ -382,13 +382,13 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.1kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill. Application: Office Building. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
+      "Application: Office Building. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
     image: `${IMG_BASE}/WV-013.jpg`,
   },
   {
     id: "wv-dv-014",
     code: "WV-014",
-    name: "Sonsill Modern Interior Decoration Mirrored Bamboo Fiber Wood Veneer Pvc Wpc Wall Panels",
+    name: "Modern Interior Decoration Mirrored Bamboo Fiber Wood Veneer Pvc Wpc Wall Panels",
     series: "Decorative Veneer Series",
     seriesSlug: "decorative-veneer",
     size: "1220*2440mm",
@@ -406,13 +406,13 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.1kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill. Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
+      "Application: Home Office. Warranty: 2 Years. Design Style: Modern. Project Solution Capability: graphic design, total solution for projects, Others.",
     image: `${IMG_BASE}/WV-014.jpg`,
   },
   {
     id: "wv-dv-015",
     code: "WV-015",
-    name: "Sonsill Pet Marble Continuous Texture Co-extruded Bamboo Charcoal Wood Veneer Wpc Wall Panel For Background Walls",
+    name: "Pet Marble Continuous Texture Co-extruded Bamboo Charcoal Wood Veneer Wpc Wall Panel For Background Walls",
     series: "Decorative Veneer Series",
     seriesSlug: "decorative-veneer",
     size: "1220*2440mm",
@@ -430,7 +430,7 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.1kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: SONSILL. Application: Hotel. Warranty: More Than 5 Years. Design Style: Modern. Project Solution Capability: graphic design, 3D model design, total solution for projects, Cross Categories Consolidation.",
+      "Application: Hotel. Warranty: More Than 5 Years. Design Style: Modern. Project Solution Capability: graphic design, 3D model design, total solution for projects, Cross Categories Consolidation.",
     image: `${IMG_BASE}/WV-015.jpg`,
   },
   {
@@ -454,7 +454,7 @@ export const woodVeneerProducts: WoodVeneerProduct[] = [
     weightPerPiece: "1.1kg",
     leadTime: LEAD_TIME,
     remarks:
-      "Brand: Sonsill. Application: Hotel. Warranty: More Than 5 Years. Design Style: Modern. Project Solution Capability: graphic design, 3D model design, total solution for projects, Cross Categories Consolidation. After-sale Service: Online Technical Support, Onsite Installation, Onsite Training, Onsite Inspection, Free Spare Parts, Return and Replacement.",
+      "Application: Hotel. Warranty: More Than 5 Years. Design Style: Modern. Project Solution Capability: graphic design, 3D model design, total solution for projects, Cross Categories Consolidation. After-sale Service: Online Technical Support, Onsite Installation, Onsite Training, Onsite Inspection, Free Spare Parts, Return and Replacement.",
     image: `${IMG_BASE}/WV-016.jpg`,
   },
 ];
@@ -464,7 +464,7 @@ export const woodVeneerFAQs = [
   {
     question: "What is bamboo fiber wood veneer and what are its advantages?",
     answer:
-      "Bamboo fiber wood veneer is a WPC (Wood Plastic Composite) wall panel made from bamboo fiber and polymer materials. The Bamboo Fiber Series panels are 1220x2440mm with 5mm thickness (some models offer 5mm/8mm options). Key advantages include waterproof performance, modern wood grain appearance, lightweight construction (1.1kg per piece), and easy installation. Brand: Sonsill. Applications include indoor, hotel, and home office decoration with warranty ranging from 2 years to more than 5 years.",
+      "Bamboo fiber wood veneer is a WPC (Wood Plastic Composite) wall panel made from bamboo fiber and polymer materials. The Bamboo Fiber Series panels are 1220x2440mm with 5mm thickness (some models offer 5mm/8mm options). Key advantages include waterproof performance, modern wood grain appearance, lightweight construction (1.1kg per piece), and easy installation. Applications include indoor, hotel, and home office decoration with warranty ranging from 2 years to more than 5 years.",
   },
   {
     question: "What thickness options are available for melamine MDF boards?",
