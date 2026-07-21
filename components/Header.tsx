@@ -55,7 +55,7 @@ const navItems: NavItem[] = [
         label: "Sheets & Boards",
         href: "/products",
         children: [
-          { label: "UV Marble Sheets", href: "/products/uv-marble-sheets", desc: "UV-coated marble-look surface sheets" },
+          { label: "PVC Marble Sheet", href: "/products/pvc-marble-sheet", desc: "UV-coated marble-look surface sheets" },
           { label: "PVC Ceiling Panels", href: "/products/pvc-ceiling-panels", desc: "Waterproof PVC ceiling systems" },
           { label: "PVC Partition Panels", href: "/products/pvc-partition-panels", desc: "Lightweight PVC partition walls" },
         ],

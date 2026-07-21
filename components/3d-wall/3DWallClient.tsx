@@ -470,7 +470,7 @@ Please contact our sales team for pricing and confirmation.
 
   // ===== Related categories =====
   const relatedCategories = categories.filter((c) =>
-    ["pvc-ceiling-panels", "uv-marble-sheets", "acoustic-wall-panels", "3d-wall-panels"].includes(c.slug),
+    ["pvc-ceiling-panels", "pvc-marble-sheet", "acoustic-wall-panels", "3d-wall-panels"].includes(c.slug),
   );
 
   // ===== Gallery for selected product =====

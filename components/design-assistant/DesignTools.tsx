@@ -150,7 +150,7 @@ function generateRecommendations(
     ],
     restaurant: [
       {
-        category: "UV Marble", name: "UV Marble Sheets", href: "/products/uv-marble-sheets",
+        category: "PVC Marble", name: "PVC Marble Sheet", href: "/products/pvc-marble-sheet",
         reason: "Marble-look surface for counter fronts — grease-resistant, easy clean, high-gloss finish",
         icon: "✨",
         specs: [
@@ -242,7 +242,7 @@ function generateRecommendations(
     ],
     retail: [
       {
-        category: "UV Marble", name: "UV Marble Sheets", href: "/products/uv-marble-sheets",
+        category: "PVC Marble", name: "PVC Marble Sheet", href: "/products/pvc-marble-sheet",
         reason: "High-gloss marble finish for display walls and counters — attracts customer attention",
         icon: "✨",
         specs: [
@@ -384,15 +384,15 @@ function generateRecommendations(
     lobby: ["indoor-wpc-wall-panels", "pu-stone-panels"],
     guestroom: ["spc-flooring", "indoor-wpc-wall-panels"],
     facade: ["outdoor-wpc-cladding"],
-    dining: ["3d-wall-panels", "uv-marble-sheets"],
-    counter: ["uv-marble-sheets"],
+    dining: ["3d-wall-panels", "pvc-marble-sheet"],
+    counter: ["pvc-marble-sheet"],
     kitchen: ["pvc-ceiling-panels"],
     outdoor: ["outdoor-wpc-cladding"],
     meeting: ["acoustic-wall-panels", "wood-veneer-panels"],
     workspace: ["spc-flooring"],
     executive: ["wood-veneer-panels"],
     reception: ["indoor-wpc-wall-panels"],
-    display: ["uv-marble-sheets", "3d-wall-panels"],
+    display: ["pvc-marble-sheet", "3d-wall-panels"],
     fitting: ["spc-flooring"],
     entrance: ["outdoor-wpc-cladding"],
     livingroom: ["indoor-wpc-wall-panels", "wood-veneer-panels"],
@@ -407,7 +407,7 @@ function generateRecommendations(
     minimalist: ["indoor-wpc-wall-panels"],
     scandinavian: ["wood-veneer-panels"],
     industrial: ["pu-stone-panels"],
-    luxury: ["uv-marble-sheets"],
+    luxury: ["pvc-marble-sheet"],
     chinese: ["3d-wall-panels"],
     coastal: ["outdoor-wpc-cladding"],
   };
@@ -445,7 +445,7 @@ const materialPrices: MaterialPrice[] = [
   { category: "WPC Wall Panels", name: "Indoor WPC Wall Panels", href: "/products/indoor-wpc-wall-panels", unit: "m²", prices: [8, 14, 22], wasteFactor: 1.05 },
   { category: "Outdoor WPC Cladding", name: "Outdoor WPC Cladding", href: "/products/outdoor-wpc-cladding", unit: "m²", prices: [12, 18, 28], wasteFactor: 1.05 },
   { category: "SPC Flooring", name: "SPC Flooring", href: "/products/spc-flooring", unit: "m²", prices: [6, 10, 16], wasteFactor: 1.07 },
-  { category: "UV Marble Sheets", name: "UV Marble Sheets", href: "/products/uv-marble-sheets", unit: "m²", prices: [7, 12, 20], wasteFactor: 1.05 },
+  { category: "PVC Marble Sheet", name: "PVC Marble Sheet", href: "/products/pvc-marble-sheet", unit: "m²", prices: [7, 12, 20], wasteFactor: 1.05 },
   { category: "PU Stone Panels", name: "PU Stone Panels", href: "/products/pu-stone-panels", unit: "m²", prices: [15, 25, 40], wasteFactor: 1.03 },
   { category: "3D Wall Panels", name: "3D Wall Panels", href: "/products/3d-wall-panels", unit: "m²", prices: [10, 18, 30], wasteFactor: 1.05 },
   { category: "Acoustic Wall Panels", name: "Acoustic Wall Panels", href: "/products/acoustic-wall-panels", unit: "m²", prices: [12, 20, 35], wasteFactor: 1.05 },
@@ -504,7 +504,7 @@ const presetPalettes: ColorPalette[] = [
     style: "Luxury Hotel",
     psychology: "Sophisticated and opulent — signals quality, exclusivity and timeless elegance.",
     materials: [
-      { label: "UV Marble Sheets", href: "/products/uv-marble-sheets" },
+      { label: "PVC Marble Sheet", href: "/products/pvc-marble-sheet" },
       { label: "Wood Veneer Panels", href: "/products/wood-veneer-panels" },
     ],
   },
@@ -561,7 +561,7 @@ const presetPalettes: ColorPalette[] = [
 function getMaterialsForHue(hue: number): ColorPalette["materials"] {
   if (hue < 30 || hue >= 330) return [
     { label: "PU Stone Panels", href: "/products/pu-stone-panels" },
-    { label: "UV Marble Sheets", href: "/products/uv-marble-sheets" },
+    { label: "PVC Marble Sheet", href: "/products/pvc-marble-sheet" },
   ];
   if (hue < 60) return [
     { label: "Wood Veneer Panels", href: "/products/wood-veneer-panels" },

@@ -19,6 +19,7 @@ import { woodVeneerFAQs } from "@/lib/wood-veneer-data";
 import { psWallFAQs } from "@/lib/ps-wall-data";
 import { wpcDoorFAQs } from "@/lib/wpc-door-data";
 import { spcFlooringFAQs } from "@/lib/spc-flooring-data";
+import { pvcMarbleFAQs } from "@/lib/pvc-marble-data";
 import ProductCard from "@/components/ProductCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import Schema, { buildFAQ } from "@/components/Schema";
@@ -33,6 +34,7 @@ import WoodVeneerClient from "@/components/wood-veneer/WoodVeneerClient";
 import PSWallClient from "@/components/ps-wall/PSWallClient";
 import WPCDoorClient from "@/components/wpc-door/WPCDoorClient";
 import SPCFlooringClient from "@/components/spc-flooring/SPCFlooringClient";
+import PVCMarbleClient from "@/components/pvc-marble/PVCMarbleClient";
 import styles from "./page.module.css";
 
 // 仅预渲染已知品类，未知 slug 返回 404（SSG 友好）
@@ -159,6 +161,17 @@ export async function generateMetadata({
       description:
         "Explore SPC vinyl flooring planks for indoor hotel, home, office and commercial applications. Waterproof, fireproof, wear-resistant click-lock SPC flooring with wood grain finishes. Available in 4mm-7mm thickness, 0.3mm-0.7mm wear layer. Browse product models, sizes, MOQ and quotation information from OneStopBuildly.",
       path: "/products/spc-flooring",
+      image: cat.image,
+    });
+  }
+
+  // PVC Marble Sheet 专用 SEO
+  if (category === "pvc-marble-sheet") {
+    return buildMetadata({
+      title: "PVC Marble Sheet / UV Board | OneStopBuildly",
+      description:
+        "Explore PVC marble sheets and UV coated boards for interior wall decoration, kitchen cabinets and bathroom applications. Waterproof, fireproof, high-gloss UV coated marble finish with customizable colors. Available in 1220*2440mm, 1220*2800mm, 1220*2900mm sizes, 2mm-5mm thickness. Browse product models, sizes, MOQ and quotation information from OneStopBuildly.",
+      path: "/products/pvc-marble-sheet",
       image: cat.image,
     });
   }
@@ -366,6 +379,25 @@ export default async function CategoryPage({
         </div>
         <SPCFlooringClient />
         <Schema type="FAQPage" data={buildFAQ(spcFlooringFAQs)} />
+      </>
+    );
+  }
+
+  // PVC Marble Sheet 使用增强型交互页面
+  if (category === "pvc-marble-sheet") {
+    return (
+      <>
+        <div className="container">
+          <Breadcrumb
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Products", href: "/products" },
+              { label: "PVC Marble Sheet", href: "/products/pvc-marble-sheet" },
+            ]}
+          />
+        </div>
+        <PVCMarbleClient />
+        <Schema type="FAQPage" data={buildFAQ(pvcMarbleFAQs)} />
       </>
     );
   }

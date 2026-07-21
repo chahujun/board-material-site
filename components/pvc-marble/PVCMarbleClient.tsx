@@ -4,23 +4,23 @@ import { useState, useMemo, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  wpcPanelProducts,
-  wpcPanelSeries,
-  wpcPanelFAQs,
+  pvcMarbleProducts,
+  pvcMarbleSeries,
+  pvcMarbleFAQs,
   getProductsBySeries,
   getUniqueSizes,
   getUniqueSeries,
   getUniqueColors,
   getUniqueCodes,
-  WPC_PANEL_CONTACT,
-  type WPCPanelProduct,
-} from "@/lib/wpc-panel-data";
+  PVC_MARBLE_CONTACT,
+  type PVCMarbleProduct,
+} from "@/lib/pvc-marble-data";
 import { categories } from "@/lib/products";
-import styles from "./wpc-panel.module.css";
+import styles from "./pvc-marble.module.css";
 
 // ===== Types =====
 interface QuoteItem {
-  product: WPCPanelProduct;
+  product: PVCMarbleProduct;
   quantity: number;
 }
 
@@ -237,21 +237,15 @@ function Lightbox({
 }
 
 // ===== Build gallery images for a product =====
-function buildGallery(product: WPCPanelProduct): GalleryImage[] {
+function buildGallery(product: PVCMarbleProduct): GalleryImage[] {
   const images: GalleryImage[] = [
     { url: product.image, label: "Product View", type: "main" },
   ];
-  if (product.textureImage) {
-    images.push({ url: product.textureImage, label: "Texture Detail", type: "texture" });
-  }
-  if (product.applicationImage) {
-    images.push({ url: product.applicationImage, label: "Application", type: "application" });
-  }
   return images;
 }
 
 // ===== Main Component =====
-export default function WPCPanelClient() {
+export default function PVCMarbleClient() {
   // Filter state
   const [searchQuery, setSearchQuery] = useState("");
   const [filterSeries, setFilterSeries] = useState("");
@@ -259,7 +253,7 @@ export default function WPCPanelClient() {
   const [filterColor, setFilterColor] = useState("");
 
   // Drawer state
-  const [selectedProduct, setSelectedProduct] = useState<WPCPanelProduct | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<PVCMarbleProduct | null>(null);
   const [detailOpen, setDetailOpen] = useState(false);
   const [quoteOpen, setQuoteOpen] = useState(false);
   const [activeImageTab, setActiveImageTab] = useState(0);
@@ -279,7 +273,7 @@ export default function WPCPanelClient() {
   // ===== Load quote list from localStorage =====
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("wpc-wall-panel-quote-list");
+      const saved = localStorage.getItem("pvc-marble-quote-list");
       if (saved) {
         setQuoteList(JSON.parse(saved));
       }
@@ -293,7 +287,7 @@ export default function WPCPanelClient() {
   useEffect(() => {
     if (hydrated) {
       try {
-        localStorage.setItem("wpc-wall-panel-quote-list", JSON.stringify(quoteList));
+        localStorage.setItem("pvc-marble-quote-list", JSON.stringify(quoteList));
       } catch {
         // ignore
       }
@@ -308,7 +302,7 @@ export default function WPCPanelClient() {
 
   // ===== Filtered products =====
   const filteredProducts = useMemo(() => {
-    return wpcPanelProducts.filter((p) => {
+    return pvcMarbleProducts.filter((p) => {
       const q = searchQuery.toLowerCase().trim();
       if (q && !p.name.toLowerCase().includes(q) && !p.code.toLowerCase().includes(q) && !p.series.toLowerCase().includes(q)) {
         return false;
@@ -330,7 +324,7 @@ export default function WPCPanelClient() {
   };
 
   // ===== Quote list handlers =====
-  const handleAddToQuote = useCallback((product: WPCPanelProduct, quantity = 1) => {
+  const handleAddToQuote = useCallback((product: PVCMarbleProduct, quantity = 1) => {
     setQuoteList((prev) => {
       const existing = prev.find((q) => q.product.code === product.code);
       if (existing) {
@@ -358,7 +352,7 @@ export default function WPCPanelClient() {
   const isInQuoteList = (code: string) => quoteList.some((q) => q.product.code === code);
 
   // ===== Detail drawer handlers =====
-  const handleViewDetails = (product: WPCPanelProduct) => {
+  const handleViewDetails = (product: PVCMarbleProduct) => {
     setSelectedProduct(product);
     setActiveImageTab(0);
     setDetailOpen(true);
@@ -434,7 +428,7 @@ export default function WPCPanelClient() {
   };
 
   // ===== Download product info =====
-  const handleDownloadInfo = (product: WPCPanelProduct) => {
+  const handleDownloadInfo = (product: PVCMarbleProduct) => {
     const info = `
 Product Information
 ===================
@@ -456,9 +450,9 @@ Lead Time: ${product.leadTime}
 Remarks: ${product.remarks || "None"}
 
 Contact:
-${WPC_PANEL_CONTACT.company}
-Email: ${WPC_PANEL_CONTACT.email}
-Phone/WhatsApp: ${WPC_PANEL_CONTACT.phone}
+OneStopBuildly
+Email: ${PVC_MARBLE_CONTACT.email}
+WhatsApp: ${PVC_MARBLE_CONTACT.whatsapp}
 
 Please contact our sales team for pricing and confirmation.
 `.trim();
@@ -476,7 +470,7 @@ Please contact our sales team for pricing and confirmation.
 
   // ===== Related categories =====
   const relatedCategories = categories.filter((c) =>
-    ["pvc-ceiling-panels", "pvc-marble-sheet", "acoustic-wall-panels", "3d-wall-panels"].includes(c.slug),
+    ["pvc-ceiling-panels", "3d-wall-panels", "wood-veneer-panels"].includes(c.slug),
   );
 
   // ===== Gallery for selected product =====
@@ -490,26 +484,26 @@ Please contact our sales team for pricing and confirmation.
         <div className="container">
           <div className={styles.introGrid}>
             <div className={styles.introText}>
-              <span className="eyebrow">Wood-plastic composite panels for modern interior walls</span>
-              <h1 className={styles.introTitle}>Indoor WPC Wall Panels</h1>
+              <span className="eyebrow">PS decorative panels for modern interior accent walls</span>
+              <h1 className={styles.introTitle}>PVC Marble Sheet</h1>
               <p className={styles.introDesc}>
-                Wood-plastic composite panels for modern interior walls. Fluted and slatted
-                WPC wall panels combining PVC and wood fiber for waterproof, fire-retardant
-                interior cladding.
+                PS decorative wall panels with diamond, geometric and art deco patterns.
+                Waterproof, fireproof and soundproof polystyrene panels for luxurious interior wall
+                and ceiling decoration.
               </p>
               <div className={styles.introTags}>
                 <span className={styles.tag}>Waterproof</span>
                 <span className={styles.tag}>Fire-Retardant</span>
-                <span className={styles.tag}>Eco-Friendly</span>
-                <span className={styles.tag}>Wood Grain Finish</span>
-                <span className={styles.tag}>Tongue &amp; Groove</span>
+                <span className={styles.tag}>3D Diamond Design</span>
+                <span className={styles.tag}>Gold Finish</span>
+                <span className={styles.tag}>Sound-Absorbing</span>
               </div>
             </div>
             <div className={styles.introCollage}>
               <div className={styles.introCollageMain}>
                 <Image
-                  src="/images/products/wpc-panel/WP-001.jpg"
-                  alt="Multi-color wood grain WPC wall panel display"
+                  src="/images/products/pvc-marble/PM-001.jpg"
+                  alt="PVC marble sheet with natural veining"
                   fill
                   sizes="(max-width: 960px) 100vw, 30vw"
                   priority
@@ -519,8 +513,8 @@ Please contact our sales team for pricing and confirmation.
               <div className={styles.introCollageSide}>
                 <div className={styles.introCollageSmall}>
                   <Image
-                    src="/images/products/wpc-panel/WP-004.jpg"
-                    alt="3D texture WPC wall panel for TV background"
+                    src="/images/products/pvc-marble/PM-004.jpg"
+                    alt="PVC marble panel surface detail"
                     fill
                     sizes="(max-width: 960px) 100vw, 15vw"
                     className={styles.collageImg}
@@ -528,8 +522,8 @@ Please contact our sales team for pricing and confirmation.
                 </div>
                 <div className={styles.introCollageSmall}>
                   <Image
-                    src="/images/products/wpc-panel/WP-017.jpg"
-                    alt="Dark charcoal WPC fluted wall panel"
+                    src="/images/products/pvc-marble/PM-012.jpg"
+                    alt="Decorative PVC marble sheet texture"
                     fill
                     sizes="(max-width: 960px) 100vw, 15vw"
                     className={styles.collageImg}
@@ -560,7 +554,7 @@ Please contact our sales team for pricing and confirmation.
             aria-label="Filter by series"
           >
             <option value="">All Series</option>
-            {wpcPanelSeries.map((s) => (
+            {pvcMarbleSeries.map((s) => (
               <option key={s.slug} value={s.slug}>
                 {s.name}
               </option>
@@ -938,7 +932,7 @@ Please contact our sales team for pricing and confirmation.
           <h2>Frequently asked questions</h2>
         </div>
         <div className={styles.faqList}>
-          {wpcPanelFAQs.map((faq) => (
+          {pvcMarbleFAQs.map((faq) => (
             <div key={faq.question} className={styles.faqItem}>
               <h3 className={styles.faqQuestion}>{faq.question}</h3>
               <p className={styles.faqAnswer}>{faq.answer}</p>
@@ -975,9 +969,9 @@ Please contact our sales team for pricing and confirmation.
                 team will confirm pricing, MOQ, lead time and shipping details.
               </p>
               <p className={styles.ctaContact}>
-                Email: <a href={`mailto:${WPC_PANEL_CONTACT.email}`}>{WPC_PANEL_CONTACT.email}</a>
+                Email: <a href={`mailto:${PVC_MARBLE_CONTACT.email}`}>{PVC_MARBLE_CONTACT.email}</a>
                 <br />
-                WhatsApp: {WPC_PANEL_CONTACT.whatsapp}
+                WhatsApp: {PVC_MARBLE_CONTACT.whatsapp}
               </p>
             </div>
 
@@ -1083,7 +1077,7 @@ Please contact our sales team for pricing and confirmation.
                         className={styles.formInput}
                         value={formState.productCode}
                         onChange={(e) => handleFormChange("productCode", e.target.value)}
-                        placeholder="e.g. WP-001, WPC"
+                        placeholder="e.g. PS-001, PS Wall Panel"
                       />
                     </div>
 

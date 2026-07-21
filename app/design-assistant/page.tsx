@@ -53,7 +53,7 @@ const commercial = [
     materials: [
       {
         label: "UV marble sheets for counter fronts",
-        href: "/products/uv-marble-sheets",
+        href: "/products/pvc-marble-sheet",
       },
       {
         label: "3D wall panels for feature walls",
@@ -135,8 +135,8 @@ const stylesGuide = [
       "Luxury interior with marble wall cladding, warm wood staircase and layered material surfaces",
     description:
       "Rich textures, marble accents, warm metallics. Layered surfaces create depth and quiet opulence.",
-    material: "UV Marble Sheets",
-    href: "/products/uv-marble-sheets",
+    material: "PVC Marble Sheet",
+    href: "/products/pvc-marble-sheet",
   },
   {
     name: "New Chinese",
