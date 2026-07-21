@@ -20,6 +20,7 @@ import { psWallFAQs } from "@/lib/ps-wall-data";
 import { wpcDoorFAQs } from "@/lib/wpc-door-data";
 import { spcFlooringFAQs } from "@/lib/spc-flooring-data";
 import { pvcMarbleFAQs } from "@/lib/pvc-marble-data";
+import { pvcPartitionFAQs } from "@/lib/pvc-partition-data";
 import ProductCard from "@/components/ProductCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import Schema, { buildFAQ } from "@/components/Schema";
@@ -35,6 +36,7 @@ import PSWallClient from "@/components/ps-wall/PSWallClient";
 import WPCDoorClient from "@/components/wpc-door/WPCDoorClient";
 import SPCFlooringClient from "@/components/spc-flooring/SPCFlooringClient";
 import PVCMarbleClient from "@/components/pvc-marble/PVCMarbleClient";
+import PVCPartitionClient from "@/components/pvc-partition/PVCPartitionClient";
 import styles from "./page.module.css";
 
 // 仅预渲染已知品类，未知 slug 返回 404（SSG 友好）
@@ -172,6 +174,17 @@ export async function generateMetadata({
       description:
         "Explore PVC marble sheets and UV coated boards for interior wall decoration, kitchen cabinets and bathroom applications. Waterproof, fireproof, high-gloss UV coated marble finish with customizable colors. Available in 1220*2440mm, 1220*2800mm, 1220*2900mm sizes, 2mm-5mm thickness. Browse product models, sizes, MOQ and quotation information from OneStopBuildly.",
       path: "/products/pvc-marble-sheet",
+      image: cat.image,
+    });
+  }
+
+  // PVC Partition Panels 专用 SEO
+  if (category === "pvc-partition-panels") {
+    return buildMetadata({
+      title: "PVC Partition Panels | OneStopBuildly",
+      description:
+        "Explore PVC partition panels for interior wall decoration and office divider applications. Waterproof, fireproof, moisture-proof with modern geometric patterns. Double laminate construction, easy installation for office, hotel and commercial interiors. Available in 400x26x2900mm size. Browse product models, sizes, MOQ and quotation information from OneStopBuildly.",
+      path: "/products/pvc-partition-panels",
       image: cat.image,
     });
   }
@@ -398,6 +411,25 @@ export default async function CategoryPage({
         </div>
         <PVCMarbleClient />
         <Schema type="FAQPage" data={buildFAQ(pvcMarbleFAQs)} />
+      </>
+    );
+  }
+
+  // PVC Partition Panels 使用增强型交互页面
+  if (category === "pvc-partition-panels") {
+    return (
+      <>
+        <div className="container">
+          <Breadcrumb
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Products", href: "/products" },
+              { label: "PVC Partition Panels", href: "/products/pvc-partition-panels" },
+            ]}
+          />
+        </div>
+        <PVCPartitionClient />
+        <Schema type="FAQPage" data={buildFAQ(pvcPartitionFAQs)} />
       </>
     );
   }

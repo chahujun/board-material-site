@@ -339,21 +339,36 @@ export const categories: ProductCategory[] = [
   {
     slug: "pvc-partition-panels",
     name: "PVC Partition Panels",
-    tagline: "Folding and sliding partition panels for flexible spaces.",
+    tagline: "Waterproof, fireproof PVC partition panels for interior office and commercial space division.",
     description:
-      "PVC partition panels for creating flexible room divisions in offices, restaurants and homes. Available in folding, sliding and fixed configurations with various decorative finishes.",
-    image: "/images/products/category-pvc-partition.jpg",
+      "PVC partition panels for creating flexible room divisions in offices, hotels, restaurants and homes. Waterproof, fireproof, moisture-proof with modern geometric patterns. Double laminate construction with easy installation for commercial interior applications. Available in 400x26x2900mm size with wood color and multi-color options. 5+ years warranty.",
+    image: "/images/products/pvc-partition-panel/PP-001.jpg",
     accentColor: "#5A5A6B",
     faqs: [
       {
-        question: "What types of PVC partition panels are available?",
+        question: "What material are PVC partition panels made of?",
         answer:
-          "We supply three main types: folding (accordion) partitions for rapid space division, sliding track-mounted panels for smooth operation, and fixed modular panels for semi-permanent divisions. All use a lightweight PVC frame with decorative panel infills.",
+          "PVC partition panels are made from 100% PVC (polyvinyl chloride) material. The panels are waterproof, fireproof, moisture-proof, anti-static, sound-absorbing and mould-proof. The double laminate construction provides additional strength and durability for commercial interior applications.",
       },
       {
-        question: "Can PVC partition panels provide acoustic insulation?",
+        question: "What sizes are available for PVC partition panels?",
         answer:
-          "Yes. Our acoustic partition panels achieve STC (Sound Transmission Class) ratings of 28-35 depending on panel thickness and infill. For office and conference room privacy, we recommend double-skin panels with acoustic insulation between skins.",
+          "Standard size is 400x26x2900mm (width x thickness x length). The panel length is 2.9 meters (2900mm) with a width of 400mm and thickness of 26mm. Custom sizes are available upon request. The 2900mm length is designed to span from floor to ceiling in standard commercial spaces.",
+      },
+      {
+        question: "Are PVC partition panels waterproof and fireproof?",
+        answer:
+          "Yes. PVC partition panels are 100% waterproof and fireproof. They are also moisture-proof, mould-proof, and anti-static. The fire retardant properties make them suitable for commercial applications requiring fire-rated materials. Panels meet interior wall decoration standards for offices, hotels and public buildings.",
+      },
+      {
+        question: "How are PVC partition panels installed?",
+        answer:
+          "PVC partition panels feature easy installation with a fast install double laminate system. The lightweight design allows for quick assembly without heavy tools. Panels connect using a tongue-and-groove or interlocking system. Onsite installation service is available. The brushed surface finish provides a modern decorative appearance.",
+      },
+      {
+        question: "What is the MOQ and packaging for PVC partition panels?",
+        answer:
+          "Standard MOQ is 500 square meters. Each panel is packaged individually with a package size of 290x50x50 cm and a gross weight of 20.0 kg per panel. Lead time is typically 15 days for orders up to 5000 square meters. Please contact our sales team for specific MOQ and packaging details.",
       },
     ],
   },
@@ -879,85 +894,6 @@ export const products: Product[] = [
     applications: ["Residential ceilings", "Commercial ceilings", "Wall cladding", "Budget project interiors"],
   },
 
-  // ===== PVC Partition Panels =====
-  {
-    id: "part-001",
-    slug: "folding-pvc-partition-panel",
-    name: "Folding PVC Partition Panel",
-    category: "pvc-partition-panels",
-    shortDescription: "Accordion folding PVC partition for rapid space division.",
-    description:
-      "A folding (accordion) PVC partition panel system for rapidly dividing large spaces into smaller rooms. The track-mounted folding panels stack compactly when open and deploy in seconds, popular for restaurants, offices and event spaces.",
-    specs: {
-      Material: "PVC frame + decorative infill",
-      PanelWidth: "100-120 mm per fold",
-      Height: "Up to 3.0 m",
-      Thickness: "40 mm",
-      Operation: "Top track, folding",
-      Finish: "Wood grain / solid color",
-    },
-    image: "/images/products/category-pvc-partition.jpg",
-    features: [
-      "Rapid accordion space division",
-      "Compact stacking when open",
-      "Top track smooth operation",
-      "Multiple decorative finishes",
-    ],
-    moq: "50 sqm",
-    applications: ["Restaurants", "Event spaces", "Offices", "Conference areas"],
-  },
-  {
-    id: "part-002",
-    slug: "sliding-pvc-partition-panel",
-    name: "Sliding PVC Partition Panel",
-    category: "pvc-partition-panels",
-    shortDescription: "Track-mounted sliding PVC partition for smooth operation.",
-    description:
-      "A sliding PVC partition panel system with overhead track for smooth, quiet operation. Individual panels slide and stack to one side, ideal for offices, hotel function rooms and home spaces needing flexible division without floor tracks.",
-    specs: {
-      Material: "PVC frame + decorative infill",
-      PanelWidth: "800-1000 mm",
-      Height: "Up to 3.2 m",
-      Thickness: "60 mm",
-      Operation: "Overhead track, sliding",
-      Finish: "Wood grain / fabric / solid",
-    },
-    image: "/images/products/category-pvc-partition.jpg",
-    features: [
-      "Smooth overhead track operation",
-      "No floor tracks for clean floors",
-      "Side-stacking panels",
-      "Acoustic infill option",
-    ],
-    moq: "60 sqm",
-    applications: ["Offices", "Hotel function rooms", "Home spaces", "Meeting areas"],
-  },
-  {
-    id: "part-003",
-    slug: "fixed-modular-pvc-partition",
-    name: "Fixed Modular PVC Partition Panel",
-    category: "pvc-partition-panels",
-    shortDescription: "Semi-permanent modular PVC partition for room division.",
-    description:
-      "A fixed modular PVC partition panel system for semi-permanent room division in offices, restaurants and homes. The modular panels install between floor and ceiling with adjustable height, offering a cost-effective alternative to stud walls.",
-    specs: {
-      Material: "PVC frame + decorative panel",
-      PanelWidth: "600-1200 mm",
-      Height: "Adjustable up to 3.0 m",
-      Thickness: "75 mm",
-      Configuration: "Fixed modular",
-      Finish: "Wood grain / solid / acoustic",
-    },
-    image: "/images/products/category-pvc-partition.jpg",
-    features: [
-      "Semi-permanent modular division",
-      "Adjustable floor-to-ceiling height",
-      "Cost-effective vs stud walls",
-      "Acoustic infill option available",
-    ],
-    moq: "40 sqm",
-    applications: ["Office divisions", "Restaurant booths", "Home room splits", "Retail spaces"],
-  },
 ];
 
 // ===== 数据查询工具函数 =====
