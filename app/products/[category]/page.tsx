@@ -17,6 +17,7 @@ import { threeDWallFAQs } from "@/lib/3d-wall-data";
 import { acousticWallFAQs } from "@/lib/acoustic-wall-data";
 import { woodVeneerFAQs } from "@/lib/wood-veneer-data";
 import { psWallFAQs } from "@/lib/ps-wall-data";
+import { wpcDoorFAQs } from "@/lib/wpc-door-data";
 import ProductCard from "@/components/ProductCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import Schema, { buildFAQ } from "@/components/Schema";
@@ -29,6 +30,7 @@ import ThreeDWallClient from "@/components/3d-wall/3DWallClient";
 import AcousticWallClient from "@/components/acoustic-wall/AcousticWallClient";
 import WoodVeneerClient from "@/components/wood-veneer/WoodVeneerClient";
 import PSWallClient from "@/components/ps-wall/PSWallClient";
+import WPCDoorClient from "@/components/wpc-door/WPCDoorClient";
 import styles from "./page.module.css";
 
 // 仅预渲染已知品类，未知 slug 返回 404（SSG 友好）
@@ -133,6 +135,17 @@ export async function generateMetadata({
       description:
         "Explore PS polystyrene wall panels for interior decoration. Fluted, 3D pattern and wood effect cladding panels. Waterproof, moisture-proof, industrial design style for villa, hotel, TV background and commercial spaces. Available in 2400x600mm, 10mm-12mm thickness from OneStopBuildly.",
       path: "/products/ps-wall-panels",
+      image: cat.image,
+    });
+  }
+
+  // WPC Door 专用 SEO
+  if (category === "wpc-door") {
+    return buildMetadata({
+      title: "WPC Door | OneStopBuildly",
+      description:
+        "Explore interior WPC doors, door frames and hidden doors for home, office, hotel and bedroom applications. Waterproof, fire-prevention PVC composite doors with wood grain finishes, customizable sizes and push-pull opening. Browse product models, sizes, MOQ and quotation information from OneStopBuildly.",
+      path: "/products/wpc-door",
       image: cat.image,
     });
   }
@@ -302,6 +315,25 @@ export default async function CategoryPage({
         </div>
         <PSWallClient />
         <Schema type="FAQPage" data={buildFAQ(psWallFAQs)} />
+      </>
+    );
+  }
+
+  // WPC Door 使用增强型交互页面
+  if (category === "wpc-door") {
+    return (
+      <>
+        <div className="container">
+          <Breadcrumb
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Products", href: "/products" },
+              { label: "WPC Door", href: "/products/wpc-door" },
+            ]}
+          />
+        </div>
+        <WPCDoorClient />
+        <Schema type="FAQPage" data={buildFAQ(wpcDoorFAQs)} />
       </>
     );
   }

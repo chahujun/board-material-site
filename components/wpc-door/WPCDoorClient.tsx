@@ -4,23 +4,23 @@ import { useState, useMemo, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  outdoorWPCProducts,
-  outdoorWPCSeries,
-  outdoorWPCFAQs,
+  wpcDoorProducts,
+  wpcDoorSeries,
+  wpcDoorFAQs,
   getProductsBySeries,
   getUniqueSizes,
   getUniqueSeries,
   getUniqueColors,
   getUniqueCodes,
-  OUTDOOR_WPC_CONTACT,
-  type OutdoorWPCProduct,
-} from "@/lib/outdoor-wpc-data";
+  WPC_DOOR_CONTACT,
+  type WPCDoorProduct,
+} from "@/lib/wpc-door-data";
 import { categories } from "@/lib/products";
-import styles from "./outdoor-wpc.module.css";
+import styles from "./wpc-door.module.css";
 
 // ===== Types =====
 interface QuoteItem {
-  product: OutdoorWPCProduct;
+  product: WPCDoorProduct;
   quantity: number;
 }
 
@@ -84,6 +84,16 @@ function SmartImage({
   showZoomHint?: boolean;
 }) {
   const [status, setStatus] = useState<"loading" | "loaded" | "error">("loading");
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    if (imgRef.current) {
+      const img = imgRef.current;
+      if (img.complete && img.naturalWidth > 0) {
+        setStatus("loaded");
+      }
+    }
+  }, [src]);
 
   return (
     <div
@@ -101,6 +111,7 @@ function SmartImage({
         </div>
       )}
       <Image
+        ref={imgRef}
         src={src}
         alt={alt}
         fill={fill}
@@ -226,10 +237,7 @@ function Lightbox({
 }
 
 // ===== Build gallery images for a product =====
-function buildGallery(product: OutdoorWPCProduct): GalleryImage[] {
-  // Outdoor WPC products ship a single hero image per SKU; the gallery
-  // structure is retained so the detail drawer/lightbox stay consistent
-  // with the indoor WPC panel page.
+function buildGallery(product: WPCDoorProduct): GalleryImage[] {
   const images: GalleryImage[] = [
     { url: product.image, label: "Product View", type: "main" },
   ];
@@ -237,7 +245,7 @@ function buildGallery(product: OutdoorWPCProduct): GalleryImage[] {
 }
 
 // ===== Main Component =====
-export default function OutdoorWPCClient() {
+export default function WPCDoorClient() {
   // Filter state
   const [searchQuery, setSearchQuery] = useState("");
   const [filterSeries, setFilterSeries] = useState("");
@@ -245,7 +253,7 @@ export default function OutdoorWPCClient() {
   const [filterColor, setFilterColor] = useState("");
 
   // Drawer state
-  const [selectedProduct, setSelectedProduct] = useState<OutdoorWPCProduct | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<WPCDoorProduct | null>(null);
   const [detailOpen, setDetailOpen] = useState(false);
   const [quoteOpen, setQuoteOpen] = useState(false);
   const [activeImageTab, setActiveImageTab] = useState(0);
@@ -265,7 +273,7 @@ export default function OutdoorWPCClient() {
   // ===== Load quote list from localStorage =====
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("outdoor-wpc-quote-list");
+      const saved = localStorage.getItem("wpc-door-quote-list");
       if (saved) {
         setQuoteList(JSON.parse(saved));
       }
@@ -279,7 +287,7 @@ export default function OutdoorWPCClient() {
   useEffect(() => {
     if (hydrated) {
       try {
-        localStorage.setItem("outdoor-wpc-quote-list", JSON.stringify(quoteList));
+        localStorage.setItem("wpc-door-quote-list", JSON.stringify(quoteList));
       } catch {
         // ignore
       }
@@ -294,7 +302,7 @@ export default function OutdoorWPCClient() {
 
   // ===== Filtered products =====
   const filteredProducts = useMemo(() => {
-    return outdoorWPCProducts.filter((p) => {
+    return wpcDoorProducts.filter((p) => {
       const q = searchQuery.toLowerCase().trim();
       if (q && !p.name.toLowerCase().includes(q) && !p.code.toLowerCase().includes(q) && !p.series.toLowerCase().includes(q)) {
         return false;
@@ -316,7 +324,7 @@ export default function OutdoorWPCClient() {
   };
 
   // ===== Quote list handlers =====
-  const handleAddToQuote = useCallback((product: OutdoorWPCProduct, quantity = 1) => {
+  const handleAddToQuote = useCallback((product: WPCDoorProduct, quantity = 1) => {
     setQuoteList((prev) => {
       const existing = prev.find((q) => q.product.code === product.code);
       if (existing) {
@@ -344,7 +352,7 @@ export default function OutdoorWPCClient() {
   const isInQuoteList = (code: string) => quoteList.some((q) => q.product.code === code);
 
   // ===== Detail drawer handlers =====
-  const handleViewDetails = (product: OutdoorWPCProduct) => {
+  const handleViewDetails = (product: WPCDoorProduct) => {
     setSelectedProduct(product);
     setActiveImageTab(0);
     setDetailOpen(true);
@@ -420,7 +428,7 @@ export default function OutdoorWPCClient() {
   };
 
   // ===== Download product info =====
-  const handleDownloadInfo = (product: OutdoorWPCProduct) => {
+  const handleDownloadInfo = (product: WPCDoorProduct) => {
     const info = `
 Product Information
 ===================
@@ -442,9 +450,9 @@ Lead Time: ${product.leadTime}
 Remarks: ${product.remarks || "None"}
 
 Contact:
-${OUTDOOR_WPC_CONTACT.company}
-Email: ${OUTDOOR_WPC_CONTACT.email}
-Phone/WhatsApp: ${OUTDOOR_WPC_CONTACT.phone}
+OneStopBuildly
+Email: ${WPC_DOOR_CONTACT.email}
+WhatsApp: ${WPC_DOOR_CONTACT.whatsapp}
 
 Please contact our sales team for pricing and confirmation.
 `.trim();
@@ -462,7 +470,7 @@ Please contact our sales team for pricing and confirmation.
 
   // ===== Related categories =====
   const relatedCategories = categories.filter((c) =>
-    ["indoor-wpc-wall-panels", "wpc-door", "pu-stone-panels", "wood-veneer-panels"].includes(c.slug),
+    ["indoor-wpc-wall-panels", "ps-wall-panels", "wood-veneer-panels"].includes(c.slug),
   );
 
   // ===== Gallery for selected product =====
@@ -476,27 +484,26 @@ Please contact our sales team for pricing and confirmation.
         <div className="container">
           <div className={styles.introGrid}>
             <div className={styles.introText}>
-              <span className="eyebrow">Co-extruded WPC cladding for exterior facades and outdoor walls</span>
-              <h1 className={styles.introTitle}>Outdoor WPC Wall Cladding</h1>
+              <span className="eyebrow">WPC doors for durable interior and exterior entry solutions</span>
+              <h1 className={styles.introTitle}>WPC Door</h1>
               <p className={styles.introDesc}>
-                Co-extruded WPC wall cladding engineered for exterior facades and building
-                envelopes. A UV-resistant cap layer, weatherproof hollow-core construction
-                and wood-grain finishes deliver durable outdoor cladding that resists fading,
-                moisture and temperature extremes across 15 profiles in 3 series.
+                WPC doors engineered with wood-plastic composite for superior strength, moisture
+                resistance and thermal insulation. Stylish, low-maintenance doors for residential
+                and commercial projects.
               </p>
               <div className={styles.introTags}>
-                <span className={styles.tag}>Weather Resistant</span>
-                <span className={styles.tag}>UV Protection</span>
-                <span className={styles.tag}>Co-extrusion Technology</span>
-                <span className={styles.tag}>Easy Installation</span>
                 <span className={styles.tag}>Waterproof</span>
+                <span className={styles.tag}>Termite-Resistant</span>
+                <span className={styles.tag}>Sound-Absorbing</span>
+                <span className={styles.tag}>Low Maintenance</span>
+                <span className={styles.tag}>Eco-Friendly</span>
               </div>
             </div>
             <div className={styles.introCollage}>
               <div className={styles.introCollageMain}>
                 <Image
-                  src="/images/products/outdoor-wpc/OW-001.jpg"
-                  alt="Warm teak golden-brown outdoor WPC wall cladding panel display"
+                  src="/images/products/wpc-door/WD-001.jpg"
+                  alt="WPC door with modern wood-grain finish"
                   fill
                   sizes="(max-width: 960px) 100vw, 30vw"
                   priority
@@ -506,8 +513,8 @@ Please contact our sales team for pricing and confirmation.
               <div className={styles.introCollageSide}>
                 <div className={styles.introCollageSmall}>
                   <Image
-                    src="/images/products/outdoor-wpc/OW-003.jpg"
-                    alt="Fluted outdoor WPC cladding shown in five color variants"
+                    src="/images/products/wpc-door/WD-006.jpg"
+                    alt="WPC interior door with elegant panel design"
                     fill
                     sizes="(max-width: 960px) 100vw, 15vw"
                     className={styles.collageImg}
@@ -515,8 +522,8 @@ Please contact our sales team for pricing and confirmation.
                 </div>
                 <div className={styles.introCollageSmall}>
                   <Image
-                    src="/images/products/outdoor-wpc/OW-015.jpg"
-                    alt="Charcoal gray co-extrusion WPC cladding on modern building exterior"
+                    src="/images/products/wpc-door/WD-008.jpg"
+                    alt="WPC composite door with contemporary styling"
                     fill
                     sizes="(max-width: 960px) 100vw, 15vw"
                     className={styles.collageImg}
@@ -547,7 +554,7 @@ Please contact our sales team for pricing and confirmation.
             aria-label="Filter by series"
           >
             <option value="">All Series</option>
-            {outdoorWPCSeries.map((s) => (
+            {wpcDoorSeries.map((s) => (
               <option key={s.slug} value={s.slug}>
                 {s.name}
               </option>
@@ -925,7 +932,7 @@ Please contact our sales team for pricing and confirmation.
           <h2>Frequently asked questions</h2>
         </div>
         <div className={styles.faqList}>
-          {outdoorWPCFAQs.map((faq) => (
+          {wpcDoorFAQs.map((faq) => (
             <div key={faq.question} className={styles.faqItem}>
               <h3 className={styles.faqQuestion}>{faq.question}</h3>
               <p className={styles.faqAnswer}>{faq.answer}</p>
@@ -958,14 +965,13 @@ Please contact our sales team for pricing and confirmation.
               <span className={styles.ctaEyebrow}>Start an inquiry</span>
               <h2 className={styles.ctaTitle}>Get a Quote for Your Project</h2>
               <p className={styles.ctaDesc}>
-                Tell us about your exterior cladding requirements, quantity and destination.
-                Our team will confirm pricing, MOQ, lead time and shipping details for your
-                outdoor WPC wall cladding project.
+                Tell us about your product requirements, quantity and destination. Our
+                team will confirm pricing, MOQ, lead time and shipping details.
               </p>
               <p className={styles.ctaContact}>
-                Email: <a href={`mailto:${OUTDOOR_WPC_CONTACT.email}`}>{OUTDOOR_WPC_CONTACT.email}</a>
+                Email: <a href={`mailto:${WPC_DOOR_CONTACT.email}`}>{WPC_DOOR_CONTACT.email}</a>
                 <br />
-                WhatsApp: {OUTDOOR_WPC_CONTACT.whatsapp}
+                WhatsApp: {WPC_DOOR_CONTACT.whatsapp}
               </p>
             </div>
 
@@ -1071,7 +1077,7 @@ Please contact our sales team for pricing and confirmation.
                         className={styles.formInput}
                         value={formState.productCode}
                         onChange={(e) => handleFormChange("productCode", e.target.value)}
-                        placeholder="e.g. OW-001, Outdoor WPC"
+                        placeholder="e.g. WD-001, WPC Door"
                       />
                     </div>
 
@@ -1099,7 +1105,7 @@ Please contact our sales team for pricing and confirmation.
                         className={styles.formInput}
                         value={formState.color}
                         onChange={(e) => handleFormChange("color", e.target.value)}
-                        placeholder="e.g. Teak, Charcoal, Custom"
+                        placeholder="e.g. Wood Grain, White, Custom"
                       />
                     </div>
 
@@ -1126,7 +1132,7 @@ Please contact our sales team for pricing and confirmation.
                         value={formState.message}
                         onChange={(e) => handleFormChange("message", e.target.value)}
                         rows={4}
-                        placeholder="Tell us about your exterior cladding project, facade application or any special requirements..."
+                        placeholder="Tell us about your project, application or any special requirements..."
                       />
                     </div>
 

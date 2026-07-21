@@ -127,33 +127,33 @@ export const categories: ProductCategory[] = [
     ],
   },
   {
-    slug: "wpc-decking",
-    name: "WPC Decking",
-    tagline: "Wood-plastic composite decking for outdoor floors.",
+    slug: "wpc-door",
+    name: "WPC Door",
+    tagline: "Waterproof WPC composite doors for interior and commercial spaces.",
     description:
-      "3D-embossed WPC decking planks engineered for outdoor garden decks, swimming pool surrounds, balconies and terraces. Co-extrusion and 3D embossing technologies deliver realistic wood texture with superior anti-slip and weather resistance.",
-    image: "/images/products/category-wpc-decking.jpg",
+      "Interior WPC doors, door frames and hidden doors engineered for waterproof, fire-prevention performance in home, office, hotel and bedroom applications. PVC composite material with wood grain finishes, customizable sizes and push-pull opening for residential and commercial projects.",
+    image: "/images/products/wpc-door/WD-001.jpg",
     accentColor: "#8B6F47",
     faqs: [
       {
-        question: "What is the standard decking plank size and profile?",
+        question: "What materials are used in WPC doors?",
         answer:
-          "Standard size is 140 x 25 mm, available in hollow and solid profiles. Hollow planks are lighter and more economical; solid planks offer higher load capacity for commercial decks. Lengths of 2.9 m and 3.0 m are standard.",
+          "WPC doors use a polymer-based PVC composite material with a 2mm/3.5mm wood-plastic skin. The composite core delivers waterproof, fire-prevention performance while the wood grain finish provides a natural timber appearance.",
       },
       {
-        question: "Does WPC decking get hot in direct sunlight?",
+        question: "Are WPC doors customizable in size?",
         answer:
-          "WPC decking surfaces can reach 50-60°C in direct summer sun, similar to natural wood. Lighter colors absorb less heat. For pool surrounds and barefoot areas, we recommend lighter decors or our grooved anti-slip profile.",
+          "Yes. Standard size is 2000x800mm, but all WPC doors, frames and hidden doors can be customized to project requirements. Contact our sales team with your dimensional specifications for tailored quotes.",
       },
       {
-        question: "Can I buy a complete decking system with accessories?",
+        question: "Where can WPC doors be applied?",
         answer:
-          "Yes. We supply complete systems including WPC joists, stainless steel clips, starter clips, fascia boards and edge trims. A full system ensures warranty coverage and consistent performance across the deck.",
+          "WPC doors are suitable for home offices, bedrooms, hotels, living rooms and commercial interiors. The waterproof and fire-prevention properties make them ideal for humid environments and high-traffic commercial spaces.",
       },
       {
-        question: "How does WPC decking compare to natural timber decking?",
+        question: "What is the difference between WPC doors and solid wood doors?",
         answer:
-          "WPC decking requires no staining or sealing, resists rot and termites, and lasts 15-25 years with minimal maintenance. Natural timber offers authentic grain and feel but requires annual maintenance. For commercial projects, WPC is the lower lifecycle-cost choice.",
+          "WPC doors are waterproof, termite-proof and require no maintenance, while solid wood doors need regular sealing and are susceptible to moisture damage. WPC composite doors offer a longer service life and lower lifecycle cost for commercial projects.",
       },
     ],
   },
@@ -914,117 +914,6 @@ export const products: Product[] = [
     ],
     moq: "100 pieces",
     applications: ["Wholesale distribution", "Large-scale projects", "Commercial installations", "Hotel chains"],
-  },
-
-  // ===== WPC Decking =====
-  {
-    id: "wpc-decking-001",
-    slug: "outdoor-composite-wpc-decking",
-    name: "Outdoor Composite WPC Decking",
-    category: "wpc-decking",
-    shortDescription: "Outdoor composite waterproof WPC composite decking.",
-    description:
-      "An outdoor composite WPC decking plank offering waterproof performance at a competitive price point. The wood-plastic composite resists rot, termites and moisture, making it suitable for garden decks, balconies and patios. The low 2-meter MOQ makes it ideal for sample orders and small residential projects.",
-    specs: {
-      Material: "WPC (wood plastic composite)",
-      Size: "140 x 25 mm",
-      Length: "2.9 m / 3.0 m",
-      Profile: "Hollow",
-      Finish: "Wood grain embossed",
-      Waterproof: "Yes",
-      AntiSlip: "R10",
-    },
-    image: "/images/products/wpc-decking-1.jpg",
-    features: [
-      "Waterproof composite decking",
-      "Rot and termite resistant",
-      "Low 2-meter MOQ for samples",
-      "Competitive price point",
-    ],
-    moq: "2 meters",
-    applications: ["Garden decks", "Balconies", "Patios", "Residential outdoor flooring"],
-  },
-  {
-    id: "wpc-decking-002",
-    slug: "3d-embossed-wpc-decking",
-    name: "3D Embossed WPC Decking",
-    category: "wpc-decking",
-    shortDescription: "WPC decking with 3D embossed wood grain for outdoor wooden plastic composite flooring.",
-    description:
-      "A WPC decking plank with 3D embossed wood grain texture that replicates the authentic look and feel of natural timber. The deep embossing provides enhanced grip and anti-slip performance, while the wood-plastic composite core resists weathering and fading. Designed for outdoor wooden plastic composite flooring in residential and light commercial settings.",
-    specs: {
-      Material: "WPC (wood plastic composite)",
-      Size: "140 x 25 mm",
-      Length: "2.9 m",
-      Profile: "Hollow / solid",
-      Finish: "3D embossed wood grain",
-      AntiSlip: "R10",
-      Waterproof: "Yes",
-    },
-    image: "/images/products/wpc-decking-2.jpg",
-    features: [
-      "3D embossed authentic wood texture",
-      "Enhanced anti-slip grip",
-      "Weather and fade resistant",
-      "Realistic timber look and feel",
-    ],
-    moq: "200 meters",
-    applications: ["Outdoor wooden flooring", "Garden decks", "Pool surrounds", "Terrace flooring"],
-  },
-  {
-    id: "wpc-decking-003",
-    slug: "anti-slip-3d-wpc-deck-tile",
-    name: "Anti-Slip 3D WPC Deck Tile",
-    category: "wpc-decking",
-    shortDescription: "WPC outdoor flooring plastic wood composite decorative exterior fluted louver deck tile.",
-    description:
-      "An anti-slip 3D WPC deck tile with a fluted louver profile designed for decorative exterior flooring. The tile format enables rapid installation over existing surfaces, while the 3D embossed surface provides reliable slip resistance for pool surrounds and barefoot areas. A versatile solution for outdoor decorative flooring.",
-    specs: {
-      Material: "WPC (plastic wood composite)",
-      Size: "140 x 25 mm",
-      Length: "2.9 m",
-      Profile: "Fluted louver tile",
-      Finish: "3D embossed",
-      AntiSlip: "R11",
-      Waterproof: "Yes",
-    },
-    image: "/images/products/wpc-decking-3.jpg",
-    features: [
-      "Anti-slip fluted louver profile",
-      "Tile format for rapid install",
-      "3D embossed surface",
-      "Barefoot-area safe",
-    ],
-    moq: "300 meters",
-    applications: ["Pool surrounds", "Decorative exterior flooring", "Balcony tiles", "Outdoor patios"],
-  },
-  {
-    id: "wpc-decking-004",
-    slug: "co-extrusion-3d-wpc-decking",
-    name: "Co-extrusion 3D Embossed WPC Decking",
-    category: "wpc-decking",
-    shortDescription: "Waterproof fireproof anti-slip co-extrusion 3D embossed WPC decking for outdoor solid deck.",
-    description:
-      "A premium co-extrusion 3D embossed WPC decking plank engineered for outdoor solid deck applications requiring top-tier performance. The co-extruded cap delivers waterproof, fireproof and anti-slip properties, while the 3D embossing provides authentic wood texture. The solid profile supports high load capacity for commercial deck projects. Priced per square meter for large-scale sourcing.",
-    specs: {
-      Material: "WPC co-extrusion solid",
-      Size: "140 x 25 mm",
-      Length: "2.9 m / 3.0 m",
-      Profile: "Solid",
-      Finish: "3D embossed co-extruded",
-      FireRating: "Class B",
-      AntiSlip: "R11",
-      Waterproof: "Yes",
-    },
-    image: "/images/products/wpc-decking-4.jpg",
-    features: [
-      "Co-extrusion waterproof and fireproof cap",
-      "Solid profile for high load",
-      "3D embossed wood texture",
-      "R11 anti-slip rating",
-    ],
-    moq: "500 meters",
-    applications: ["Commercial solid decks", "Hotel pool decks", "Public outdoor spaces", "High-traffic decking"],
   },
 
   // ===== SPC Flooring =====

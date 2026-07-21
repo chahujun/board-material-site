@@ -172,9 +172,9 @@ function generateRecommendations(
         bestFor: "Dining feature walls, entrance",
       },
       {
-        category: "WPC Decking", name: "WPC Decking", href: "/products/wpc-decking",
-        reason: "Weatherproof outdoor seating — no rot, no splinter, low maintenance for terrace dining",
-        icon: "🪵",
+        category: "WPC Door", name: "WPC Door", href: "/products/wpc-door",
+        reason: "Waterproof interior doors — fire prevention, durable composite for bedroom and hotel rooms",
+        icon: "🚪",
         specs: [
           { label: "Warranty", value: "10-15 years" },
           { label: "Slip Rating", value: "R11" },
@@ -387,7 +387,7 @@ function generateRecommendations(
     dining: ["3d-wall-panels", "uv-marble-sheets"],
     counter: ["uv-marble-sheets"],
     kitchen: ["pvc-ceiling-panels"],
-    outdoor: ["wpc-decking"],
+    outdoor: ["outdoor-wpc-cladding"],
     meeting: ["acoustic-wall-panels", "wood-veneer-panels"],
     workspace: ["spc-flooring"],
     executive: ["wood-veneer-panels"],
@@ -398,7 +398,7 @@ function generateRecommendations(
     livingroom: ["indoor-wpc-wall-panels", "wood-veneer-panels"],
     bedroom: ["wood-veneer-panels"],
     bathroom: ["pvc-ceiling-panels"],
-    balcony: ["wpc-decking", "outdoor-wpc-cladding"],
+    balcony: ["outdoor-wpc-cladding"],
     classroom: ["acoustic-wall-panels"],
     hall: ["acoustic-wall-panels"],
   };
@@ -450,7 +450,7 @@ const materialPrices: MaterialPrice[] = [
   { category: "3D Wall Panels", name: "3D Wall Panels", href: "/products/3d-wall-panels", unit: "m²", prices: [10, 18, 30], wasteFactor: 1.05 },
   { category: "Acoustic Wall Panels", name: "Acoustic Wall Panels", href: "/products/acoustic-wall-panels", unit: "m²", prices: [12, 20, 35], wasteFactor: 1.05 },
   { category: "Wood Veneer Panels", name: "Wood Veneer Panels", href: "/products/wood-veneer-panels", unit: "m²", prices: [15, 25, 45], wasteFactor: 1.05 },
-  { category: "WPC Decking", name: "WPC Decking", href: "/products/wpc-decking", unit: "m²", prices: [14, 22, 35], wasteFactor: 1.07 },
+  { category: "WPC Door", name: "WPC Door", href: "/products/wpc-door", unit: "pcs", prices: [40, 70, 120], wasteFactor: 1.0 },
   { category: "PVC Ceiling Panels", name: "PVC Ceiling Panels", href: "/products/pvc-ceiling-panels", unit: "m²", prices: [5, 8, 14], wasteFactor: 1.05 },
   { category: "PVC Partition Panels", name: "PVC Partition Panels", href: "/products/pvc-partition-panels", unit: "m²", prices: [6, 10, 16], wasteFactor: 1.05 },
   { category: "PS Wall Panels", name: "PS Wall Panels", href: "/products/ps-wall-panels", unit: "m²", prices: [4, 7, 12], wasteFactor: 1.05 },
@@ -553,7 +553,7 @@ const presetPalettes: ColorPalette[] = [
     psychology: "Fresh and expansive — evokes openness, tranquility and natural light.",
     materials: [
       { label: "Outdoor WPC Cladding", href: "/products/outdoor-wpc-cladding" },
-      { label: "WPC Decking", href: "/products/wpc-decking" },
+      { label: "WPC Door", href: "/products/wpc-door" },
     ],
   },
 ];

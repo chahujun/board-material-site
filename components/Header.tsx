@@ -47,7 +47,7 @@ const navItems: NavItem[] = [
         label: "Flooring & Decking",
         href: "/products",
         children: [
-          { label: "WPC Decking", href: "/products/wpc-decking", desc: "Wood-plastic composite outdoor decking" },
+          { label: "WPC Door", href: "/products/wpc-door", desc: "Waterproof WPC composite interior doors" },
           { label: "SPC Flooring", href: "/products/spc-flooring", desc: "Stone plastic composite rigid flooring" },
         ],
       },

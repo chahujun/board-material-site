@@ -60,8 +60,8 @@ const commercial = [
         href: "/products/3d-wall-panels",
       },
       {
-        label: "WPC decking for outdoor seating",
-        href: "/products/wpc-decking",
+        label: "WPC doors for interior rooms",
+        href: "/products/wpc-door",
       },
       {
         label: "PVC ceiling panels for kitchen areas",
