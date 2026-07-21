@@ -16,6 +16,7 @@ import { outdoorWPCFAQs } from "@/lib/outdoor-wpc-data";
 import { threeDWallFAQs } from "@/lib/3d-wall-data";
 import { acousticWallFAQs } from "@/lib/acoustic-wall-data";
 import { woodVeneerFAQs } from "@/lib/wood-veneer-data";
+import { psWallFAQs } from "@/lib/ps-wall-data";
 import ProductCard from "@/components/ProductCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import Schema, { buildFAQ } from "@/components/Schema";
@@ -27,6 +28,7 @@ import OutdoorWPCClient from "@/components/outdoor-wpc/OutdoorWPCClient";
 import ThreeDWallClient from "@/components/3d-wall/3DWallClient";
 import AcousticWallClient from "@/components/acoustic-wall/AcousticWallClient";
 import WoodVeneerClient from "@/components/wood-veneer/WoodVeneerClient";
+import PSWallClient from "@/components/ps-wall/PSWallClient";
 import styles from "./page.module.css";
 
 // 仅预渲染已知品类，未知 slug 返回 404（SSG 友好）
@@ -120,6 +122,17 @@ export async function generateMetadata({
       description:
         "Explore bamboo fiber wood veneer panels, melamine MDF boards and decorative WPC veneer panels. Waterproof, fancy wood grain finishes for furniture, interior decoration and feature walls. Available in 3mm-25mm thicknesses from OneStopBuildly.",
       path: "/products/wood-veneer-panels",
+      image: cat.image,
+    });
+  }
+
+  // PS Wall Panels 专用 SEO
+  if (category === "ps-wall-panels") {
+    return buildMetadata({
+      title: "PS Wall Panels | OneStopBuildly",
+      description:
+        "Explore PS polystyrene wall panels for interior decoration. Fluted, 3D pattern and wood effect cladding panels. Waterproof, moisture-proof, industrial design style for villa, hotel, TV background and commercial spaces. Available in 2400x600mm, 10mm-12mm thickness from OneStopBuildly.",
+      path: "/products/ps-wall-panels",
       image: cat.image,
     });
   }
@@ -270,6 +283,25 @@ export default async function CategoryPage({
         </div>
         <WoodVeneerClient />
         <Schema type="FAQPage" data={buildFAQ(woodVeneerFAQs)} />
+      </>
+    );
+  }
+
+  // PS Wall Panels 使用增强型交互页面
+  if (category === "ps-wall-panels") {
+    return (
+      <>
+        <div className="container">
+          <Breadcrumb
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Products", href: "/products" },
+              { label: "PS Wall Panels", href: "/products/ps-wall-panels" },
+            ]}
+          />
+        </div>
+        <PSWallClient />
+        <Schema type="FAQPage" data={buildFAQ(psWallFAQs)} />
       </>
     );
   }
