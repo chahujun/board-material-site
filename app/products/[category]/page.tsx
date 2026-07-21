@@ -183,7 +183,7 @@ export async function generateMetadata({
     return buildMetadata({
       title: "PVC Partition Panels | OneStopBuildly",
       description:
-        "Explore PVC partition panels for interior wall decoration and office divider applications. Waterproof, fireproof, moisture-proof with modern geometric patterns. Double laminate construction, easy installation for office, hotel and commercial interiors. Available in 400x26x2900mm size. Browse product models, sizes, MOQ and quotation information from OneStopBuildly.",
+        "Explore PVC partition panels for interior wall decoration and office divider applications. Waterproof, fireproof, moisture-proof with wood grain and marble veining finishes. Hollow core honeycomb construction, interlock system, easy installation for office, hotel and commercial interiors. Available in 400x26x2900mm size. Browse product models, sizes, MOQ and quotation information from OneStopBuildly.",
       path: "/products/pvc-partition-panels",
       image: cat.image,
     });

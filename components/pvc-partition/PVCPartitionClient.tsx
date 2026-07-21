@@ -487,7 +487,7 @@ Please contact our sales team for pricing and confirmation.
               <span className="eyebrow">PVC partition panels for modern interior space division</span>
               <h1 className={styles.introTitle}>PVC Partition Panels</h1>
               <p className={styles.introDesc}>
-                PVC partition panels for creating flexible room divisions in offices, restaurants and homes. Waterproof, fireproof, moisture-proof with modern geometric patterns for interior wall decoration.
+                PVC partition panels for creating flexible room divisions in offices, restaurants and homes. Waterproof, fireproof, moisture-proof with wood grain and marble veining finishes for interior wall decoration.
               </p>
               <div className={styles.introTags}>
                 <span className={styles.tag}>Waterproof</span>
