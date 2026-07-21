@@ -502,7 +502,7 @@ Please contact our sales team for pricing and confirmation.
             <div className={styles.introCollage}>
               <div className={styles.introCollageMain}>
                 <Image
-                  src="/images/products/pvc-marble/PM-001.jpg"
+                  src="/images/products/pvc-marble-sheet/PM-001.jpg"
                   alt="PVC marble sheet with natural veining"
                   fill
                   sizes="(max-width: 960px) 100vw, 30vw"
@@ -513,7 +513,7 @@ Please contact our sales team for pricing and confirmation.
               <div className={styles.introCollageSide}>
                 <div className={styles.introCollageSmall}>
                   <Image
-                    src="/images/products/pvc-marble/PM-004.jpg"
+                    src="/images/products/pvc-marble-sheet/PM-004.jpg"
                     alt="PVC marble panel surface detail"
                     fill
                     sizes="(max-width: 960px) 100vw, 15vw"
@@ -522,7 +522,7 @@ Please contact our sales team for pricing and confirmation.
                 </div>
                 <div className={styles.introCollageSmall}>
                   <Image
-                    src="/images/products/pvc-marble/PM-012.jpg"
+                    src="/images/products/pvc-marble-sheet/PM-012.jpg"
                     alt="Decorative PVC marble sheet texture"
                     fill
                     sizes="(max-width: 960px) 100vw, 15vw"
