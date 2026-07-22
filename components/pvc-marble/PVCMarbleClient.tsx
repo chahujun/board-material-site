@@ -419,9 +419,21 @@ export default function PVCMarbleClient() {
     }
     setFormStatus("loading");
     try {
-      await new Promise((r) => setTimeout(r, 1500));
-      setFormStatus("success");
-      setFormState(initialForm);
+      const res = await fetch("/api/inquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...formState,
+          category: "pvc-marble-sheets",
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setFormStatus("success");
+        setFormState(initialForm);
+      } else {
+        setFormStatus("error");
+      }
     } catch {
       setFormStatus("error");
     }
