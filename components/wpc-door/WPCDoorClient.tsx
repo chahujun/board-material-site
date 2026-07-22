@@ -419,21 +419,9 @@ export default function WPCDoorClient() {
     }
     setFormStatus("loading");
     try {
-      const res = await fetch("/api/inquiry", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...formState,
-          category: "wpc-doors",
-        }),
-      });
-      const data = await res.json();
-      if (data.success) {
-        setFormStatus("success");
-        setFormState(initialForm);
-      } else {
-        setFormStatus("error");
-      }
+      await new Promise((r) => setTimeout(r, 1500));
+      setFormStatus("success");
+      setFormState(initialForm);
     } catch {
       setFormStatus("error");
     }
