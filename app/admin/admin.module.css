@@ -1,9 +1,0 @@
-.adminRoot {
-  min-height: 100vh;
-  background: #0f1115;
-  color: #e8eaed;
-}
-
-.adminRoot * {
-  box-sizing: border-box;
-}
