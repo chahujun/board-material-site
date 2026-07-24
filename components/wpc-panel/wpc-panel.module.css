@@ -315,6 +315,7 @@
   font-size: var(--fs-xs);
   color: var(--color-text-secondary);
   line-height: var(--lh-normal);
+  overflow-wrap: anywhere;
 }
 
 .cardSpecLabel {

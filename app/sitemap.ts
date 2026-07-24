@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { categories } from "@/lib/products";
 import { blogPosts } from "@/lib/blog";
 import { siteConfig } from "@/lib/seo";
+import { wpcPanelProducts } from "@/lib/wpc-panel-data";
 
 export const dynamic = "force-static";
 
@@ -33,5 +34,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...categoryPages, ...blogPages];
+  const indoorWPCProductPages: MetadataRoute.Sitemap = wpcPanelProducts.map((product) => ({
+    url: `${base}/products/indoor-wpc-wall-panels/${product.slug}`,
+    lastModified: new Date(product.verifiedAt),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...categoryPages, ...indoorWPCProductPages, ...blogPages];
 }

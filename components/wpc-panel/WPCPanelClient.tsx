@@ -61,6 +61,8 @@ const initialForm: FormState = {
   message: "",
 };
 
+const QUOTE_STORAGE_KEY = "wpc-wall-panel-quote-list-v2";
+
 // ===== Smart Image Component with Loading/Error States =====
 function SmartImage({
   src,
@@ -273,13 +275,13 @@ export default function WPCPanelClient() {
 
   // Form state
   const [formState, setFormState] = useState<FormState>(initialForm);
-  const [formStatus, setFormStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [formStatus, setFormStatus] = useState<"idle" | "success" | "error">("idle");
   const [formErrors, setFormErrors] = useState<Record<string, string>>({});
 
   // ===== Load quote list from localStorage =====
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("wpc-wall-panel-quote-list");
+      const saved = localStorage.getItem(QUOTE_STORAGE_KEY);
       if (saved) {
         setQuoteList(JSON.parse(saved));
       }
@@ -293,7 +295,7 @@ export default function WPCPanelClient() {
   useEffect(() => {
     if (hydrated) {
       try {
-        localStorage.setItem("wpc-wall-panel-quote-list", JSON.stringify(quoteList));
+        localStorage.setItem(QUOTE_STORAGE_KEY, JSON.stringify(quoteList));
       } catch {
         // ignore
       }
@@ -417,20 +419,27 @@ export default function WPCPanelClient() {
     return Object.keys(errors).length === 0;
   };
 
-  const handleFormSubmit = async (e: React.FormEvent) => {
+  const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!validateForm()) {
       setFormStatus("error");
       return;
     }
-    setFormStatus("loading");
-    try {
-      await new Promise((r) => setTimeout(r, 1500));
-      setFormStatus("success");
-      setFormState(initialForm);
-    } catch {
-      setFormStatus("error");
-    }
+    const subject = `Indoor WPC Wall Panel Inquiry - ${formState.productCode || "Product selection needed"}`;
+    const body = [
+      `Name: ${formState.fullName}`,
+      `Company: ${formState.company || "Not provided"}`,
+      `Email: ${formState.email}`,
+      `Phone / WhatsApp: ${formState.phone || "Not provided"}`,
+      `Destination: ${formState.country}`,
+      `Product code: ${formState.productCode || "Please advise"}`,
+      `Quantity: ${formState.quantity || "Please advise"}`,
+      `Color: ${formState.color || "Please advise"}`,
+      `Target delivery date: ${formState.deliveryDate || "Not provided"}`,
+      `Requirements: ${formState.message || "Please send current specifications, price and lead time."}`,
+    ].join("\n");
+    setFormStatus("success");
+    window.location.href = `mailto:${WPC_PANEL_CONTACT.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   // ===== Download product info =====
@@ -442,16 +451,16 @@ Product Information
 Product Name: ${product.name}
 Product Code: ${product.code}
 Series: ${product.series}
-Size: ${product.size}mm
+Size: ${product.size}
 Thickness: ${product.thickness}
 Color: ${product.color}
 MOQ: ${product.moq} ${product.unit}
 Incoterm: ${product.incoterm}
 Packaging: ${product.packaging}
-Pieces per Carton: ${product.pcsPerCarton}
+Pieces per Carton: ${product.pcsPerCarton || "Not stated"}
 Carton Size: ${product.cartonSize}
 Weight per Piece: ${product.weightPerPiece}
-Net Weight per Carton: ${product.netWeightPerCarton || "N/A"}
+Single Gross Weight: ${product.netWeightPerCarton || "N/A"}
 Lead Time: ${product.leadTime}
 Remarks: ${product.remarks || "None"}
 
@@ -493,16 +502,17 @@ Please contact our sales team for pricing and confirmation.
               <span className="eyebrow">Wood-plastic composite panels for modern interior walls</span>
               <h1 className={styles.introTitle}>Indoor WPC Wall Panels</h1>
               <p className={styles.introDesc}>
-                Wood-plastic composite panels for modern interior walls. Fluted and slatted
-                WPC wall panels combining PVC and wood fiber for waterproof, fire-retardant
-                interior cladding.
+                A source-matched selection of special-shape, fluted and wood-grain indoor wall
+                panels for residential, hospitality and commercial interiors. Specifications,
+                performance labels and MOQ units are shown by individual product rather than
+                generalized across the range.
               </p>
               <div className={styles.introTags}>
                 <span className={styles.tag}>Waterproof</span>
-                <span className={styles.tag}>Fire-Retardant</span>
-                <span className={styles.tag}>Eco-Friendly</span>
-                <span className={styles.tag}>Wood Grain Finish</span>
-                <span className={styles.tag}>Tongue &amp; Groove</span>
+                <span className={styles.tag}>3D Wood Grain</span>
+                <span className={styles.tag}>Custom Colors</span>
+                <span className={styles.tag}>Easy Installation</span>
+                <span className={styles.tag}>Indoor Applications</span>
               </div>
             </div>
             <div className={styles.introCollage}>
@@ -528,8 +538,8 @@ Please contact our sales team for pricing and confirmation.
                 </div>
                 <div className={styles.introCollageSmall}>
                   <Image
-                    src="/images/products/wpc-panel/WP-017.jpg"
-                    alt="Dark charcoal WPC fluted wall panel"
+                    src="/images/products/wpc-panel/WP-023.jpg"
+                    alt="Embossed WPC wall panel profile selection"
                     fill
                     sizes="(max-width: 960px) 100vw, 15vw"
                     className={styles.collageImg}
@@ -625,12 +635,10 @@ Please contact our sales team for pricing and confirmation.
           <div className={styles.productGrid}>
             {filteredProducts.map((product) => (
               <article key={product.id} className={styles.card}>
-                <div
+                <Link
                   className={styles.cardImage}
-                  onClick={() => handleViewDetails(product)}
-                  role="button"
-                  tabIndex={0}
-                  onKeyDown={(e) => { if (e.key === "Enter") handleViewDetails(product); }}
+                  href={`/products/indoor-wpc-wall-panels/${product.slug}`}
+                  aria-label={`View full details for ${product.code}`}
                 >
                   <SmartImage
                     src={product.image}
@@ -642,7 +650,7 @@ Please contact our sales team for pricing and confirmation.
                   <span className={styles.cardMoq}>
                     MOQ {product.moq} {product.unit}
                   </span>
-                </div>
+                </Link>
                 <div className={styles.cardBody}>
                   <h3 className={styles.cardName}>{product.name}</h3>
                   <span className={styles.cardCode}>Code: {product.code}</span>
@@ -665,12 +673,12 @@ Please contact our sales team for pricing and confirmation.
                     </div>
                   </div>
                   <div className={styles.cardFooter}>
-                    <button
+                    <Link
                       className={styles.detailsBtn}
-                      onClick={() => handleViewDetails(product)}
+                      href={`/products/indoor-wpc-wall-panels/${product.slug}`}
                     >
-                      View Details
-                    </button>
+                      View Product
+                    </Link>
                     <button
                       className={`${styles.addToQuoteBtn} ${
                         isInQuoteList(product.code) ? styles.added : ""
@@ -775,7 +783,7 @@ Please contact our sales team for pricing and confirmation.
                   <span className={styles.specValue}>{selectedProduct.weightPerPiece}</span>
                 </div>
                 <div className={styles.specItem}>
-                  <span className={styles.specLabel}>Net Wt / Carton</span>
+                  <span className={styles.specLabel}>Single Gross Weight</span>
                   <span className={styles.specValue}>
                     {selectedProduct.netWeightPerCarton || "—"}
                   </span>
@@ -990,8 +998,8 @@ Please contact our sales team for pricing and confirmation.
             >
               {formStatus === "success" ? (
                 <div className={`${styles.formStatus} ${styles.formSuccess}`}>
-                  Thank you. Your inquiry has been received. Our sales team will review your
-                  requirements and contact you with the confirmed quotation.
+                  Your email application should now contain a prepared inquiry. Review it and
+                  send the message to complete your request.
                 </div>
               ) : (
                 <>
@@ -1142,35 +1150,14 @@ Please contact our sales team for pricing and confirmation.
                       />
                     </div>
 
-                    <div className={`${styles.formGroup} ${styles.formFull}`}>
-                      <label className={styles.formLabel} htmlFor="file">
-                        Upload Reference File
-                      </label>
-                      <input
-                        id="file"
-                        type="file"
-                        className={styles.fileUpload}
-                        accept=".pdf,.jpg,.jpeg,.png,.dwg,.dxf,.zip"
-                      />
-                    </div>
-
                     <div className={styles.formActions}>
                       {formStatus === "error" && Object.keys(formErrors).length > 0 && (
                         <div className={`${styles.formStatus} ${styles.formError}`}>
                           Please fill in all required fields correctly.
                         </div>
                       )}
-                      {formStatus === "loading" && (
-                        <div className={`${styles.formStatus} ${styles.formLoading}`}>
-                          <span className={styles.spinner} /> Submitting your inquiry...
-                        </div>
-                      )}
-                      <button
-                        type="submit"
-                        className={styles.submitBtn}
-                        disabled={formStatus === "loading"}
-                      >
-                        {formStatus === "loading" ? "Submitting..." : "Request a Quote"}
+                      <button type="submit" className={styles.submitBtn}>
+                        Prepare Email Inquiry
                       </button>
                     </div>
                   </div>
