@@ -1,0 +1,82 @@
+name: Apply Indoor WPC Product Update
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: indoor-wpc-product-update
+  cancel-in-progress: false
+
+jobs:
+  apply-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out master
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Validate update bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f wpc-product-update.tar.gz
+          tar -tzf wpc-product-update.tar.gz > /tmp/wpc-product-files.txt
+          test -s /tmp/wpc-product-files.txt
+
+          while IFS= read -r path; do
+            case "$path" in
+              app/products/indoor-wpc-wall-panels|app/products/indoor-wpc-wall-panels/*) ;;
+              app/robots.ts|app/sitemap.ts) ;;
+              components/wpc-panel|components/wpc-panel/*) ;;
+              docs/INDOOR-WPC-PRODUCT-SOP.md) ;;
+              lib/wpc-panel-data.ts) ;;
+              public/images/products/wpc-panel/WP-*/|public/images/products/wpc-panel/WP-*/*) ;;
+              *) echo "Unexpected bundle path: $path" >&2; exit 1 ;;
+            esac
+          done < /tmp/wpc-product-files.txt
+
+      - name: Apply product files
+        shell: bash
+        run: |
+          set -euo pipefail
+          tar -xzf wpc-product-update.tar.gz -C .
+          git rm -- wpc-product-update.tar.gz
+          git add -- \
+            app/products/indoor-wpc-wall-panels \
+            app/robots.ts \
+            app/sitemap.ts \
+            components/wpc-panel \
+            docs/INDOOR-WPC-PRODUCT-SOP.md \
+            lib/wpc-panel-data.ts \
+            public/images/products/wpc-panel/WP-001 \
+            public/images/products/wpc-panel/WP-002 \
+            public/images/products/wpc-panel/WP-003 \
+            public/images/products/wpc-panel/WP-004 \
+            public/images/products/wpc-panel/WP-005 \
+            public/images/products/wpc-panel/WP-012 \
+            public/images/products/wpc-panel/WP-013 \
+            public/images/products/wpc-panel/WP-014 \
+            public/images/products/wpc-panel/WP-015 \
+            public/images/products/wpc-panel/WP-021 \
+            public/images/products/wpc-panel/WP-022 \
+            public/images/products/wpc-panel/WP-023 \
+            public/images/products/wpc-panel/WP-024 \
+            public/images/products/wpc-panel/WP-025 \
+            public/images/products/wpc-panel/WP-026
+
+      - name: Commit to master
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --cached --quiet; then
+            echo "No product changes to commit."
+            exit 0
+          fi
+          git commit -m "Update indoor WPC product pages and SEO"
+          git push origin HEAD:master
